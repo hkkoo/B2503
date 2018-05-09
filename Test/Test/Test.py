@@ -22,3 +22,4 @@ btn_ctrl.Click()
 
 time.sleep(50)
 os.system("taskkill /im khmini.exe")
+time.sleep(50)
