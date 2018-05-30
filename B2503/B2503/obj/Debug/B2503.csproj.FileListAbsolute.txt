@@ -1,0 +1,12 @@
+D:\dev\B2503\B2503\B2503\bin\Debug\B2503.exe.config
+D:\dev\B2503\B2503\B2503\bin\Debug\B2503.exe
+D:\dev\B2503\B2503\B2503\bin\Debug\B2503.pdb
+D:\dev\B2503\B2503\B2503\bin\Debug\AxInterop.KHOpenAPILib.dll
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csprojResolveAssemblyReference.cache
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.Properties.Resources.resources
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csproj.GenerateResource.cache
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csproj.CoreCompileInputs.cache
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csproj.CopyComplete
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.exe
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.pdb
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.MainForm.resources
