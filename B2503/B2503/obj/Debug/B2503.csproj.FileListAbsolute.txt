@@ -6,7 +6,12 @@ D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csprojResolveAssemblyReference.cache
 D:\dev\B2503\B2503\B2503\obj\Debug\B2503.Properties.Resources.resources
 D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csproj.GenerateResource.cache
 D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csproj.CoreCompileInputs.cache
-D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csproj.CopyComplete
 D:\dev\B2503\B2503\B2503\obj\Debug\B2503.exe
 D:\dev\B2503\B2503\B2503\obj\Debug\B2503.pdb
 D:\dev\B2503\B2503\B2503\obj\Debug\B2503.MainForm.resources
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.LogForm.resources
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.SettingForm.resources
+D:\dev\B2503\B2503\B2503\obj\Debug\B2503.csproj.ResolveComReference.cache
+D:\dev\B2503\B2503\B2503\bin\Debug\Interop.KHOpenAPILib.dll
+D:\dev\B2503\B2503\B2503\obj\Debug\Interop.KHOpenAPILib.dll
+D:\dev\B2503\B2503\B2503\obj\Debug\AxInterop.KHOpenAPILib.dll
