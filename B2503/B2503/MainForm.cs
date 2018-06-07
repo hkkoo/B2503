@@ -87,6 +87,7 @@ namespace B2503
                 개인정보.Text += ", 이름: " + axKHOpenAPI.GetLoginInfo("USER_NAME");
                 개인정보.Text += ", 계좌: ";
                 string[] arr계좌 = axKHOpenAPI.GetLoginInfo("ACCNO").Split(';');
+                
 
                 // 계좌번호 불러오기
                 계좌번호리스트.Items.AddRange(arr계좌);
