@@ -15,11 +15,14 @@ namespace B2503
     {
         LogForm logform = null;
         SettingForm settingform = null;
-        
+        Settings ShortSettings;
+        Settings LongSettings;
+
         public MainForm()
         {
             InitializeComponent();
             currentTimer.Start();
+            axKHOpenAPI.CommConnect();
         }
 
         private void logBtn_Click(object sender, EventArgs e)

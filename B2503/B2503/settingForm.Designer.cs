@@ -32,135 +32,133 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.미체결시간 = new System.Windows.Forms.NumericUpDown();
+            this.매수종료익절손절진행check = new System.Windows.Forms.CheckBox();
+            this.미체결취소check = new System.Windows.Forms.CheckBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
+            this.추가매수수익률3구매수량num = new System.Windows.Forms.NumericUpDown();
             this.label22 = new System.Windows.Forms.Label();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox14 = new System.Windows.Forms.ComboBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.추가매수수익률3수익률num = new System.Windows.Forms.NumericUpDown();
+            this.추가매수수익률3updown = new System.Windows.Forms.ComboBox();
+            this.추가매수수익률3check = new System.Windows.Forms.CheckBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
+            this.추가매수수익률2구매수량num = new System.Windows.Forms.NumericUpDown();
             this.label21 = new System.Windows.Forms.Label();
-            this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox13 = new System.Windows.Forms.ComboBox();
-            this.checkBox14 = new System.Windows.Forms.CheckBox();
+            this.추가매수수익률2수익률num = new System.Windows.Forms.NumericUpDown();
+            this.추가매수수익률2updown = new System.Windows.Forms.ComboBox();
+            this.추가매수수익률2check = new System.Windows.Forms.CheckBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
+            this.추가매수수익률1구매수량num = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
-            this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox12 = new System.Windows.Forms.ComboBox();
-            this.checkBox13 = new System.Windows.Forms.CheckBox();
+            this.추가매수수익률1수익률num = new System.Windows.Forms.NumericUpDown();
+            this.추가매수수익률1updown = new System.Windows.Forms.ComboBox();
+            this.추가매수수익률1check = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.매수운영종료시간time = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.매수운영시작시간time = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.초기매수조건식combo = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.추가매수조건식1num = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.추가매수조건식combo = new System.Windows.Forms.ComboBox();
+            this.추가매수조건식1check = new System.Windows.Forms.CheckBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
+            this.추가매수조건식3num = new System.Windows.Forms.NumericUpDown();
             this.label18 = new System.Windows.Forms.Label();
-            this.comboBox10 = new System.Windows.Forms.ComboBox();
-            this.checkBox11 = new System.Windows.Forms.CheckBox();
+            this.추가매수조건식3combo = new System.Windows.Forms.ComboBox();
+            this.추가매수조건식3check = new System.Windows.Forms.CheckBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.추가매수조건식2num = new System.Windows.Forms.NumericUpDown();
             this.label17 = new System.Windows.Forms.Label();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.추가매수조건식2combo = new System.Windows.Forms.ComboBox();
+            this.추가매수조건식2check = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.분할매도수익률3수량num = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox11 = new System.Windows.Forms.ComboBox();
-            this.checkBox12 = new System.Windows.Forms.CheckBox();
+            this.분할매도수익률3수익률num = new System.Windows.Forms.NumericUpDown();
+            this.분할매도수익률3updown = new System.Windows.Forms.ComboBox();
+            this.분할매도수익률3check = new System.Windows.Forms.CheckBox();
             this.panel13 = new System.Windows.Forms.Panel();
-            this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
+            this.분할매도수익률2수량num = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
-            this.numericUpDown13 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox15 = new System.Windows.Forms.ComboBox();
-            this.checkBox16 = new System.Windows.Forms.CheckBox();
+            this.분할매도수익률2수익률num = new System.Windows.Forms.NumericUpDown();
+            this.분할매도수익률2updown = new System.Windows.Forms.ComboBox();
+            this.분할매도수익률2check = new System.Windows.Forms.CheckBox();
             this.panel14 = new System.Windows.Forms.Panel();
-            this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
+            this.분할매도수익률1수량num = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
-            this.numericUpDown15 = new System.Windows.Forms.NumericUpDown();
-            this.comboBox16 = new System.Windows.Forms.ComboBox();
-            this.checkBox17 = new System.Windows.Forms.CheckBox();
+            this.분할매도수익률1수익률num = new System.Windows.Forms.NumericUpDown();
+            this.분할매도수익률1updown = new System.Windows.Forms.ComboBox();
+            this.분할매도수익률1check = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.청산후정료check = new System.Windows.Forms.CheckBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.전체손절률check = new System.Windows.Forms.CheckBox();
+            this.전체익절률check = new System.Windows.Forms.CheckBox();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.checkBox22 = new System.Windows.Forms.CheckBox();
-            this.checkBox21 = new System.Windows.Forms.CheckBox();
+            this.초기매도조건식check = new System.Windows.Forms.CheckBox();
+            this.일괄청산시간check = new System.Windows.Forms.CheckBox();
             this.comboBox17 = new System.Windows.Forms.ComboBox();
             this.comboBox18 = new System.Windows.Forms.ComboBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.dateTimePicker4 = new System.Windows.Forms.DateTimePicker();
-            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.일괄청산시간time = new System.Windows.Forms.DateTimePicker();
+            this.초기매도조건식combo = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.numericUpDown16 = new System.Windows.Forms.NumericUpDown();
+            this.분할매도조건식1num = new System.Windows.Forms.NumericUpDown();
             this.label30 = new System.Windows.Forms.Label();
-            this.comboBox20 = new System.Windows.Forms.ComboBox();
-            this.checkBox18 = new System.Windows.Forms.CheckBox();
+            this.분할매도조건식1combo = new System.Windows.Forms.ComboBox();
+            this.분할매도조건식1check = new System.Windows.Forms.CheckBox();
             this.panel17 = new System.Windows.Forms.Panel();
-            this.numericUpDown17 = new System.Windows.Forms.NumericUpDown();
+            this.분할매도조건식3num = new System.Windows.Forms.NumericUpDown();
             this.label31 = new System.Windows.Forms.Label();
-            this.comboBox21 = new System.Windows.Forms.ComboBox();
-            this.checkBox19 = new System.Windows.Forms.CheckBox();
+            this.분할매도조건식3combo = new System.Windows.Forms.ComboBox();
+            this.분할매도조건식3check = new System.Windows.Forms.CheckBox();
             this.panel18 = new System.Windows.Forms.Panel();
-            this.numericUpDown18 = new System.Windows.Forms.NumericUpDown();
+            this.분할매도조건식2num = new System.Windows.Forms.NumericUpDown();
             this.label32 = new System.Windows.Forms.Label();
-            this.comboBox22 = new System.Windows.Forms.ComboBox();
-            this.checkBox20 = new System.Windows.Forms.CheckBox();
+            this.분할매도조건식2combo = new System.Windows.Forms.ComboBox();
+            this.분할매도조건식2check = new System.Windows.Forms.CheckBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel20 = new System.Windows.Forms.Panel();
+            this.계좌combo = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
+            this.블랙추가btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.블랙종목코드text = new System.Windows.Forms.TextBox();
+            this.블랙리스트list = new System.Windows.Forms.ListBox();
             this.panel19 = new System.Windows.Forms.Panel();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.열기btn = new System.Windows.Forms.Button();
+            this.저장btn = new System.Windows.Forms.Button();
+            this.전략명text = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.최대매수종목수text = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.종목별최대매수금액text = new System.Windows.Forms.TextBox();
+            this.종목별초기매수금액text = new System.Windows.Forms.TextBox();
+            this.총매수가능금액text = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.닫기btn = new System.Windows.Forms.Button();
+            this.설정적용btn = new System.Windows.Forms.Button();
             this.장기탭 = new System.Windows.Forms.TabPage();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel21 = new System.Windows.Forms.Panel();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -292,57 +290,59 @@
             this.label56 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.전체익절률num = new System.Windows.Forms.NumericUpDown();
+            this.전체손절률num = new System.Windows.Forms.NumericUpDown();
             this.장단기탭.SuspendLayout();
             this.단기탭.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.미체결시간)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률3구매수량num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률3수익률num)).BeginInit();
             this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률2구매수량num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률2수익률num)).BeginInit();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률1구매수량num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률1수익률num)).BeginInit();
             this.panel4.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수조건식1num)).BeginInit();
             this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수조건식3num)).BeginInit();
             this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수조건식2num)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.panel12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률3수량num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률3수익률num)).BeginInit();
             this.panel13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률2수량num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률2수익률num)).BeginInit();
             this.panel14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률1수량num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률1수익률num)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel15.SuspendLayout();
             this.groupBox8.SuspendLayout();
             this.panel16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도조건식1num)).BeginInit();
             this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도조건식3num)).BeginInit();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도조건식2num)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel20.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel19.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.장기탭.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel21.SuspendLayout();
             this.groupBox9.SuspendLayout();
@@ -391,6 +391,8 @@
             this.groupBox15.SuspendLayout();
             this.panel40.SuspendLayout();
             this.groupBox16.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.전체익절률num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.전체손절률num)).BeginInit();
             this.SuspendLayout();
             // 
             // 장단기탭
@@ -452,9 +454,9 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.numericUpDown19);
-            this.groupBox5.Controls.Add(this.checkBox4);
-            this.groupBox5.Controls.Add(this.checkBox8);
+            this.groupBox5.Controls.Add(this.미체결시간);
+            this.groupBox5.Controls.Add(this.매수종료익절손절진행check);
+            this.groupBox5.Controls.Add(this.미체결취소check);
             this.groupBox5.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox5.Location = new System.Drawing.Point(1, 459);
             this.groupBox5.Name = "groupBox5";
@@ -463,42 +465,42 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "매수/매도 옵션";
             // 
-            // numericUpDown19
+            // 미체결시간
             // 
-            this.numericUpDown19.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.numericUpDown19.Location = new System.Drawing.Point(148, 18);
-            this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(50, 21);
-            this.numericUpDown19.TabIndex = 21;
-            this.numericUpDown19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown19.Value = new decimal(new int[] {
+            this.미체결시간.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.미체결시간.Location = new System.Drawing.Point(148, 18);
+            this.미체결시간.Name = "미체결시간";
+            this.미체결시간.Size = new System.Drawing.Size(50, 21);
+            this.미체결시간.TabIndex = 21;
+            this.미체결시간.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.미체결시간.Value = new decimal(new int[] {
             60,
             0,
             0,
             0});
             // 
-            // checkBox4
+            // 매수종료익절손절진행check
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox4.Location = new System.Drawing.Point(6, 46);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(246, 19);
-            this.checkBox4.TabIndex = 20;
-            this.checkBox4.Text = "매수조건식 시간 종료 후 익절, 손절 진행";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.매수종료익절손절진행check.AutoSize = true;
+            this.매수종료익절손절진행check.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.매수종료익절손절진행check.Location = new System.Drawing.Point(6, 46);
+            this.매수종료익절손절진행check.Name = "매수종료익절손절진행check";
+            this.매수종료익절손절진행check.Size = new System.Drawing.Size(246, 19);
+            this.매수종료익절손절진행check.TabIndex = 20;
+            this.매수종료익절손절진행check.Text = "매수조건식 시간 종료 후 익절, 손절 진행";
+            this.매수종료익절손절진행check.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // 미체결취소check
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox8.ForeColor = System.Drawing.Color.Black;
-            this.checkBox8.Location = new System.Drawing.Point(6, 21);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(218, 19);
-            this.checkBox8.TabIndex = 1;
-            this.checkBox8.Text = "미체결 매수매도 취소                초";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.미체결취소check.AutoSize = true;
+            this.미체결취소check.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.미체결취소check.ForeColor = System.Drawing.Color.Black;
+            this.미체결취소check.Location = new System.Drawing.Point(6, 21);
+            this.미체결취소check.Name = "미체결취소check";
+            this.미체결취소check.Size = new System.Drawing.Size(218, 19);
+            this.미체결취소check.TabIndex = 1;
+            this.미체결취소check.Text = "미체결 매수매도 취소                초";
+            this.미체결취소check.UseVisualStyleBackColor = true;
             // 
             // groupBox6
             // 
@@ -518,25 +520,25 @@
             // panel11
             // 
             this.panel11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel11.Controls.Add(this.numericUpDown10);
+            this.panel11.Controls.Add(this.추가매수수익률3구매수량num);
             this.panel11.Controls.Add(this.label22);
-            this.panel11.Controls.Add(this.numericUpDown11);
-            this.panel11.Controls.Add(this.comboBox14);
-            this.panel11.Controls.Add(this.checkBox15);
+            this.panel11.Controls.Add(this.추가매수수익률3수익률num);
+            this.panel11.Controls.Add(this.추가매수수익률3updown);
+            this.panel11.Controls.Add(this.추가매수수익률3check);
             this.panel11.Location = new System.Drawing.Point(2, 116);
             this.panel11.Margin = new System.Windows.Forms.Padding(0);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(360, 47);
             this.panel11.TabIndex = 38;
             // 
-            // numericUpDown10
+            // 추가매수수익률3구매수량num
             // 
-            this.numericUpDown10.Location = new System.Drawing.Point(234, 25);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown10.TabIndex = 36;
-            this.numericUpDown10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown10.Value = new decimal(new int[] {
+            this.추가매수수익률3구매수량num.Location = new System.Drawing.Point(234, 25);
+            this.추가매수수익률3구매수량num.Name = "추가매수수익률3구매수량num";
+            this.추가매수수익률3구매수량num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수수익률3구매수량num.TabIndex = 36;
+            this.추가매수수익률3구매수량num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수수익률3구매수량num.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -552,64 +554,64 @@
             this.label22.TabIndex = 35;
             this.label22.Text = "보유수량의                   %를 추가 매수";
             // 
-            // numericUpDown11
+            // 추가매수수익률3수익률num
             // 
-            this.numericUpDown11.Location = new System.Drawing.Point(74, 4);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown11.TabIndex = 32;
-            this.numericUpDown11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown11.Value = new decimal(new int[] {
+            this.추가매수수익률3수익률num.Location = new System.Drawing.Point(74, 4);
+            this.추가매수수익률3수익률num.Name = "추가매수수익률3수익률num";
+            this.추가매수수익률3수익률num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수수익률3수익률num.TabIndex = 32;
+            this.추가매수수익률3수익률num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수수익률3수익률num.Value = new decimal(new int[] {
             50,
             0,
             0,
             0});
             // 
-            // comboBox14
+            // 추가매수수익률3updown
             // 
-            this.comboBox14.FormattingEnabled = true;
-            this.comboBox14.Items.AddRange(new object[] {
+            this.추가매수수익률3updown.FormattingEnabled = true;
+            this.추가매수수익률3updown.Items.AddRange(new object[] {
             "이상",
             "이하"});
-            this.comboBox14.Location = new System.Drawing.Point(144, 2);
-            this.comboBox14.Name = "comboBox14";
-            this.comboBox14.Size = new System.Drawing.Size(50, 22);
-            this.comboBox14.TabIndex = 34;
-            this.comboBox14.Text = "이상";
+            this.추가매수수익률3updown.Location = new System.Drawing.Point(144, 2);
+            this.추가매수수익률3updown.Name = "추가매수수익률3updown";
+            this.추가매수수익률3updown.Size = new System.Drawing.Size(50, 22);
+            this.추가매수수익률3updown.TabIndex = 34;
+            this.추가매수수익률3updown.Text = "이상";
             // 
-            // checkBox15
+            // 추가매수수익률3check
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox15.Location = new System.Drawing.Point(3, 6);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(243, 18);
-            this.checkBox15.TabIndex = 33;
-            this.checkBox15.Text = "수익률이                  %                      일 경우,";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.추가매수수익률3check.AutoSize = true;
+            this.추가매수수익률3check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.추가매수수익률3check.Location = new System.Drawing.Point(3, 6);
+            this.추가매수수익률3check.Name = "추가매수수익률3check";
+            this.추가매수수익률3check.Size = new System.Drawing.Size(243, 18);
+            this.추가매수수익률3check.TabIndex = 33;
+            this.추가매수수익률3check.Text = "수익률이                  %                      일 경우,";
+            this.추가매수수익률3check.UseVisualStyleBackColor = true;
             // 
             // panel10
             // 
             this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel10.Controls.Add(this.numericUpDown7);
+            this.panel10.Controls.Add(this.추가매수수익률2구매수량num);
             this.panel10.Controls.Add(this.label21);
-            this.panel10.Controls.Add(this.numericUpDown8);
-            this.panel10.Controls.Add(this.comboBox13);
-            this.panel10.Controls.Add(this.checkBox14);
+            this.panel10.Controls.Add(this.추가매수수익률2수익률num);
+            this.panel10.Controls.Add(this.추가매수수익률2updown);
+            this.panel10.Controls.Add(this.추가매수수익률2check);
             this.panel10.Location = new System.Drawing.Point(2, 65);
             this.panel10.Margin = new System.Windows.Forms.Padding(0);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(360, 50);
             this.panel10.TabIndex = 37;
             // 
-            // numericUpDown7
+            // 추가매수수익률2구매수량num
             // 
-            this.numericUpDown7.Location = new System.Drawing.Point(234, 25);
-            this.numericUpDown7.Name = "numericUpDown7";
-            this.numericUpDown7.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown7.TabIndex = 36;
-            this.numericUpDown7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown7.Value = new decimal(new int[] {
+            this.추가매수수익률2구매수량num.Location = new System.Drawing.Point(234, 25);
+            this.추가매수수익률2구매수량num.Name = "추가매수수익률2구매수량num";
+            this.추가매수수익률2구매수량num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수수익률2구매수량num.TabIndex = 36;
+            this.추가매수수익률2구매수량num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수수익률2구매수량num.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -625,64 +627,64 @@
             this.label21.TabIndex = 35;
             this.label21.Text = "보유수량의                   %를 추가 매수";
             // 
-            // numericUpDown8
+            // 추가매수수익률2수익률num
             // 
-            this.numericUpDown8.Location = new System.Drawing.Point(74, 4);
-            this.numericUpDown8.Name = "numericUpDown8";
-            this.numericUpDown8.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown8.TabIndex = 32;
-            this.numericUpDown8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown8.Value = new decimal(new int[] {
+            this.추가매수수익률2수익률num.Location = new System.Drawing.Point(74, 4);
+            this.추가매수수익률2수익률num.Name = "추가매수수익률2수익률num";
+            this.추가매수수익률2수익률num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수수익률2수익률num.TabIndex = 32;
+            this.추가매수수익률2수익률num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수수익률2수익률num.Value = new decimal(new int[] {
             50,
             0,
             0,
             0});
             // 
-            // comboBox13
+            // 추가매수수익률2updown
             // 
-            this.comboBox13.FormattingEnabled = true;
-            this.comboBox13.Items.AddRange(new object[] {
+            this.추가매수수익률2updown.FormattingEnabled = true;
+            this.추가매수수익률2updown.Items.AddRange(new object[] {
             "이상",
             "이하"});
-            this.comboBox13.Location = new System.Drawing.Point(144, 2);
-            this.comboBox13.Name = "comboBox13";
-            this.comboBox13.Size = new System.Drawing.Size(50, 22);
-            this.comboBox13.TabIndex = 34;
-            this.comboBox13.Text = "이상";
+            this.추가매수수익률2updown.Location = new System.Drawing.Point(144, 2);
+            this.추가매수수익률2updown.Name = "추가매수수익률2updown";
+            this.추가매수수익률2updown.Size = new System.Drawing.Size(50, 22);
+            this.추가매수수익률2updown.TabIndex = 34;
+            this.추가매수수익률2updown.Text = "이상";
             // 
-            // checkBox14
+            // 추가매수수익률2check
             // 
-            this.checkBox14.AutoSize = true;
-            this.checkBox14.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox14.Location = new System.Drawing.Point(3, 6);
-            this.checkBox14.Name = "checkBox14";
-            this.checkBox14.Size = new System.Drawing.Size(243, 18);
-            this.checkBox14.TabIndex = 33;
-            this.checkBox14.Text = "수익률이                  %                      일 경우,";
-            this.checkBox14.UseVisualStyleBackColor = true;
+            this.추가매수수익률2check.AutoSize = true;
+            this.추가매수수익률2check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.추가매수수익률2check.Location = new System.Drawing.Point(3, 6);
+            this.추가매수수익률2check.Name = "추가매수수익률2check";
+            this.추가매수수익률2check.Size = new System.Drawing.Size(243, 18);
+            this.추가매수수익률2check.TabIndex = 33;
+            this.추가매수수익률2check.Text = "수익률이                  %                      일 경우,";
+            this.추가매수수익률2check.UseVisualStyleBackColor = true;
             // 
             // panel9
             // 
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel9.Controls.Add(this.numericUpDown9);
+            this.panel9.Controls.Add(this.추가매수수익률1구매수량num);
             this.panel9.Controls.Add(this.label20);
-            this.panel9.Controls.Add(this.numericUpDown6);
-            this.panel9.Controls.Add(this.comboBox12);
-            this.panel9.Controls.Add(this.checkBox13);
+            this.panel9.Controls.Add(this.추가매수수익률1수익률num);
+            this.panel9.Controls.Add(this.추가매수수익률1updown);
+            this.panel9.Controls.Add(this.추가매수수익률1check);
             this.panel9.Location = new System.Drawing.Point(2, 14);
             this.panel9.Margin = new System.Windows.Forms.Padding(0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(360, 50);
             this.panel9.TabIndex = 30;
             // 
-            // numericUpDown9
+            // 추가매수수익률1구매수량num
             // 
-            this.numericUpDown9.Location = new System.Drawing.Point(234, 25);
-            this.numericUpDown9.Name = "numericUpDown9";
-            this.numericUpDown9.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown9.TabIndex = 36;
-            this.numericUpDown9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown9.Value = new decimal(new int[] {
+            this.추가매수수익률1구매수량num.Location = new System.Drawing.Point(234, 25);
+            this.추가매수수익률1구매수량num.Name = "추가매수수익률1구매수량num";
+            this.추가매수수익률1구매수량num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수수익률1구매수량num.TabIndex = 36;
+            this.추가매수수익률1구매수량num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수수익률1구매수량num.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -698,41 +700,41 @@
             this.label20.TabIndex = 35;
             this.label20.Text = "보유수량의                   %를 추가 매수";
             // 
-            // numericUpDown6
+            // 추가매수수익률1수익률num
             // 
-            this.numericUpDown6.Location = new System.Drawing.Point(74, 4);
-            this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown6.TabIndex = 32;
-            this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown6.Value = new decimal(new int[] {
+            this.추가매수수익률1수익률num.Location = new System.Drawing.Point(74, 4);
+            this.추가매수수익률1수익률num.Name = "추가매수수익률1수익률num";
+            this.추가매수수익률1수익률num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수수익률1수익률num.TabIndex = 32;
+            this.추가매수수익률1수익률num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수수익률1수익률num.Value = new decimal(new int[] {
             50,
             0,
             0,
             0});
             // 
-            // comboBox12
+            // 추가매수수익률1updown
             // 
-            this.comboBox12.FormattingEnabled = true;
-            this.comboBox12.Items.AddRange(new object[] {
+            this.추가매수수익률1updown.FormattingEnabled = true;
+            this.추가매수수익률1updown.Items.AddRange(new object[] {
             "이상",
             "이하"});
-            this.comboBox12.Location = new System.Drawing.Point(144, 2);
-            this.comboBox12.Name = "comboBox12";
-            this.comboBox12.Size = new System.Drawing.Size(50, 22);
-            this.comboBox12.TabIndex = 34;
-            this.comboBox12.Text = "이상";
+            this.추가매수수익률1updown.Location = new System.Drawing.Point(144, 2);
+            this.추가매수수익률1updown.Name = "추가매수수익률1updown";
+            this.추가매수수익률1updown.Size = new System.Drawing.Size(50, 22);
+            this.추가매수수익률1updown.TabIndex = 34;
+            this.추가매수수익률1updown.Text = "이상";
             // 
-            // checkBox13
+            // 추가매수수익률1check
             // 
-            this.checkBox13.AutoSize = true;
-            this.checkBox13.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox13.Location = new System.Drawing.Point(3, 6);
-            this.checkBox13.Name = "checkBox13";
-            this.checkBox13.Size = new System.Drawing.Size(243, 18);
-            this.checkBox13.TabIndex = 33;
-            this.checkBox13.Text = "수익률이                  %                      일 경우,";
-            this.checkBox13.UseVisualStyleBackColor = true;
+            this.추가매수수익률1check.AutoSize = true;
+            this.추가매수수익률1check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.추가매수수익률1check.Location = new System.Drawing.Point(3, 6);
+            this.추가매수수익률1check.Name = "추가매수수익률1check";
+            this.추가매수수익률1check.Size = new System.Drawing.Size(243, 18);
+            this.추가매수수익률1check.TabIndex = 33;
+            this.추가매수수익률1check.Text = "수익률이                  %                      일 경우,";
+            this.추가매수수익률1check.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -740,11 +742,11 @@
             this.panel4.Controls.Add(this.comboBox4);
             this.panel4.Controls.Add(this.comboBox3);
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.dateTimePicker2);
+            this.panel4.Controls.Add(this.매수운영종료시간time);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Controls.Add(this.dateTimePicker1);
+            this.panel4.Controls.Add(this.매수운영시작시간time);
             this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.comboBox1);
+            this.panel4.Controls.Add(this.초기매수조건식combo);
             this.panel4.Location = new System.Drawing.Point(1, 27);
             this.panel4.Margin = new System.Windows.Forms.Padding(0);
             this.panel4.Name = "panel4";
@@ -792,19 +794,19 @@
             this.label1.TabIndex = 41;
             this.label1.Text = "매수방식";
             // 
-            // dateTimePicker2
+            // 매수운영종료시간time
             // 
-            this.dateTimePicker2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker2.Checked = false;
-            this.dateTimePicker2.CustomFormat = "HH:mm:ss";
-            this.dateTimePicker2.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(262, 0);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.ShowUpDown = true;
-            this.dateTimePicker2.Size = new System.Drawing.Size(95, 22);
-            this.dateTimePicker2.TabIndex = 40;
-            this.dateTimePicker2.Value = new System.DateTime(2018, 6, 7, 0, 0, 0, 0);
+            this.매수운영종료시간time.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.매수운영종료시간time.Checked = false;
+            this.매수운영종료시간time.CustomFormat = "HH:mm:ss";
+            this.매수운영종료시간time.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.매수운영종료시간time.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.매수운영종료시간time.Location = new System.Drawing.Point(262, 0);
+            this.매수운영종료시간time.Name = "매수운영종료시간time";
+            this.매수운영종료시간time.ShowUpDown = true;
+            this.매수운영종료시간time.Size = new System.Drawing.Size(95, 22);
+            this.매수운영종료시간time.TabIndex = 40;
+            this.매수운영종료시간time.Value = new System.DateTime(2018, 6, 7, 0, 0, 0, 0);
             // 
             // label4
             // 
@@ -818,19 +820,19 @@
             this.label4.TabIndex = 39;
             this.label4.Text = "~";
             // 
-            // dateTimePicker1
+            // 매수운영시작시간time
             // 
-            this.dateTimePicker1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker1.Checked = false;
-            this.dateTimePicker1.CustomFormat = "HH:mm:ss";
-            this.dateTimePicker1.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(117, 0);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.ShowUpDown = true;
-            this.dateTimePicker1.Size = new System.Drawing.Size(95, 22);
-            this.dateTimePicker1.TabIndex = 38;
-            this.dateTimePicker1.Value = new System.DateTime(2018, 6, 7, 0, 0, 0, 0);
+            this.매수운영시작시간time.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.매수운영시작시간time.Checked = false;
+            this.매수운영시작시간time.CustomFormat = "HH:mm:ss";
+            this.매수운영시작시간time.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.매수운영시작시간time.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.매수운영시작시간time.Location = new System.Drawing.Point(117, 0);
+            this.매수운영시작시간time.Name = "매수운영시작시간time";
+            this.매수운영시작시간time.ShowUpDown = true;
+            this.매수운영시작시간time.Size = new System.Drawing.Size(95, 22);
+            this.매수운영시작시간time.TabIndex = 38;
+            this.매수운영시작시간time.Value = new System.DateTime(2018, 6, 7, 0, 0, 0, 0);
             // 
             // label2
             // 
@@ -844,14 +846,14 @@
             this.label2.TabIndex = 37;
             this.label2.Text = "매수운영시간";
             // 
-            // comboBox1
+            // 초기매수조건식combo
             // 
-            this.comboBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(117, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 20);
-            this.comboBox1.TabIndex = 36;
+            this.초기매수조건식combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.초기매수조건식combo.FormattingEnabled = true;
+            this.초기매수조건식combo.Location = new System.Drawing.Point(117, 27);
+            this.초기매수조건식combo.Name = "초기매수조건식combo";
+            this.초기매수조건식combo.Size = new System.Drawing.Size(241, 20);
+            this.초기매수조건식combo.TabIndex = 36;
             // 
             // label14
             // 
@@ -883,24 +885,24 @@
             // panel5
             // 
             this.panel5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel5.Controls.Add(this.numericUpDown2);
+            this.panel5.Controls.Add(this.추가매수조건식1num);
             this.panel5.Controls.Add(this.label16);
-            this.panel5.Controls.Add(this.comboBox2);
-            this.panel5.Controls.Add(this.checkBox2);
+            this.panel5.Controls.Add(this.추가매수조건식combo);
+            this.panel5.Controls.Add(this.추가매수조건식1check);
             this.panel5.Location = new System.Drawing.Point(2, 14);
             this.panel5.Margin = new System.Windows.Forms.Padding(0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(360, 49);
             this.panel5.TabIndex = 30;
             // 
-            // numericUpDown2
+            // 추가매수조건식1num
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(170, 25);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown2.TabIndex = 32;
-            this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.추가매수조건식1num.Location = new System.Drawing.Point(170, 25);
+            this.추가매수조건식1num.Name = "추가매수조건식1num";
+            this.추가매수조건식1num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수조건식1num.TabIndex = 32;
+            this.추가매수조건식1num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수조건식1num.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -916,48 +918,48 @@
             this.label16.TabIndex = 33;
             this.label16.Text = "위의 조건일 경우, 보유 수량의                     %를 추가 매수";
             // 
-            // comboBox2
+            // 추가매수조건식combo
             // 
-            this.comboBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(111, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(246, 22);
-            this.comboBox2.TabIndex = 31;
+            this.추가매수조건식combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.추가매수조건식combo.FormattingEnabled = true;
+            this.추가매수조건식combo.Location = new System.Drawing.Point(111, 2);
+            this.추가매수조건식combo.Name = "추가매수조건식combo";
+            this.추가매수조건식combo.Size = new System.Drawing.Size(246, 22);
+            this.추가매수조건식combo.TabIndex = 31;
             // 
-            // checkBox2
+            // 추가매수조건식1check
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox2.ForeColor = System.Drawing.Color.Red;
-            this.checkBox2.Location = new System.Drawing.Point(3, 3);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(103, 18);
-            this.checkBox2.TabIndex = 30;
-            this.checkBox2.Text = "추가매수조건식";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.추가매수조건식1check.AutoSize = true;
+            this.추가매수조건식1check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.추가매수조건식1check.ForeColor = System.Drawing.Color.Red;
+            this.추가매수조건식1check.Location = new System.Drawing.Point(3, 3);
+            this.추가매수조건식1check.Name = "추가매수조건식1check";
+            this.추가매수조건식1check.Size = new System.Drawing.Size(103, 18);
+            this.추가매수조건식1check.TabIndex = 30;
+            this.추가매수조건식1check.Text = "추가매수조건식";
+            this.추가매수조건식1check.UseVisualStyleBackColor = true;
             // 
             // panel7
             // 
             this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel7.Controls.Add(this.numericUpDown4);
+            this.panel7.Controls.Add(this.추가매수조건식3num);
             this.panel7.Controls.Add(this.label18);
-            this.panel7.Controls.Add(this.comboBox10);
-            this.panel7.Controls.Add(this.checkBox11);
+            this.panel7.Controls.Add(this.추가매수조건식3combo);
+            this.panel7.Controls.Add(this.추가매수조건식3check);
             this.panel7.Location = new System.Drawing.Point(2, 112);
             this.panel7.Margin = new System.Windows.Forms.Padding(0);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(360, 53);
             this.panel7.TabIndex = 35;
             // 
-            // numericUpDown4
+            // 추가매수조건식3num
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(170, 25);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown4.TabIndex = 32;
-            this.numericUpDown4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown4.Value = new decimal(new int[] {
+            this.추가매수조건식3num.Location = new System.Drawing.Point(170, 25);
+            this.추가매수조건식3num.Name = "추가매수조건식3num";
+            this.추가매수조건식3num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수조건식3num.TabIndex = 32;
+            this.추가매수조건식3num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수조건식3num.Value = new decimal(new int[] {
             10,
             0,
             0,
@@ -973,50 +975,50 @@
             this.label18.TabIndex = 33;
             this.label18.Text = "위의 조건일 경우, 보유 수량의                     %를 추가 매수";
             // 
-            // comboBox10
+            // 추가매수조건식3combo
             // 
-            this.comboBox10.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox10.FormattingEnabled = true;
-            this.comboBox10.Location = new System.Drawing.Point(111, 2);
-            this.comboBox10.Name = "comboBox10";
-            this.comboBox10.Size = new System.Drawing.Size(246, 22);
-            this.comboBox10.TabIndex = 31;
+            this.추가매수조건식3combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.추가매수조건식3combo.FormattingEnabled = true;
+            this.추가매수조건식3combo.Location = new System.Drawing.Point(111, 2);
+            this.추가매수조건식3combo.Name = "추가매수조건식3combo";
+            this.추가매수조건식3combo.Size = new System.Drawing.Size(246, 22);
+            this.추가매수조건식3combo.TabIndex = 31;
             // 
-            // checkBox11
+            // 추가매수조건식3check
             // 
-            this.checkBox11.AutoSize = true;
-            this.checkBox11.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox11.ForeColor = System.Drawing.Color.Red;
-            this.checkBox11.Location = new System.Drawing.Point(3, 3);
-            this.checkBox11.Name = "checkBox11";
-            this.checkBox11.Size = new System.Drawing.Size(103, 18);
-            this.checkBox11.TabIndex = 30;
-            this.checkBox11.Text = "추가매수조건식";
-            this.checkBox11.UseVisualStyleBackColor = true;
+            this.추가매수조건식3check.AutoSize = true;
+            this.추가매수조건식3check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.추가매수조건식3check.ForeColor = System.Drawing.Color.Red;
+            this.추가매수조건식3check.Location = new System.Drawing.Point(3, 3);
+            this.추가매수조건식3check.Name = "추가매수조건식3check";
+            this.추가매수조건식3check.Size = new System.Drawing.Size(103, 18);
+            this.추가매수조건식3check.TabIndex = 30;
+            this.추가매수조건식3check.Text = "추가매수조건식";
+            this.추가매수조건식3check.UseVisualStyleBackColor = true;
             // 
             // panel6
             // 
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel6.Controls.Add(this.numericUpDown3);
+            this.panel6.Controls.Add(this.추가매수조건식2num);
             this.panel6.Controls.Add(this.label17);
-            this.panel6.Controls.Add(this.comboBox9);
-            this.panel6.Controls.Add(this.checkBox1);
+            this.panel6.Controls.Add(this.추가매수조건식2combo);
+            this.panel6.Controls.Add(this.추가매수조건식2check);
             this.panel6.Location = new System.Drawing.Point(2, 64);
             this.panel6.Margin = new System.Windows.Forms.Padding(0);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(360, 49);
             this.panel6.TabIndex = 34;
             // 
-            // numericUpDown3
+            // 추가매수조건식2num
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(170, 24);
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown3.TabIndex = 32;
-            this.numericUpDown3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.추가매수조건식2num.Location = new System.Drawing.Point(170, 24);
+            this.추가매수조건식2num.Name = "추가매수조건식2num";
+            this.추가매수조건식2num.Size = new System.Drawing.Size(43, 21);
+            this.추가매수조건식2num.TabIndex = 32;
+            this.추가매수조건식2num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.추가매수조건식2num.Value = new decimal(new int[] {
             30,
             0,
             0,
@@ -1032,26 +1034,26 @@
             this.label17.TabIndex = 33;
             this.label17.Text = "위의 조건일 경우, 보유 수량의                     %를 추가 매수";
             // 
-            // comboBox9
+            // 추가매수조건식2combo
             // 
-            this.comboBox9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Location = new System.Drawing.Point(111, 0);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(246, 22);
-            this.comboBox9.TabIndex = 31;
+            this.추가매수조건식2combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.추가매수조건식2combo.FormattingEnabled = true;
+            this.추가매수조건식2combo.Location = new System.Drawing.Point(111, 0);
+            this.추가매수조건식2combo.Name = "추가매수조건식2combo";
+            this.추가매수조건식2combo.Size = new System.Drawing.Size(246, 22);
+            this.추가매수조건식2combo.TabIndex = 31;
             // 
-            // checkBox1
+            // 추가매수조건식2check
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Red;
-            this.checkBox1.Location = new System.Drawing.Point(3, 3);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(103, 18);
-            this.checkBox1.TabIndex = 30;
-            this.checkBox1.Text = "추가매수조건식";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.추가매수조건식2check.AutoSize = true;
+            this.추가매수조건식2check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.추가매수조건식2check.ForeColor = System.Drawing.Color.Red;
+            this.추가매수조건식2check.Location = new System.Drawing.Point(3, 3);
+            this.추가매수조건식2check.Name = "추가매수조건식2check";
+            this.추가매수조건식2check.Size = new System.Drawing.Size(103, 18);
+            this.추가매수조건식2check.TabIndex = 30;
+            this.추가매수조건식2check.Text = "추가매수조건식";
+            this.추가매수조건식2check.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -1095,25 +1097,25 @@
             // panel12
             // 
             this.panel12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel12.Controls.Add(this.numericUpDown1);
+            this.panel12.Controls.Add(this.분할매도수익률3수량num);
             this.panel12.Controls.Add(this.label19);
-            this.panel12.Controls.Add(this.numericUpDown5);
-            this.panel12.Controls.Add(this.comboBox11);
-            this.panel12.Controls.Add(this.checkBox12);
+            this.panel12.Controls.Add(this.분할매도수익률3수익률num);
+            this.panel12.Controls.Add(this.분할매도수익률3updown);
+            this.panel12.Controls.Add(this.분할매도수익률3check);
             this.panel12.Location = new System.Drawing.Point(0, 116);
             this.panel12.Margin = new System.Windows.Forms.Padding(0);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(362, 47);
             this.panel12.TabIndex = 38;
             // 
-            // numericUpDown1
+            // 분할매도수익률3수량num
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(235, 25);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown1.TabIndex = 36;
-            this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.분할매도수익률3수량num.Location = new System.Drawing.Point(235, 25);
+            this.분할매도수익률3수량num.Name = "분할매도수익률3수량num";
+            this.분할매도수익률3수량num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도수익률3수량num.TabIndex = 36;
+            this.분할매도수익률3수량num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도수익률3수량num.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -1125,68 +1127,68 @@
             this.label19.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label19.Location = new System.Drawing.Point(166, 28);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(193, 14);
+            this.label19.Size = new System.Drawing.Size(168, 14);
             this.label19.TabIndex = 35;
-            this.label19.Text = "보유수량의                   %를 분할 매도";
+            this.label19.Text = "보유수량의                   %를 매도";
             // 
-            // numericUpDown5
+            // 분할매도수익률3수익률num
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(74, 4);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown5.TabIndex = 32;
-            this.numericUpDown5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown5.Value = new decimal(new int[] {
+            this.분할매도수익률3수익률num.Location = new System.Drawing.Point(74, 4);
+            this.분할매도수익률3수익률num.Name = "분할매도수익률3수익률num";
+            this.분할매도수익률3수익률num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도수익률3수익률num.TabIndex = 32;
+            this.분할매도수익률3수익률num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도수익률3수익률num.Value = new decimal(new int[] {
             50,
             0,
             0,
             0});
             // 
-            // comboBox11
+            // 분할매도수익률3updown
             // 
-            this.comboBox11.FormattingEnabled = true;
-            this.comboBox11.Items.AddRange(new object[] {
+            this.분할매도수익률3updown.FormattingEnabled = true;
+            this.분할매도수익률3updown.Items.AddRange(new object[] {
             "이상",
             "이하"});
-            this.comboBox11.Location = new System.Drawing.Point(144, 2);
-            this.comboBox11.Name = "comboBox11";
-            this.comboBox11.Size = new System.Drawing.Size(50, 22);
-            this.comboBox11.TabIndex = 34;
-            this.comboBox11.Text = "이상";
+            this.분할매도수익률3updown.Location = new System.Drawing.Point(144, 2);
+            this.분할매도수익률3updown.Name = "분할매도수익률3updown";
+            this.분할매도수익률3updown.Size = new System.Drawing.Size(50, 22);
+            this.분할매도수익률3updown.TabIndex = 34;
+            this.분할매도수익률3updown.Text = "이상";
             // 
-            // checkBox12
+            // 분할매도수익률3check
             // 
-            this.checkBox12.AutoSize = true;
-            this.checkBox12.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox12.Location = new System.Drawing.Point(3, 6);
-            this.checkBox12.Name = "checkBox12";
-            this.checkBox12.Size = new System.Drawing.Size(243, 18);
-            this.checkBox12.TabIndex = 33;
-            this.checkBox12.Text = "수익률이                  %                      일 경우,";
-            this.checkBox12.UseVisualStyleBackColor = true;
+            this.분할매도수익률3check.AutoSize = true;
+            this.분할매도수익률3check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.분할매도수익률3check.Location = new System.Drawing.Point(3, 6);
+            this.분할매도수익률3check.Name = "분할매도수익률3check";
+            this.분할매도수익률3check.Size = new System.Drawing.Size(243, 18);
+            this.분할매도수익률3check.TabIndex = 33;
+            this.분할매도수익률3check.Text = "수익률이                  %                      일 경우,";
+            this.분할매도수익률3check.UseVisualStyleBackColor = true;
             // 
             // panel13
             // 
             this.panel13.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel13.Controls.Add(this.numericUpDown12);
+            this.panel13.Controls.Add(this.분할매도수익률2수량num);
             this.panel13.Controls.Add(this.label23);
-            this.panel13.Controls.Add(this.numericUpDown13);
-            this.panel13.Controls.Add(this.comboBox15);
-            this.panel13.Controls.Add(this.checkBox16);
+            this.panel13.Controls.Add(this.분할매도수익률2수익률num);
+            this.panel13.Controls.Add(this.분할매도수익률2updown);
+            this.panel13.Controls.Add(this.분할매도수익률2check);
             this.panel13.Location = new System.Drawing.Point(0, 65);
             this.panel13.Margin = new System.Windows.Forms.Padding(0);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(362, 50);
             this.panel13.TabIndex = 37;
             // 
-            // numericUpDown12
+            // 분할매도수익률2수량num
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(235, 25);
-            this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown12.TabIndex = 36;
-            this.numericUpDown12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown12.Value = new decimal(new int[] {
+            this.분할매도수익률2수량num.Location = new System.Drawing.Point(235, 25);
+            this.분할매도수익률2수량num.Name = "분할매도수익률2수량num";
+            this.분할매도수익률2수량num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도수익률2수량num.TabIndex = 36;
+            this.분할매도수익률2수량num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도수익률2수량num.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -1198,68 +1200,68 @@
             this.label23.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label23.Location = new System.Drawing.Point(166, 28);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(193, 14);
+            this.label23.Size = new System.Drawing.Size(168, 14);
             this.label23.TabIndex = 35;
-            this.label23.Text = "보유수량의                   %를 분할 매도";
+            this.label23.Text = "보유수량의                   %를 매도";
             // 
-            // numericUpDown13
+            // 분할매도수익률2수익률num
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(74, 4);
-            this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown13.TabIndex = 32;
-            this.numericUpDown13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown13.Value = new decimal(new int[] {
+            this.분할매도수익률2수익률num.Location = new System.Drawing.Point(74, 4);
+            this.분할매도수익률2수익률num.Name = "분할매도수익률2수익률num";
+            this.분할매도수익률2수익률num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도수익률2수익률num.TabIndex = 32;
+            this.분할매도수익률2수익률num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도수익률2수익률num.Value = new decimal(new int[] {
             50,
             0,
             0,
             0});
             // 
-            // comboBox15
+            // 분할매도수익률2updown
             // 
-            this.comboBox15.FormattingEnabled = true;
-            this.comboBox15.Items.AddRange(new object[] {
+            this.분할매도수익률2updown.FormattingEnabled = true;
+            this.분할매도수익률2updown.Items.AddRange(new object[] {
             "이상",
             "이하"});
-            this.comboBox15.Location = new System.Drawing.Point(144, 2);
-            this.comboBox15.Name = "comboBox15";
-            this.comboBox15.Size = new System.Drawing.Size(50, 22);
-            this.comboBox15.TabIndex = 34;
-            this.comboBox15.Text = "이상";
+            this.분할매도수익률2updown.Location = new System.Drawing.Point(144, 2);
+            this.분할매도수익률2updown.Name = "분할매도수익률2updown";
+            this.분할매도수익률2updown.Size = new System.Drawing.Size(50, 22);
+            this.분할매도수익률2updown.TabIndex = 34;
+            this.분할매도수익률2updown.Text = "이상";
             // 
-            // checkBox16
+            // 분할매도수익률2check
             // 
-            this.checkBox16.AutoSize = true;
-            this.checkBox16.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox16.Location = new System.Drawing.Point(3, 6);
-            this.checkBox16.Name = "checkBox16";
-            this.checkBox16.Size = new System.Drawing.Size(243, 18);
-            this.checkBox16.TabIndex = 33;
-            this.checkBox16.Text = "수익률이                  %                      일 경우,";
-            this.checkBox16.UseVisualStyleBackColor = true;
+            this.분할매도수익률2check.AutoSize = true;
+            this.분할매도수익률2check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.분할매도수익률2check.Location = new System.Drawing.Point(3, 6);
+            this.분할매도수익률2check.Name = "분할매도수익률2check";
+            this.분할매도수익률2check.Size = new System.Drawing.Size(243, 18);
+            this.분할매도수익률2check.TabIndex = 33;
+            this.분할매도수익률2check.Text = "수익률이                  %                      일 경우,";
+            this.분할매도수익률2check.UseVisualStyleBackColor = true;
             // 
             // panel14
             // 
             this.panel14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel14.Controls.Add(this.numericUpDown14);
+            this.panel14.Controls.Add(this.분할매도수익률1수량num);
             this.panel14.Controls.Add(this.label24);
-            this.panel14.Controls.Add(this.numericUpDown15);
-            this.panel14.Controls.Add(this.comboBox16);
-            this.panel14.Controls.Add(this.checkBox17);
+            this.panel14.Controls.Add(this.분할매도수익률1수익률num);
+            this.panel14.Controls.Add(this.분할매도수익률1updown);
+            this.panel14.Controls.Add(this.분할매도수익률1check);
             this.panel14.Location = new System.Drawing.Point(0, 14);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(362, 50);
             this.panel14.TabIndex = 30;
             // 
-            // numericUpDown14
+            // 분할매도수익률1수량num
             // 
-            this.numericUpDown14.Location = new System.Drawing.Point(235, 25);
-            this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown14.TabIndex = 36;
-            this.numericUpDown14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown14.Value = new decimal(new int[] {
+            this.분할매도수익률1수량num.Location = new System.Drawing.Point(235, 25);
+            this.분할매도수익률1수량num.Name = "분할매도수익률1수량num";
+            this.분할매도수익률1수량num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도수익률1수량num.TabIndex = 36;
+            this.분할매도수익률1수량num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도수익률1수량num.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -1271,55 +1273,55 @@
             this.label24.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label24.Location = new System.Drawing.Point(166, 28);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(193, 14);
+            this.label24.Size = new System.Drawing.Size(168, 14);
             this.label24.TabIndex = 35;
-            this.label24.Text = "보유수량의                   %를 분할 매도";
+            this.label24.Text = "보유수량의                   %를 매도";
             // 
-            // numericUpDown15
+            // 분할매도수익률1수익률num
             // 
-            this.numericUpDown15.Location = new System.Drawing.Point(74, 4);
-            this.numericUpDown15.Name = "numericUpDown15";
-            this.numericUpDown15.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown15.TabIndex = 32;
-            this.numericUpDown15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown15.Value = new decimal(new int[] {
+            this.분할매도수익률1수익률num.Location = new System.Drawing.Point(74, 4);
+            this.분할매도수익률1수익률num.Name = "분할매도수익률1수익률num";
+            this.분할매도수익률1수익률num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도수익률1수익률num.TabIndex = 32;
+            this.분할매도수익률1수익률num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도수익률1수익률num.Value = new decimal(new int[] {
             50,
             0,
             0,
             0});
             // 
-            // comboBox16
+            // 분할매도수익률1updown
             // 
-            this.comboBox16.FormattingEnabled = true;
-            this.comboBox16.Items.AddRange(new object[] {
+            this.분할매도수익률1updown.FormattingEnabled = true;
+            this.분할매도수익률1updown.Items.AddRange(new object[] {
             "이상",
             "이하"});
-            this.comboBox16.Location = new System.Drawing.Point(144, 2);
-            this.comboBox16.Name = "comboBox16";
-            this.comboBox16.Size = new System.Drawing.Size(50, 22);
-            this.comboBox16.TabIndex = 34;
-            this.comboBox16.Text = "이상";
+            this.분할매도수익률1updown.Location = new System.Drawing.Point(144, 2);
+            this.분할매도수익률1updown.Name = "분할매도수익률1updown";
+            this.분할매도수익률1updown.Size = new System.Drawing.Size(50, 22);
+            this.분할매도수익률1updown.TabIndex = 34;
+            this.분할매도수익률1updown.Text = "이상";
             // 
-            // checkBox17
+            // 분할매도수익률1check
             // 
-            this.checkBox17.AutoSize = true;
-            this.checkBox17.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox17.Location = new System.Drawing.Point(3, 6);
-            this.checkBox17.Name = "checkBox17";
-            this.checkBox17.Size = new System.Drawing.Size(243, 18);
-            this.checkBox17.TabIndex = 33;
-            this.checkBox17.Text = "수익률이                  %                      일 경우,";
-            this.checkBox17.UseVisualStyleBackColor = true;
+            this.분할매도수익률1check.AutoSize = true;
+            this.분할매도수익률1check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.분할매도수익률1check.Location = new System.Drawing.Point(3, 6);
+            this.분할매도수익률1check.Name = "분할매도수익률1check";
+            this.분할매도수익률1check.Size = new System.Drawing.Size(243, 18);
+            this.분할매도수익률1check.TabIndex = 33;
+            this.분할매도수익률1check.Text = "수익률이                  %                      일 경우,";
+            this.분할매도수익률1check.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.checkBox3);
+            this.groupBox1.Controls.Add(this.전체손절률num);
+            this.groupBox1.Controls.Add(this.전체익절률num);
+            this.groupBox1.Controls.Add(this.청산후정료check);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.checkBox5);
+            this.groupBox1.Controls.Add(this.전체손절률check);
+            this.groupBox1.Controls.Add(this.전체익절률check);
             this.groupBox1.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox1.Location = new System.Drawing.Point(1, 459);
             this.groupBox1.Name = "groupBox1";
@@ -1328,21 +1330,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "전체청산방식";
             // 
-            // checkBox3
+            // 청산후정료check
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox3.Location = new System.Drawing.Point(6, 46);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(138, 19);
-            this.checkBox3.TabIndex = 20;
-            this.checkBox3.Text = "전체청산후 매매종료";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.청산후정료check.AutoSize = true;
+            this.청산후정료check.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.청산후정료check.Location = new System.Drawing.Point(6, 46);
+            this.청산후정료check.Name = "청산후정료check";
+            this.청산후정료check.Size = new System.Drawing.Size(138, 19);
+            this.청산후정료check.TabIndex = 20;
+            this.청산후정료check.Text = "전체청산후 매매종료";
+            this.청산후정료check.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(304, 22);
+            this.label6.Location = new System.Drawing.Point(276, 24);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(21, 15);
             this.label6.TabIndex = 19;
@@ -1351,89 +1353,75 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(135, 22);
+            this.label5.Location = new System.Drawing.Point(118, 24);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(21, 15);
             this.label5.TabIndex = 18;
             this.label5.Text = "%";
             // 
-            // textBox2
+            // 전체손절률check
             // 
-            this.textBox2.Location = new System.Drawing.Point(241, 18);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(62, 22);
-            this.textBox2.TabIndex = 17;
+            this.전체손절률check.AutoSize = true;
+            this.전체손절률check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.전체손절률check.ForeColor = System.Drawing.Color.Blue;
+            this.전체손절률check.Location = new System.Drawing.Point(169, 22);
+            this.전체손절률check.Name = "전체손절률check";
+            this.전체손절률check.Size = new System.Drawing.Size(59, 18);
+            this.전체손절률check.TabIndex = 15;
+            this.전체손절률check.Text = "손절율";
+            this.전체손절률check.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.전체손절률check.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // 전체익절률check
             // 
-            this.textBox1.Location = new System.Drawing.Point(71, 18);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(62, 22);
-            this.textBox1.TabIndex = 16;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox6.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox6.Location = new System.Drawing.Point(176, 21);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(59, 18);
-            this.checkBox6.TabIndex = 15;
-            this.checkBox6.Text = "손절율";
-            this.checkBox6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.checkBox6.UseVisualStyleBackColor = true;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox5.ForeColor = System.Drawing.Color.Red;
-            this.checkBox5.Location = new System.Drawing.Point(6, 21);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(59, 18);
-            this.checkBox5.TabIndex = 1;
-            this.checkBox5.Text = "익절율";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.전체익절률check.AutoSize = true;
+            this.전체익절률check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.전체익절률check.ForeColor = System.Drawing.Color.Red;
+            this.전체익절률check.Location = new System.Drawing.Point(6, 21);
+            this.전체익절률check.Name = "전체익절률check";
+            this.전체익절률check.Size = new System.Drawing.Size(59, 18);
+            this.전체익절률check.TabIndex = 1;
+            this.전체익절률check.Text = "익절율";
+            this.전체익절률check.UseVisualStyleBackColor = true;
             // 
             // panel15
             // 
-            this.panel15.Controls.Add(this.checkBox22);
-            this.panel15.Controls.Add(this.checkBox21);
+            this.panel15.Controls.Add(this.초기매도조건식check);
+            this.panel15.Controls.Add(this.일괄청산시간check);
             this.panel15.Controls.Add(this.comboBox17);
             this.panel15.Controls.Add(this.comboBox18);
             this.panel15.Controls.Add(this.label26);
-            this.panel15.Controls.Add(this.dateTimePicker4);
-            this.panel15.Controls.Add(this.comboBox19);
+            this.panel15.Controls.Add(this.일괄청산시간time);
+            this.panel15.Controls.Add(this.초기매도조건식combo);
             this.panel15.Location = new System.Drawing.Point(1, 27);
             this.panel15.Margin = new System.Windows.Forms.Padding(0);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(362, 75);
             this.panel15.TabIndex = 26;
             // 
-            // checkBox22
+            // 초기매도조건식check
             // 
-            this.checkBox22.AutoSize = true;
-            this.checkBox22.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox22.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox22.Location = new System.Drawing.Point(9, 28);
-            this.checkBox22.Name = "checkBox22";
-            this.checkBox22.Size = new System.Drawing.Size(103, 18);
-            this.checkBox22.TabIndex = 46;
-            this.checkBox22.Text = "초기매도조건식";
-            this.checkBox22.UseVisualStyleBackColor = true;
+            this.초기매도조건식check.AutoSize = true;
+            this.초기매도조건식check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.초기매도조건식check.ForeColor = System.Drawing.Color.Blue;
+            this.초기매도조건식check.Location = new System.Drawing.Point(9, 28);
+            this.초기매도조건식check.Name = "초기매도조건식check";
+            this.초기매도조건식check.Size = new System.Drawing.Size(103, 18);
+            this.초기매도조건식check.TabIndex = 46;
+            this.초기매도조건식check.Text = "초기매도조건식";
+            this.초기매도조건식check.UseVisualStyleBackColor = true;
             // 
-            // checkBox21
+            // 일괄청산시간check
             // 
-            this.checkBox21.AutoSize = true;
-            this.checkBox21.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox21.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox21.Location = new System.Drawing.Point(9, 3);
-            this.checkBox21.Name = "checkBox21";
-            this.checkBox21.Size = new System.Drawing.Size(92, 18);
-            this.checkBox21.TabIndex = 45;
-            this.checkBox21.Text = "일괄청산시간";
-            this.checkBox21.UseVisualStyleBackColor = true;
+            this.일괄청산시간check.AutoSize = true;
+            this.일괄청산시간check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.일괄청산시간check.ForeColor = System.Drawing.Color.Blue;
+            this.일괄청산시간check.Location = new System.Drawing.Point(9, 3);
+            this.일괄청산시간check.Name = "일괄청산시간check";
+            this.일괄청산시간check.Size = new System.Drawing.Size(92, 18);
+            this.일괄청산시간check.TabIndex = 45;
+            this.일괄청산시간check.Text = "일괄청산시간";
+            this.일괄청산시간check.UseVisualStyleBackColor = true;
             // 
             // comboBox17
             // 
@@ -1464,28 +1452,28 @@
             this.label26.TabIndex = 41;
             this.label26.Text = "매도방식";
             // 
-            // dateTimePicker4
+            // 일괄청산시간time
             // 
-            this.dateTimePicker4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.dateTimePicker4.Checked = false;
-            this.dateTimePicker4.CustomFormat = "HH:mm:ss";
-            this.dateTimePicker4.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.dateTimePicker4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker4.Location = new System.Drawing.Point(117, 0);
-            this.dateTimePicker4.Name = "dateTimePicker4";
-            this.dateTimePicker4.ShowUpDown = true;
-            this.dateTimePicker4.Size = new System.Drawing.Size(95, 22);
-            this.dateTimePicker4.TabIndex = 38;
-            this.dateTimePicker4.Value = new System.DateTime(2018, 6, 7, 0, 0, 0, 0);
+            this.일괄청산시간time.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.일괄청산시간time.Checked = false;
+            this.일괄청산시간time.CustomFormat = "HH:mm:ss";
+            this.일괄청산시간time.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.일괄청산시간time.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.일괄청산시간time.Location = new System.Drawing.Point(117, 0);
+            this.일괄청산시간time.Name = "일괄청산시간time";
+            this.일괄청산시간time.ShowUpDown = true;
+            this.일괄청산시간time.Size = new System.Drawing.Size(95, 22);
+            this.일괄청산시간time.TabIndex = 38;
+            this.일괄청산시간time.Value = new System.DateTime(2018, 6, 7, 0, 0, 0, 0);
             // 
-            // comboBox19
+            // 초기매도조건식combo
             // 
-            this.comboBox19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox19.FormattingEnabled = true;
-            this.comboBox19.Location = new System.Drawing.Point(117, 27);
-            this.comboBox19.Name = "comboBox19";
-            this.comboBox19.Size = new System.Drawing.Size(241, 20);
-            this.comboBox19.TabIndex = 36;
+            this.초기매도조건식combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.초기매도조건식combo.FormattingEnabled = true;
+            this.초기매도조건식combo.Location = new System.Drawing.Point(117, 27);
+            this.초기매도조건식combo.Name = "초기매도조건식combo";
+            this.초기매도조건식combo.Size = new System.Drawing.Size(241, 20);
+            this.초기매도조건식combo.TabIndex = 36;
             // 
             // label29
             // 
@@ -1517,24 +1505,24 @@
             // panel16
             // 
             this.panel16.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel16.Controls.Add(this.numericUpDown16);
+            this.panel16.Controls.Add(this.분할매도조건식1num);
             this.panel16.Controls.Add(this.label30);
-            this.panel16.Controls.Add(this.comboBox20);
-            this.panel16.Controls.Add(this.checkBox18);
+            this.panel16.Controls.Add(this.분할매도조건식1combo);
+            this.panel16.Controls.Add(this.분할매도조건식1check);
             this.panel16.Location = new System.Drawing.Point(2, 14);
             this.panel16.Margin = new System.Windows.Forms.Padding(0);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(360, 49);
             this.panel16.TabIndex = 30;
             // 
-            // numericUpDown16
+            // 분할매도조건식1num
             // 
-            this.numericUpDown16.Location = new System.Drawing.Point(169, 25);
-            this.numericUpDown16.Name = "numericUpDown16";
-            this.numericUpDown16.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown16.TabIndex = 32;
-            this.numericUpDown16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown16.Value = new decimal(new int[] {
+            this.분할매도조건식1num.Location = new System.Drawing.Point(169, 25);
+            this.분할매도조건식1num.Name = "분할매도조건식1num";
+            this.분할매도조건식1num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도조건식1num.TabIndex = 32;
+            this.분할매도조건식1num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도조건식1num.Value = new decimal(new int[] {
             50,
             0,
             0,
@@ -1550,48 +1538,48 @@
             this.label30.TabIndex = 33;
             this.label30.Text = "위의 조건일 경우, 보유 수량의                     %를 분할 매도";
             // 
-            // comboBox20
+            // 분할매도조건식1combo
             // 
-            this.comboBox20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox20.FormattingEnabled = true;
-            this.comboBox20.Location = new System.Drawing.Point(111, 2);
-            this.comboBox20.Name = "comboBox20";
-            this.comboBox20.Size = new System.Drawing.Size(246, 22);
-            this.comboBox20.TabIndex = 31;
+            this.분할매도조건식1combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.분할매도조건식1combo.FormattingEnabled = true;
+            this.분할매도조건식1combo.Location = new System.Drawing.Point(111, 2);
+            this.분할매도조건식1combo.Name = "분할매도조건식1combo";
+            this.분할매도조건식1combo.Size = new System.Drawing.Size(246, 22);
+            this.분할매도조건식1combo.TabIndex = 31;
             // 
-            // checkBox18
+            // 분할매도조건식1check
             // 
-            this.checkBox18.AutoSize = true;
-            this.checkBox18.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox18.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox18.Location = new System.Drawing.Point(3, 3);
-            this.checkBox18.Name = "checkBox18";
-            this.checkBox18.Size = new System.Drawing.Size(103, 18);
-            this.checkBox18.TabIndex = 30;
-            this.checkBox18.Text = "분할매도조건식";
-            this.checkBox18.UseVisualStyleBackColor = true;
+            this.분할매도조건식1check.AutoSize = true;
+            this.분할매도조건식1check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.분할매도조건식1check.ForeColor = System.Drawing.Color.Blue;
+            this.분할매도조건식1check.Location = new System.Drawing.Point(3, 3);
+            this.분할매도조건식1check.Name = "분할매도조건식1check";
+            this.분할매도조건식1check.Size = new System.Drawing.Size(103, 18);
+            this.분할매도조건식1check.TabIndex = 30;
+            this.분할매도조건식1check.Text = "분할매도조건식";
+            this.분할매도조건식1check.UseVisualStyleBackColor = true;
             // 
             // panel17
             // 
             this.panel17.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel17.Controls.Add(this.numericUpDown17);
+            this.panel17.Controls.Add(this.분할매도조건식3num);
             this.panel17.Controls.Add(this.label31);
-            this.panel17.Controls.Add(this.comboBox21);
-            this.panel17.Controls.Add(this.checkBox19);
+            this.panel17.Controls.Add(this.분할매도조건식3combo);
+            this.panel17.Controls.Add(this.분할매도조건식3check);
             this.panel17.Location = new System.Drawing.Point(2, 112);
             this.panel17.Margin = new System.Windows.Forms.Padding(0);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(360, 53);
             this.panel17.TabIndex = 35;
             // 
-            // numericUpDown17
+            // 분할매도조건식3num
             // 
-            this.numericUpDown17.Location = new System.Drawing.Point(169, 25);
-            this.numericUpDown17.Name = "numericUpDown17";
-            this.numericUpDown17.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown17.TabIndex = 32;
-            this.numericUpDown17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown17.Value = new decimal(new int[] {
+            this.분할매도조건식3num.Location = new System.Drawing.Point(169, 25);
+            this.분할매도조건식3num.Name = "분할매도조건식3num";
+            this.분할매도조건식3num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도조건식3num.TabIndex = 32;
+            this.분할매도조건식3num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도조건식3num.Value = new decimal(new int[] {
             10,
             0,
             0,
@@ -1607,50 +1595,50 @@
             this.label31.TabIndex = 33;
             this.label31.Text = "위의 조건일 경우, 보유 수량의                     %를 분할 매도";
             // 
-            // comboBox21
+            // 분할매도조건식3combo
             // 
-            this.comboBox21.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox21.FormattingEnabled = true;
-            this.comboBox21.Location = new System.Drawing.Point(111, 2);
-            this.comboBox21.Name = "comboBox21";
-            this.comboBox21.Size = new System.Drawing.Size(246, 22);
-            this.comboBox21.TabIndex = 31;
+            this.분할매도조건식3combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.분할매도조건식3combo.FormattingEnabled = true;
+            this.분할매도조건식3combo.Location = new System.Drawing.Point(111, 2);
+            this.분할매도조건식3combo.Name = "분할매도조건식3combo";
+            this.분할매도조건식3combo.Size = new System.Drawing.Size(246, 22);
+            this.분할매도조건식3combo.TabIndex = 31;
             // 
-            // checkBox19
+            // 분할매도조건식3check
             // 
-            this.checkBox19.AutoSize = true;
-            this.checkBox19.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox19.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox19.Location = new System.Drawing.Point(3, 3);
-            this.checkBox19.Name = "checkBox19";
-            this.checkBox19.Size = new System.Drawing.Size(103, 18);
-            this.checkBox19.TabIndex = 30;
-            this.checkBox19.Text = "분할매도조건식";
-            this.checkBox19.UseVisualStyleBackColor = true;
+            this.분할매도조건식3check.AutoSize = true;
+            this.분할매도조건식3check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.분할매도조건식3check.ForeColor = System.Drawing.Color.Blue;
+            this.분할매도조건식3check.Location = new System.Drawing.Point(3, 3);
+            this.분할매도조건식3check.Name = "분할매도조건식3check";
+            this.분할매도조건식3check.Size = new System.Drawing.Size(103, 18);
+            this.분할매도조건식3check.TabIndex = 30;
+            this.분할매도조건식3check.Text = "분할매도조건식";
+            this.분할매도조건식3check.UseVisualStyleBackColor = true;
             // 
             // panel18
             // 
             this.panel18.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel18.Controls.Add(this.numericUpDown18);
+            this.panel18.Controls.Add(this.분할매도조건식2num);
             this.panel18.Controls.Add(this.label32);
-            this.panel18.Controls.Add(this.comboBox22);
-            this.panel18.Controls.Add(this.checkBox20);
+            this.panel18.Controls.Add(this.분할매도조건식2combo);
+            this.panel18.Controls.Add(this.분할매도조건식2check);
             this.panel18.Location = new System.Drawing.Point(2, 64);
             this.panel18.Margin = new System.Windows.Forms.Padding(0);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(360, 49);
             this.panel18.TabIndex = 34;
             // 
-            // numericUpDown18
+            // 분할매도조건식2num
             // 
-            this.numericUpDown18.Location = new System.Drawing.Point(169, 25);
-            this.numericUpDown18.Name = "numericUpDown18";
-            this.numericUpDown18.Size = new System.Drawing.Size(43, 21);
-            this.numericUpDown18.TabIndex = 32;
-            this.numericUpDown18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.numericUpDown18.Value = new decimal(new int[] {
+            this.분할매도조건식2num.Location = new System.Drawing.Point(169, 25);
+            this.분할매도조건식2num.Name = "분할매도조건식2num";
+            this.분할매도조건식2num.Size = new System.Drawing.Size(43, 21);
+            this.분할매도조건식2num.TabIndex = 32;
+            this.분할매도조건식2num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.분할매도조건식2num.Value = new decimal(new int[] {
             30,
             0,
             0,
@@ -1666,26 +1654,26 @@
             this.label32.TabIndex = 33;
             this.label32.Text = "위의 조건일 경우, 보유 수량의                     %를 분할 매도";
             // 
-            // comboBox22
+            // 분할매도조건식2combo
             // 
-            this.comboBox22.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.comboBox22.FormattingEnabled = true;
-            this.comboBox22.Location = new System.Drawing.Point(111, 2);
-            this.comboBox22.Name = "comboBox22";
-            this.comboBox22.Size = new System.Drawing.Size(246, 22);
-            this.comboBox22.TabIndex = 31;
+            this.분할매도조건식2combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.분할매도조건식2combo.FormattingEnabled = true;
+            this.분할매도조건식2combo.Location = new System.Drawing.Point(111, 2);
+            this.분할매도조건식2combo.Name = "분할매도조건식2combo";
+            this.분할매도조건식2combo.Size = new System.Drawing.Size(246, 22);
+            this.분할매도조건식2combo.TabIndex = 31;
             // 
-            // checkBox20
+            // 분할매도조건식2check
             // 
-            this.checkBox20.AutoSize = true;
-            this.checkBox20.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.checkBox20.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox20.Location = new System.Drawing.Point(3, 3);
-            this.checkBox20.Name = "checkBox20";
-            this.checkBox20.Size = new System.Drawing.Size(103, 18);
-            this.checkBox20.TabIndex = 30;
-            this.checkBox20.Text = "분할매도조건식";
-            this.checkBox20.UseVisualStyleBackColor = true;
+            this.분할매도조건식2check.AutoSize = true;
+            this.분할매도조건식2check.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.분할매도조건식2check.ForeColor = System.Drawing.Color.Blue;
+            this.분할매도조건식2check.Location = new System.Drawing.Point(3, 3);
+            this.분할매도조건식2check.Name = "분할매도조건식2check";
+            this.분할매도조건식2check.Size = new System.Drawing.Size(103, 18);
+            this.분할매도조건식2check.TabIndex = 30;
+            this.분할매도조건식2check.Text = "분할매도조건식";
+            this.분할매도조건식2check.UseVisualStyleBackColor = true;
             // 
             // panel3
             // 
@@ -1693,8 +1681,8 @@
             this.panel3.Controls.Add(this.groupBox2);
             this.panel3.Controls.Add(this.panel19);
             this.panel3.Controls.Add(this.groupBox3);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.닫기btn);
+            this.panel3.Controls.Add(this.설정적용btn);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(741, 3);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
@@ -1702,12 +1690,39 @@
             this.panel3.Size = new System.Drawing.Size(316, 551);
             this.panel3.TabIndex = 2;
             // 
+            // panel20
+            // 
+            this.panel20.Controls.Add(this.계좌combo);
+            this.panel20.Controls.Add(this.label9);
+            this.panel20.Location = new System.Drawing.Point(3, 44);
+            this.panel20.Name = "panel20";
+            this.panel20.Size = new System.Drawing.Size(312, 34);
+            this.panel20.TabIndex = 28;
+            // 
+            // 계좌combo
+            // 
+            this.계좌combo.FormattingEnabled = true;
+            this.계좌combo.Location = new System.Drawing.Point(140, 4);
+            this.계좌combo.Name = "계좌combo";
+            this.계좌combo.Size = new System.Drawing.Size(168, 20);
+            this.계좌combo.TabIndex = 1;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label9.Location = new System.Drawing.Point(6, 5);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 15);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "계좌선택: ";
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button3);
+            this.groupBox2.Controls.Add(this.블랙추가btn);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.listBox1);
+            this.groupBox2.Controls.Add(this.블랙종목코드text);
+            this.groupBox2.Controls.Add(this.블랙리스트list);
             this.groupBox2.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox2.Location = new System.Drawing.Point(3, 212);
             this.groupBox2.Name = "groupBox2";
@@ -1716,14 +1731,14 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "블랙리스트";
             // 
-            // button3
+            // 블랙추가btn
             // 
-            this.button3.Location = new System.Drawing.Point(235, 128);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "추가";
-            this.button3.UseVisualStyleBackColor = true;
+            this.블랙추가btn.Location = new System.Drawing.Point(235, 128);
+            this.블랙추가btn.Name = "블랙추가btn";
+            this.블랙추가btn.Size = new System.Drawing.Size(75, 23);
+            this.블랙추가btn.TabIndex = 3;
+            this.블랙추가btn.Text = "추가";
+            this.블랙추가btn.UseVisualStyleBackColor = true;
             // 
             // label7
             // 
@@ -1734,57 +1749,60 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "종목코드: ";
             // 
-            // textBox4
+            // 블랙종목코드text
             // 
-            this.textBox4.Location = new System.Drawing.Point(64, 129);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(159, 21);
-            this.textBox4.TabIndex = 1;
+            this.블랙종목코드text.Location = new System.Drawing.Point(64, 129);
+            this.블랙종목코드text.Name = "블랙종목코드text";
+            this.블랙종목코드text.Size = new System.Drawing.Size(159, 21);
+            this.블랙종목코드text.TabIndex = 1;
             // 
-            // listBox1
+            // 블랙리스트list
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 14;
-            this.listBox1.Location = new System.Drawing.Point(1, 20);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(309, 102);
-            this.listBox1.TabIndex = 0;
+            this.블랙리스트list.FormattingEnabled = true;
+            this.블랙리스트list.ItemHeight = 14;
+            this.블랙리스트list.Location = new System.Drawing.Point(1, 20);
+            this.블랙리스트list.Name = "블랙리스트list";
+            this.블랙리스트list.Size = new System.Drawing.Size(309, 102);
+            this.블랙리스트list.TabIndex = 0;
             // 
             // panel19
             // 
-            this.panel19.Controls.Add(this.button5);
-            this.panel19.Controls.Add(this.button4);
-            this.panel19.Controls.Add(this.textBox5);
+            this.panel19.Controls.Add(this.열기btn);
+            this.panel19.Controls.Add(this.저장btn);
+            this.panel19.Controls.Add(this.전략명text);
             this.panel19.Controls.Add(this.label8);
             this.panel19.Location = new System.Drawing.Point(3, 2);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(313, 43);
             this.panel19.TabIndex = 26;
             // 
-            // button5
+            // 열기btn
             // 
-            this.button5.Location = new System.Drawing.Point(256, 7);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(52, 23);
-            this.button5.TabIndex = 3;
-            this.button5.Text = "열기";
-            this.button5.UseVisualStyleBackColor = true;
+            this.열기btn.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.열기btn.Location = new System.Drawing.Point(256, 8);
+            this.열기btn.Name = "열기btn";
+            this.열기btn.Size = new System.Drawing.Size(52, 23);
+            this.열기btn.TabIndex = 3;
+            this.열기btn.Text = "열기";
+            this.열기btn.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // 저장btn
             // 
-            this.button4.Location = new System.Drawing.Point(192, 7);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(52, 23);
-            this.button4.TabIndex = 2;
-            this.button4.Text = "저장";
-            this.button4.UseVisualStyleBackColor = true;
+            this.저장btn.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.저장btn.Location = new System.Drawing.Point(197, 8);
+            this.저장btn.Name = "저장btn";
+            this.저장btn.Size = new System.Drawing.Size(52, 23);
+            this.저장btn.TabIndex = 2;
+            this.저장btn.Text = "저장";
+            this.저장btn.UseVisualStyleBackColor = true;
             // 
-            // textBox5
+            // 전략명text
             // 
-            this.textBox5.Location = new System.Drawing.Point(77, 8);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(108, 21);
-            this.textBox5.TabIndex = 1;
+            this.전략명text.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.전략명text.Location = new System.Drawing.Point(77, 7);
+            this.전략명text.Name = "전략명text";
+            this.전략명text.Size = new System.Drawing.Size(108, 25);
+            this.전략명text.TabIndex = 1;
             // 
             // label8
             // 
@@ -1799,11 +1817,11 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.최대매수종목수text);
             this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.종목별최대매수금액text);
+            this.groupBox3.Controls.Add(this.종목별초기매수금액text);
+            this.groupBox3.Controls.Add(this.총매수가능금액text);
             this.groupBox3.Controls.Add(this.label13);
             this.groupBox3.Controls.Add(this.label12);
             this.groupBox3.Controls.Add(this.label11);
@@ -1815,12 +1833,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "자동매수조건설정";
             // 
-            // textBox3
+            // 최대매수종목수text
             // 
-            this.textBox3.Location = new System.Drawing.Point(140, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(168, 21);
-            this.textBox3.TabIndex = 7;
+            this.최대매수종목수text.Location = new System.Drawing.Point(140, 102);
+            this.최대매수종목수text.Name = "최대매수종목수text";
+            this.최대매수종목수text.Size = new System.Drawing.Size(168, 21);
+            this.최대매수종목수text.TabIndex = 7;
             // 
             // label3
             // 
@@ -1831,26 +1849,26 @@
             this.label3.TabIndex = 6;
             this.label3.Text = "최대매수종목수";
             // 
-            // textBox9
+            // 종목별최대매수금액text
             // 
-            this.textBox9.Location = new System.Drawing.Point(140, 76);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(168, 21);
-            this.textBox9.TabIndex = 5;
+            this.종목별최대매수금액text.Location = new System.Drawing.Point(140, 76);
+            this.종목별최대매수금액text.Name = "종목별최대매수금액text";
+            this.종목별최대매수금액text.Size = new System.Drawing.Size(168, 21);
+            this.종목별최대매수금액text.TabIndex = 5;
             // 
-            // textBox8
+            // 종목별초기매수금액text
             // 
-            this.textBox8.Location = new System.Drawing.Point(140, 49);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(168, 21);
-            this.textBox8.TabIndex = 4;
+            this.종목별초기매수금액text.Location = new System.Drawing.Point(140, 49);
+            this.종목별초기매수금액text.Name = "종목별초기매수금액text";
+            this.종목별초기매수금액text.Size = new System.Drawing.Size(168, 21);
+            this.종목별초기매수금액text.TabIndex = 4;
             // 
-            // textBox7
+            // 총매수가능금액text
             // 
-            this.textBox7.Location = new System.Drawing.Point(140, 22);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(168, 21);
-            this.textBox7.TabIndex = 3;
+            this.총매수가능금액text.Location = new System.Drawing.Point(140, 22);
+            this.총매수가능금액text.Name = "총매수가능금액text";
+            this.총매수가능금액text.Size = new System.Drawing.Size(168, 21);
+            this.총매수가능금액text.TabIndex = 3;
             // 
             // label13
             // 
@@ -1879,26 +1897,26 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "총매수가능금액";
             // 
-            // button2
+            // 닫기btn
             // 
-            this.button2.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button2.Location = new System.Drawing.Point(171, 492);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(130, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "닫기";
-            this.button2.UseVisualStyleBackColor = true;
+            this.닫기btn.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.닫기btn.Location = new System.Drawing.Point(171, 492);
+            this.닫기btn.Name = "닫기btn";
+            this.닫기btn.Size = new System.Drawing.Size(130, 40);
+            this.닫기btn.TabIndex = 1;
+            this.닫기btn.Text = "닫기";
+            this.닫기btn.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // 설정적용btn
             // 
-            this.button1.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.button1.Location = new System.Drawing.Point(15, 492);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(130, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "설정반영";
-            this.button1.UseVisualStyleBackColor = true;
+            this.설정적용btn.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.설정적용btn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.설정적용btn.Location = new System.Drawing.Point(15, 492);
+            this.설정적용btn.Name = "설정적용btn";
+            this.설정적용btn.Size = new System.Drawing.Size(130, 40);
+            this.설정적용btn.TabIndex = 0;
+            this.설정적용btn.Text = "설정반영";
+            this.설정적용btn.UseVisualStyleBackColor = true;
             // 
             // 장기탭
             // 
@@ -1911,33 +1929,6 @@
             this.장기탭.Size = new System.Drawing.Size(1068, 565);
             this.장기탭.TabIndex = 1;
             this.장기탭.Text = "장기매매설정";
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.comboBox5);
-            this.panel20.Controls.Add(this.label9);
-            this.panel20.Location = new System.Drawing.Point(3, 44);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(312, 34);
-            this.panel20.TabIndex = 28;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label9.Location = new System.Drawing.Point(6, 5);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 15);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "계좌선택: ";
-            // 
-            // comboBox5
-            // 
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(140, 4);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(168, 20);
-            this.comboBox5.TabIndex = 1;
             // 
             // tableLayoutPanel2
             // 
@@ -3449,6 +3440,32 @@
             this.button10.Text = "설정반영";
             this.button10.UseVisualStyleBackColor = true;
             // 
+            // 전체익절률num
+            // 
+            this.전체익절률num.Location = new System.Drawing.Point(74, 20);
+            this.전체익절률num.Name = "전체익절률num";
+            this.전체익절률num.Size = new System.Drawing.Size(43, 22);
+            this.전체익절률num.TabIndex = 33;
+            this.전체익절률num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.전체익절률num.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
+            // 전체손절률num
+            // 
+            this.전체손절률num.Location = new System.Drawing.Point(235, 20);
+            this.전체손절률num.Name = "전체손절률num";
+            this.전체손절률num.Size = new System.Drawing.Size(43, 22);
+            this.전체손절률num.TabIndex = 34;
+            this.전체손절률num.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.전체손절률num.Value = new decimal(new int[] {
+            50,
+            0,
+            0,
+            0});
+            // 
             // SettingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -3469,48 +3486,48 @@
             this.panel1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.미체결시간)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률3구매수량num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률3수익률num)).EndInit();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률2구매수량num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률2수익률num)).EndInit();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률1구매수량num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수수익률1수익률num)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수조건식1num)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수조건식3num)).EndInit();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.추가매수조건식2num)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.groupBox7.ResumeLayout(false);
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률3수량num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률3수익률num)).EndInit();
             this.panel13.ResumeLayout(false);
             this.panel13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률2수량num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률2수익률num)).EndInit();
             this.panel14.ResumeLayout(false);
             this.panel14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률1수량num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도수익률1수익률num)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel15.ResumeLayout(false);
@@ -3518,14 +3535,16 @@
             this.groupBox8.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도조건식1num)).EndInit();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도조건식3num)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.분할매도조건식2num)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel20.ResumeLayout(false);
+            this.panel20.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel19.ResumeLayout(false);
@@ -3533,8 +3552,6 @@
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.장기탭.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.panel20.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
@@ -3605,6 +3622,8 @@
             this.panel40.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.전체익절률num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.전체손절률num)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3618,132 +3637,130 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button 닫기btn;
+        private System.Windows.Forms.Button 설정적용btn;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox 종목별최대매수금액text;
+        private System.Windows.Forms.TextBox 종목별초기매수금액text;
+        private System.Windows.Forms.TextBox 총매수가능금액text;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox 전체손절률check;
+        private System.Windows.Forms.CheckBox 전체익절률check;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker 매수운영종료시간time;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker 매수운영시작시간time;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox 초기매수조건식combo;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
+        private System.Windows.Forms.NumericUpDown 추가매수조건식3num;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.ComboBox comboBox10;
-        private System.Windows.Forms.CheckBox checkBox11;
+        private System.Windows.Forms.ComboBox 추가매수조건식3combo;
+        private System.Windows.Forms.CheckBox 추가매수조건식3check;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown 추가매수조건식2num;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox 추가매수조건식2combo;
+        private System.Windows.Forms.CheckBox 추가매수조건식2check;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown 추가매수조건식1num;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.ComboBox 추가매수조건식combo;
+        private System.Windows.Forms.CheckBox 추가매수조건식1check;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.NumericUpDown numericUpDown9;
+        private System.Windows.Forms.NumericUpDown 추가매수수익률1구매수량num;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.NumericUpDown numericUpDown6;
-        private System.Windows.Forms.ComboBox comboBox12;
-        private System.Windows.Forms.CheckBox checkBox13;
+        private System.Windows.Forms.NumericUpDown 추가매수수익률1수익률num;
+        private System.Windows.Forms.ComboBox 추가매수수익률1updown;
+        private System.Windows.Forms.CheckBox 추가매수수익률1check;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
+        private System.Windows.Forms.NumericUpDown 추가매수수익률3구매수량num;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
-        private System.Windows.Forms.ComboBox comboBox14;
-        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.NumericUpDown 추가매수수익률3수익률num;
+        private System.Windows.Forms.ComboBox 추가매수수익률3updown;
+        private System.Windows.Forms.CheckBox 추가매수수익률3check;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.NumericUpDown numericUpDown7;
+        private System.Windows.Forms.NumericUpDown 추가매수수익률2구매수량num;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.NumericUpDown numericUpDown8;
-        private System.Windows.Forms.ComboBox comboBox13;
-        private System.Windows.Forms.CheckBox checkBox14;
+        private System.Windows.Forms.NumericUpDown 추가매수수익률2수익률num;
+        private System.Windows.Forms.ComboBox 추가매수수익률2updown;
+        private System.Windows.Forms.CheckBox 추가매수수익률2check;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown 분할매도수익률3수량num;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
-        private System.Windows.Forms.ComboBox comboBox11;
-        private System.Windows.Forms.CheckBox checkBox12;
+        private System.Windows.Forms.NumericUpDown 분할매도수익률3수익률num;
+        private System.Windows.Forms.ComboBox 분할매도수익률3updown;
+        private System.Windows.Forms.CheckBox 분할매도수익률3check;
         private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.NumericUpDown numericUpDown12;
+        private System.Windows.Forms.NumericUpDown 분할매도수익률2수량num;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.NumericUpDown numericUpDown13;
-        private System.Windows.Forms.ComboBox comboBox15;
-        private System.Windows.Forms.CheckBox checkBox16;
+        private System.Windows.Forms.NumericUpDown 분할매도수익률2수익률num;
+        private System.Windows.Forms.ComboBox 분할매도수익률2updown;
+        private System.Windows.Forms.CheckBox 분할매도수익률2check;
         private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.NumericUpDown numericUpDown14;
+        private System.Windows.Forms.NumericUpDown 분할매도수익률1수량num;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.NumericUpDown numericUpDown15;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.CheckBox checkBox17;
+        private System.Windows.Forms.NumericUpDown 분할매도수익률1수익률num;
+        private System.Windows.Forms.ComboBox 분할매도수익률1updown;
+        private System.Windows.Forms.CheckBox 분할매도수익률1check;
         private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.CheckBox checkBox21;
+        private System.Windows.Forms.CheckBox 일괄청산시간check;
         private System.Windows.Forms.ComboBox comboBox17;
         private System.Windows.Forms.ComboBox comboBox18;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.DateTimePicker dateTimePicker4;
-        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.DateTimePicker 일괄청산시간time;
+        private System.Windows.Forms.ComboBox 초기매도조건식combo;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.GroupBox groupBox8;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.NumericUpDown numericUpDown16;
+        private System.Windows.Forms.NumericUpDown 분할매도조건식1num;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ComboBox comboBox20;
-        private System.Windows.Forms.CheckBox checkBox18;
+        private System.Windows.Forms.ComboBox 분할매도조건식1combo;
+        private System.Windows.Forms.CheckBox 분할매도조건식1check;
         private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.NumericUpDown numericUpDown17;
+        private System.Windows.Forms.NumericUpDown 분할매도조건식3num;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ComboBox comboBox21;
-        private System.Windows.Forms.CheckBox checkBox19;
+        private System.Windows.Forms.ComboBox 분할매도조건식3combo;
+        private System.Windows.Forms.CheckBox 분할매도조건식3check;
         private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.NumericUpDown numericUpDown18;
+        private System.Windows.Forms.NumericUpDown 분할매도조건식2num;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ComboBox comboBox22;
-        private System.Windows.Forms.CheckBox checkBox20;
-        private System.Windows.Forms.CheckBox checkBox22;
+        private System.Windows.Forms.ComboBox 분할매도조건식2combo;
+        private System.Windows.Forms.CheckBox 분할매도조건식2check;
+        private System.Windows.Forms.CheckBox 초기매도조건식check;
         private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox 최대매수종목수text;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox 블랙종목코드text;
+        private System.Windows.Forms.ListBox 블랙리스트list;
+        private System.Windows.Forms.Button 블랙추가btn;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.TextBox 전략명text;
+        private System.Windows.Forms.Button 열기btn;
+        private System.Windows.Forms.Button 저장btn;
+        private System.Windows.Forms.CheckBox 청산후정료check;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.NumericUpDown numericUpDown19;
+        private System.Windows.Forms.CheckBox 매수종료익절손절진행check;
+        private System.Windows.Forms.CheckBox 미체결취소check;
+        private System.Windows.Forms.NumericUpDown 미체결시간;
         private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox 계좌combo;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private System.Windows.Forms.Panel panel21;
@@ -3876,5 +3893,7 @@
         private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.NumericUpDown 전체손절률num;
+        private System.Windows.Forms.NumericUpDown 전체익절률num;
     }
 }
