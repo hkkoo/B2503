@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KiwoomCode;
+using B2503;
 
 namespace B2503
 {
@@ -69,8 +70,10 @@ namespace B2503
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            if (axKHOpenAPI.CommConnect() == 0)
+            if (axKHOpenAPI.CommConnect() == 0) {
                 statusBar.Items[1].Text = "로그인 성공";
+                //Logger(Log.전체, "로그인 성공");
+            }
             else
                 statusBar.Items[1].Text = "로그인 실패";
         }
