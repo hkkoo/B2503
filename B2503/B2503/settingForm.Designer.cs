@@ -111,6 +111,8 @@
             this.단기전체손절률check = new System.Windows.Forms.CheckBox();
             this.단기전체익절률check = new System.Windows.Forms.CheckBox();
             this.panel15 = new System.Windows.Forms.Panel();
+            this.단기매도호가combo = new System.Windows.Forms.ComboBox();
+            this.단기매도방식combo = new System.Windows.Forms.ComboBox();
             this.단기초기매도조건식check = new System.Windows.Forms.CheckBox();
             this.단기일괄청산시간check = new System.Windows.Forms.CheckBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -138,6 +140,7 @@
             this.단기계좌combo = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.단기블랙추가btn = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.단기블랙종목코드text = new System.Windows.Forms.TextBox();
@@ -148,6 +151,10 @@
             this.단기전략명text = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.단기최대매수종목수num = new System.Windows.Forms.NumericUpDown();
+            this.단기종목별최대매수금액num = new System.Windows.Forms.NumericUpDown();
+            this.단기종목별초기매수금액num = new System.Windows.Forms.NumericUpDown();
+            this.단기총매수가능금액num = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
@@ -286,15 +293,8 @@
             this.label56 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.단기매도호가combo = new System.Windows.Forms.ComboBox();
-            this.단기매도방식combo = new System.Windows.Forms.ComboBox();
             this.전략saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.전략openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.단기총매수가능금액num = new System.Windows.Forms.NumericUpDown();
-            this.단기종목별초기매수금액num = new System.Windows.Forms.NumericUpDown();
-            this.단기종목별최대매수금액num = new System.Windows.Forms.NumericUpDown();
-            this.단기최대매수종목수num = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
             this.장단기탭.SuspendLayout();
             this.단기탭.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -347,6 +347,10 @@
             this.groupBox2.SuspendLayout();
             this.panel19.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.단기최대매수종목수num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.단기종목별최대매수금액num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.단기종목별초기매수금액num)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.단기총매수가능금액num)).BeginInit();
             this.장기탭.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel21.SuspendLayout();
@@ -396,10 +400,6 @@
             this.groupBox15.SuspendLayout();
             this.panel40.SuspendLayout();
             this.groupBox16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.단기총매수가능금액num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.단기종목별초기매수금액num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.단기종목별최대매수금액num)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.단기최대매수종목수num)).BeginInit();
             this.SuspendLayout();
             // 
             // 장단기탭
@@ -564,6 +564,11 @@
             // 단기추가매수수익률3수익률num
             // 
             this.단기추가매수수익률3수익률num.Location = new System.Drawing.Point(74, 4);
+            this.단기추가매수수익률3수익률num.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.단기추가매수수익률3수익률num.Name = "단기추가매수수익률3수익률num";
             this.단기추가매수수익률3수익률num.Size = new System.Drawing.Size(43, 21);
             this.단기추가매수수익률3수익률num.TabIndex = 32;
@@ -637,6 +642,11 @@
             // 단기추가매수수익률2수익률num
             // 
             this.단기추가매수수익률2수익률num.Location = new System.Drawing.Point(74, 4);
+            this.단기추가매수수익률2수익률num.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.단기추가매수수익률2수익률num.Name = "단기추가매수수익률2수익률num";
             this.단기추가매수수익률2수익률num.Size = new System.Drawing.Size(43, 21);
             this.단기추가매수수익률2수익률num.TabIndex = 32;
@@ -710,6 +720,11 @@
             // 단기추가매수수익률1수익률num
             // 
             this.단기추가매수수익률1수익률num.Location = new System.Drawing.Point(74, 4);
+            this.단기추가매수수익률1수익률num.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.단기추가매수수익률1수익률num.Name = "단기추가매수수익률1수익률num";
             this.단기추가매수수익률1수익률num.Size = new System.Drawing.Size(43, 21);
             this.단기추가매수수익률1수익률num.TabIndex = 32;
@@ -1180,6 +1195,11 @@
             // 단기분할매도수익률3수익률num
             // 
             this.단기분할매도수익률3수익률num.Location = new System.Drawing.Point(74, 4);
+            this.단기분할매도수익률3수익률num.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.단기분할매도수익률3수익률num.Name = "단기분할매도수익률3수익률num";
             this.단기분할매도수익률3수익률num.Size = new System.Drawing.Size(43, 21);
             this.단기분할매도수익률3수익률num.TabIndex = 32;
@@ -1253,6 +1273,11 @@
             // 단기분할매도수익률2수익률num
             // 
             this.단기분할매도수익률2수익률num.Location = new System.Drawing.Point(74, 4);
+            this.단기분할매도수익률2수익률num.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.단기분할매도수익률2수익률num.Name = "단기분할매도수익률2수익률num";
             this.단기분할매도수익률2수익률num.Size = new System.Drawing.Size(43, 21);
             this.단기분할매도수익률2수익률num.TabIndex = 32;
@@ -1326,6 +1351,11 @@
             // 단기분할매도수익률1수익률num
             // 
             this.단기분할매도수익률1수익률num.Location = new System.Drawing.Point(74, 4);
+            this.단기분할매도수익률1수익률num.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.단기분할매도수익률1수익률num.Name = "단기분할매도수익률1수익률num";
             this.단기분할매도수익률1수익률num.Size = new System.Drawing.Size(43, 21);
             this.단기분할매도수익률1수익률num.TabIndex = 32;
@@ -1379,6 +1409,11 @@
             // 단기전체손절률num
             // 
             this.단기전체손절률num.Location = new System.Drawing.Point(235, 20);
+            this.단기전체손절률num.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.단기전체손절률num.Name = "단기전체손절률num";
             this.단기전체손절률num.Size = new System.Drawing.Size(43, 22);
             this.단기전체손절률num.TabIndex = 34;
@@ -1392,6 +1427,11 @@
             // 단기전체익절률num
             // 
             this.단기전체익절률num.Location = new System.Drawing.Point(74, 20);
+            this.단기전체익절률num.Minimum = new decimal(new int[] {
+            100,
+            0,
+            0,
+            -2147483648});
             this.단기전체익절률num.Name = "단기전체익절률num";
             this.단기전체익절률num.Size = new System.Drawing.Size(43, 22);
             this.단기전체익절률num.TabIndex = 33;
@@ -1470,6 +1510,59 @@
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(362, 75);
             this.panel15.TabIndex = 26;
+            // 
+            // 단기매도호가combo
+            // 
+            this.단기매도호가combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.단기매도호가combo.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기매도호가combo.FormattingEnabled = true;
+            this.단기매도호가combo.Items.AddRange(new object[] {
+            "+10호가",
+            "+9호가",
+            "+8호가",
+            "+7호가",
+            "+6호가",
+            "+5호가",
+            "+4호가",
+            "+3호가",
+            "+2호가",
+            "+1호가",
+            "현재가",
+            "-1호가",
+            "-2호가",
+            "-3호가",
+            "-4호가",
+            "-5호가",
+            "-6호가",
+            "-7호가",
+            "-8호가",
+            "-9호가",
+            "-10호가"});
+            this.단기매도호가combo.Location = new System.Drawing.Point(274, 52);
+            this.단기매도호가combo.Name = "단기매도호가combo";
+            this.단기매도호가combo.Size = new System.Drawing.Size(84, 22);
+            this.단기매도호가combo.TabIndex = 48;
+            // 
+            // 단기매도방식combo
+            // 
+            this.단기매도방식combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.단기매도방식combo.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기매도방식combo.FormattingEnabled = true;
+            this.단기매도방식combo.Items.AddRange(new object[] {
+            "시장가",
+            "지정가",
+            "조건부지정가",
+            "최유리지정가",
+            "최우선지정가",
+            "지정가IOC",
+            "최유리IOC",
+            "지정가FOK",
+            "최유리FOK"});
+            this.단기매도방식combo.Location = new System.Drawing.Point(117, 52);
+            this.단기매도방식combo.MaxDropDownItems = 9;
+            this.단기매도방식combo.Name = "단기매도방식combo";
+            this.단기매도방식combo.Size = new System.Drawing.Size(147, 22);
+            this.단기매도방식combo.TabIndex = 47;
             // 
             // 단기초기매도조건식check
             // 
@@ -1759,7 +1852,7 @@
             // 
             // 단기계좌combo
             // 
-            this.단기계좌combo.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기계좌combo.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.단기계좌combo.FormattingEnabled = true;
             this.단기계좌combo.Location = new System.Drawing.Point(140, 4);
             this.단기계좌combo.Name = "단기계좌combo";
@@ -1790,6 +1883,15 @@
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "블랙리스트";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(247, 117);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(60, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "삭제";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // 단기블랙추가btn
             // 
@@ -1845,6 +1947,7 @@
             this.단기열기btn.TabIndex = 3;
             this.단기열기btn.Text = "열기";
             this.단기열기btn.UseVisualStyleBackColor = true;
+            this.단기열기btn.Click += new System.EventHandler(this.단기열기btn_Click);
             // 
             // 단기저장btn
             // 
@@ -1855,13 +1958,14 @@
             this.단기저장btn.TabIndex = 2;
             this.단기저장btn.Text = "저장";
             this.단기저장btn.UseVisualStyleBackColor = true;
+            this.단기저장btn.Click += new System.EventHandler(this.단기저장btn_Click);
             // 
             // 단기전략명text
             // 
-            this.단기전략명text.Font = new System.Drawing.Font("나눔고딕 ExtraBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기전략명text.Font = new System.Drawing.Font("나눔고딕", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.단기전략명text.Location = new System.Drawing.Point(77, 7);
             this.단기전략명text.Name = "단기전략명text";
-            this.단기전략명text.Size = new System.Drawing.Size(108, 25);
+            this.단기전략명text.Size = new System.Drawing.Size(108, 22);
             this.단기전략명text.TabIndex = 1;
             // 
             // label8
@@ -1892,6 +1996,62 @@
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "자동매수조건설정";
+            // 
+            // 단기최대매수종목수num
+            // 
+            this.단기최대매수종목수num.Location = new System.Drawing.Point(140, 103);
+            this.단기최대매수종목수num.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.단기최대매수종목수num.Name = "단기최대매수종목수num";
+            this.단기최대매수종목수num.Size = new System.Drawing.Size(167, 21);
+            this.단기최대매수종목수num.TabIndex = 34;
+            this.단기최대매수종목수num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.단기최대매수종목수num.ThousandsSeparator = true;
+            // 
+            // 단기종목별최대매수금액num
+            // 
+            this.단기종목별최대매수금액num.Location = new System.Drawing.Point(141, 76);
+            this.단기종목별최대매수금액num.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.단기종목별최대매수금액num.Name = "단기종목별최대매수금액num";
+            this.단기종목별최대매수금액num.Size = new System.Drawing.Size(167, 21);
+            this.단기종목별최대매수금액num.TabIndex = 33;
+            this.단기종목별최대매수금액num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.단기종목별최대매수금액num.ThousandsSeparator = true;
+            // 
+            // 단기종목별초기매수금액num
+            // 
+            this.단기종목별초기매수금액num.Location = new System.Drawing.Point(140, 49);
+            this.단기종목별초기매수금액num.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.단기종목별초기매수금액num.Name = "단기종목별초기매수금액num";
+            this.단기종목별초기매수금액num.Size = new System.Drawing.Size(167, 21);
+            this.단기종목별초기매수금액num.TabIndex = 30;
+            this.단기종목별초기매수금액num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.단기종목별초기매수금액num.ThousandsSeparator = true;
+            // 
+            // 단기총매수가능금액num
+            // 
+            this.단기총매수가능금액num.Location = new System.Drawing.Point(140, 22);
+            this.단기총매수가능금액num.Maximum = new decimal(new int[] {
+            999999999,
+            0,
+            0,
+            0});
+            this.단기총매수가능금액num.Name = "단기총매수가능금액num";
+            this.단기총매수가능금액num.Size = new System.Drawing.Size(167, 21);
+            this.단기총매수가능금액num.TabIndex = 29;
+            this.단기총매수가능금액num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.단기총매수가능금액num.ThousandsSeparator = true;
             // 
             // label3
             // 
@@ -3473,127 +3633,14 @@
             this.button10.Text = "설정반영";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // 단기매도호가combo
+            // 전략saveFileDialog
             // 
-            this.단기매도호가combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.단기매도호가combo.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.단기매도호가combo.FormattingEnabled = true;
-            this.단기매도호가combo.Items.AddRange(new object[] {
-            "+10호가",
-            "+9호가",
-            "+8호가",
-            "+7호가",
-            "+6호가",
-            "+5호가",
-            "+4호가",
-            "+3호가",
-            "+2호가",
-            "+1호가",
-            "현재가",
-            "-1호가",
-            "-2호가",
-            "-3호가",
-            "-4호가",
-            "-5호가",
-            "-6호가",
-            "-7호가",
-            "-8호가",
-            "-9호가",
-            "-10호가"});
-            this.단기매도호가combo.Location = new System.Drawing.Point(274, 52);
-            this.단기매도호가combo.Name = "단기매도호가combo";
-            this.단기매도호가combo.Size = new System.Drawing.Size(84, 22);
-            this.단기매도호가combo.TabIndex = 48;
-            // 
-            // 단기매도방식combo
-            // 
-            this.단기매도방식combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.단기매도방식combo.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.단기매도방식combo.FormattingEnabled = true;
-            this.단기매도방식combo.Items.AddRange(new object[] {
-            "시장가",
-            "지정가",
-            "조건부지정가",
-            "최유리지정가",
-            "최우선지정가",
-            "지정가IOC",
-            "최유리IOC",
-            "지정가FOK",
-            "최유리FOK"});
-            this.단기매도방식combo.Location = new System.Drawing.Point(117, 52);
-            this.단기매도방식combo.MaxDropDownItems = 9;
-            this.단기매도방식combo.Name = "단기매도방식combo";
-            this.단기매도방식combo.Size = new System.Drawing.Size(147, 22);
-            this.단기매도방식combo.TabIndex = 47;
+            this.전략saveFileDialog.Filter = "*.cfg|";
             // 
             // 전략openFileDialog
             // 
             this.전략openFileDialog.FileName = "openFileDialog1";
-            // 
-            // 단기총매수가능금액num
-            // 
-            this.단기총매수가능금액num.Location = new System.Drawing.Point(140, 22);
-            this.단기총매수가능금액num.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.단기총매수가능금액num.Name = "단기총매수가능금액num";
-            this.단기총매수가능금액num.Size = new System.Drawing.Size(167, 21);
-            this.단기총매수가능금액num.TabIndex = 29;
-            this.단기총매수가능금액num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.단기총매수가능금액num.ThousandsSeparator = true;
-            // 
-            // 단기종목별초기매수금액num
-            // 
-            this.단기종목별초기매수금액num.Location = new System.Drawing.Point(140, 49);
-            this.단기종목별초기매수금액num.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.단기종목별초기매수금액num.Name = "단기종목별초기매수금액num";
-            this.단기종목별초기매수금액num.Size = new System.Drawing.Size(167, 21);
-            this.단기종목별초기매수금액num.TabIndex = 30;
-            this.단기종목별초기매수금액num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.단기종목별초기매수금액num.ThousandsSeparator = true;
-            // 
-            // 단기종목별최대매수금액num
-            // 
-            this.단기종목별최대매수금액num.Location = new System.Drawing.Point(141, 76);
-            this.단기종목별최대매수금액num.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.단기종목별최대매수금액num.Name = "단기종목별최대매수금액num";
-            this.단기종목별최대매수금액num.Size = new System.Drawing.Size(167, 21);
-            this.단기종목별최대매수금액num.TabIndex = 33;
-            this.단기종목별최대매수금액num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.단기종목별최대매수금액num.ThousandsSeparator = true;
-            // 
-            // 단기최대매수종목수num
-            // 
-            this.단기최대매수종목수num.Location = new System.Drawing.Point(140, 103);
-            this.단기최대매수종목수num.Maximum = new decimal(new int[] {
-            999999999,
-            0,
-            0,
-            0});
-            this.단기최대매수종목수num.Name = "단기최대매수종목수num";
-            this.단기최대매수종목수num.Size = new System.Drawing.Size(167, 21);
-            this.단기최대매수종목수num.TabIndex = 34;
-            this.단기최대매수종목수num.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.단기최대매수종목수num.ThousandsSeparator = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(247, 117);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "삭제";
-            this.button1.UseVisualStyleBackColor = true;
+            this.전략openFileDialog.Filter = "*.cfg|";
             // 
             // SettingForm
             // 
@@ -3608,6 +3655,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "주식매매설정";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.SettingForm_FormClosed);
+            this.Shown += new System.EventHandler(this.SettingForm_Shown);
             this.장단기탭.ResumeLayout(false);
             this.단기탭.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -3682,6 +3730,10 @@
             this.panel19.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.단기최대매수종목수num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.단기종목별최대매수금액num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.단기종목별초기매수금액num)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.단기총매수가능금액num)).EndInit();
             this.장기탭.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.panel21.ResumeLayout(false);
@@ -3753,10 +3805,6 @@
             this.panel40.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.단기총매수가능금액num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.단기종목별초기매수금액num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.단기종목별최대매수금액num)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.단기최대매수종목수num)).EndInit();
             this.ResumeLayout(false);
 
         }

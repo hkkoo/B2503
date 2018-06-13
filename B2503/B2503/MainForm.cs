@@ -21,13 +21,27 @@ namespace B2503
         List<string> conditionList = new List<string>();
         List<string> accountList = new List<string>();
 
+        private int _scrNum = 5000;
+        private string _strRealConScrNum = "0000";
+        private string _strRealConName = "0000";
+
         public MainForm()
         {
             InitializeComponent();
             conditionList = new List<string>();
-            
+            settingBtn.Enabled = false;
             currentTimer.Start();
             axKHOpenAPI.CommConnect();
+        }
+
+        private string GetScrNum()
+        {
+            if (_scrNum < 9999)
+                _scrNum++;
+            else
+                _scrNum = 5000;
+
+            return _scrNum.ToString();
         }
 
         private void logBtn_Click(object sender, EventArgs e)
@@ -98,8 +112,11 @@ namespace B2503
                 serverType = axKHOpenAPI.GetLoginInfo("GetServerGubun");
                 serverGubunLabal.Text = (serverType == "1") ? "모의" : "실전";
                 shortSettings = new Settings(serverType, "short");
+                shortSettings.LoadSettings(shortSettings.s설정파일명);
                 longSettings = new Settings(serverType, "long");
+                longSettings.LoadSettings(shortSettings.s설정파일명);
                 loginBtn.Enabled = false;
+                settingBtn.Enabled = true;
             } else {
                 //Logger(Log.실시간, "로그인창 열기 실패");
                 //Logger(Log.실시간, "로그인 실패로 조건식리스트 불러오기 실패");
@@ -157,7 +174,7 @@ namespace B2503
         //==========================================================================================================================================//
         private void f그리드업데이트(string str종목코드, string str현재가, string str등락률, string str거래량,
                                      string str전일대비기호, string str보유수량, string str매입가, string str평가금액, string str수익률)
-        {
+        {  
         }
 
         // =====================================================<< 3. 실시간 데이터(OnReceiveRealData) 수신부 >>===================================================//
