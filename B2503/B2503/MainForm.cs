@@ -15,12 +15,17 @@ namespace B2503
     {
         LogForm logform = null;
         SettingForm settingform = null;
-        Settings ShortSettings;
-        Settings LongSettings;
+        Settings shortSettings;
+        Settings longSettings;
+        string serverType;
+        List<string> conditionList = new List<string>();
+        List<string> accountList = new List<string>();
 
         public MainForm()
         {
             InitializeComponent();
+            conditionList = new List<string>();
+            
             currentTimer.Start();
             axKHOpenAPI.CommConnect();
         }
@@ -39,7 +44,9 @@ namespace B2503
         private void settingBtn_Click(object sender, EventArgs e)
         {
             if (settingform == null || Properties.Settings.Default.settingformEnabled == false) {
-                settingform = new SettingForm();
+                settingform = new SettingForm(shortSettings, longSettings);
+                settingform.UpdateAccountList(accountList);
+                settingform.UpdateConditionList(conditionList);
                 settingform.Show();
                 Properties.Settings.Default.settingformEnabled = true;
             } else {
@@ -75,35 +82,49 @@ namespace B2503
                 statusBar.Items[1].Text = "로그인 실패";
         }
 
-        // =================================================
-        //  로그인 이벤트 함수
-        // =================================================
+        // ============================== 로그인 이벤트 함수 =================================================
         private void axKHOpenAPI_OnEventConnect(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnEventConnectEvent e)
         {
             if (Error.IsError(e.nErrCode)) {
                 //Logger(Log.실시간, "// [로그인 처리결과] " + Error.GetErrorMessage());
-           
-                // 조건식 로컬저장 자동으로 진행하기
-                System.Threading.Thread.Sleep(1000);         //  로그인 성공후 잠시 기다려서 조건식 불러오기 자동 실행하기
+                System.Threading.Thread.Sleep(500);         //  로그인 성공후 잠시 기다려서 조건식 불러오기 자동 실행하기
                 axKHOpenAPI.GetConditionLoad();
                 개인정보.Text = "ID: " + axKHOpenAPI.GetLoginInfo("USER_ID");
                 개인정보.Text += ", 이름: " + axKHOpenAPI.GetLoginInfo("USER_NAME");
-                개인정보.Text += ", 계좌: ";
-                string[] arr계좌 = axKHOpenAPI.GetLoginInfo("ACCNO").Split(';');
-                
 
-                // 계좌번호 불러오기
-                계좌번호리스트.Items.AddRange(arr계좌);
-                계좌번호리스트.SelectedIndex = 0;
+                accountList.AddRange(axKHOpenAPI.GetLoginInfo("ACCNO").Split(';'));
+                serverType = axKHOpenAPI.GetLoginInfo("GetServerGubun");
+                serverGubunLabal.Text = (serverType == "1") ? "모의" : "실전";
+                shortSettings = new Settings(serverType, "short");
+                longSettings = new Settings(serverType, "long");
+                loginBtn.Enabled = false;
             } else {
                 //Logger(Log.실시간, "로그인창 열기 실패");
                 //Logger(Log.실시간, "로그인 실패로 조건식리스트 불러오기 실패");
             }
         }
+
+        // =====================================================<<조건식 저장 및 조건식리스트 불러오기>>===========================================//
+        // 자동으로 로컬에 저장된 조건식 리스트 불러오기
+        // OnReceiveConditionVer ==>> GetConditionNameList()
+        // =======================================================================================================================================//
+
+        private void axKHOpenAPI_OnReceiveConditionVer(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveConditionVerEvent e)
+        {
+            if (e.lRet == 1) {
+                string[] spConList = axKHOpenAPI.GetConditionNameList().Trim().Split(';');   // 조건식 리스트 호출하기    
+                // Logger(Log.실시간, strConList);
+                System.Array.Sort(spConList);                             // 조건식 배열 오류로 추가 소스 삽입 
+                conditionList.AddRange(spConList);
+                // Logger(Log.검색코드, "[이벤트] 조건식 탑재 성공 (건당 이벤트 발생)" );
+            } else {
+                //Logger(Log.실시간, "[이벤트] 조건식 저장 실패로 수동버튼으로 불러오세요 : " + e.sMsg);        // 에러처리.. 
+            }            
+        }
+
         // ==========================================<< 2. 조회 요청한 일반 데이터(OnReceiveTrData) TR수신부(비실시간) >>==================================//
         //  일반 조회 요청한 모든 TR은 여기서 수신된다.
         // ================================================================================================================================================//
-
         private void axKHOpenAPI_OnReceiveTrData(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveTrDataEvent e)
         {
 
@@ -115,24 +136,6 @@ namespace B2503
         // 체결 잔고 수신 이벤트 함수
         // 매수 매도주문 체결 정보 출력부        
         // =======================================================================================================================================//
-        int int현재가;
-        int int거래량;
-        int int매입가;
-        int int보유수량;
-        int int평가금액;
-
-        Single f등락률;
-        Single f수익률;
-        //string str수익률;
-        string str수익률old;
-        //string str등락률;
-        string str등락률old;
-        //string str거래량;
-        //string str전일대비기호;
-        //string str보유수량;
-        //string str매입가;
-        //string str평가금액;
-
         private void axKHOpenAPI_OnReceiveChejanData(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveChejanDataEvent e)
         {
         }
@@ -143,7 +146,6 @@ namespace B2503
         // 종목코드 메세지수신
         // 
         // =========================================================================================================================================//
-
         private void axKHOpenAPI_OnReceiveMsg(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveMsgEvent e)
         {            
         }
@@ -165,14 +167,7 @@ namespace B2503
         {
         }
 
-        // =====================================================<<조건식 저장 및 조건식리스트 불러오기>>===========================================//
-        // 자동으로 로컬에 저장된 조건식 리스트 불러오기
-        // OnReceiveConditionVer ==>> GetConditionNameList()
-        // =======================================================================================================================================//
-
-        private void axKHOpenAPI_OnReceiveConditionVer(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveConditionVerEvent e)
-        {
-        }
+        
 
         // =================================================<<조건조회 실시간 편입/이탈 정보 업데이트>>========================================//
         // * 자동주문 로직**
