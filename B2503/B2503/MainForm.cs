@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KiwoomCode;
-using B2503;
 
 namespace B2503
 {
