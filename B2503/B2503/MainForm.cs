@@ -98,6 +98,21 @@ namespace B2503
                 statusBar.Items[1].Text = "로그인 실패";
         }
 
+        private void GetDefaultRealData()
+        {
+            serverGubunLabal.Text = (serverType == "1") ? "모의" : "실전";
+            shortSettings = new Settings(serverType, "short");
+            shortSettings.LoadSettings(shortSettings.s설정파일명);
+            longSettings = new Settings(serverType, "long");
+            longSettings.LoadSettings(shortSettings.s설정파일명);
+            loginBtn.Enabled = false;
+            settingBtn.Enabled = true;
+
+            if(shortSettings.s선택계좌 != "") {
+
+            }
+
+        }
         // ============================== 로그인 이벤트 함수 =================================================
         private void axKHOpenAPI_OnEventConnect(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnEventConnectEvent e)
         {
@@ -110,13 +125,8 @@ namespace B2503
 
                 accountList.AddRange(axKHOpenAPI.GetLoginInfo("ACCNO").Split(';'));
                 serverType = axKHOpenAPI.GetLoginInfo("GetServerGubun");
-                serverGubunLabal.Text = (serverType == "1") ? "모의" : "실전";
-                shortSettings = new Settings(serverType, "short");
-                shortSettings.LoadSettings(shortSettings.s설정파일명);
-                longSettings = new Settings(serverType, "long");
-                longSettings.LoadSettings(shortSettings.s설정파일명);
-                loginBtn.Enabled = false;
-                settingBtn.Enabled = true;
+                GetDefaultRealData();
+                
             } else {
                 //Logger(Log.실시간, "로그인창 열기 실패");
                 //Logger(Log.실시간, "로그인 실패로 조건식리스트 불러오기 실패");

@@ -66,7 +66,7 @@ namespace B2503
         public long            l종목별초기매수금액 = 0;
         public long            l종목별최대매수금액 = 0;
         public long            l최대매수종목수 = 0;
-        public List<string>       l블랙리스트 = new List<string>();
+        public List<string>    l블랙리스트 = new List<string>();
 
         public Settings(string serverType, string s투자타입)
         {
