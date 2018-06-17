@@ -30,10 +30,10 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tab1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tab3 = new System.Windows.Forms.TabPage();
-            this.송수신이벤트로그 = new System.Windows.Forms.RichTextBox();
             this.전체로그 = new System.Windows.Forms.RichTextBox();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.송수신이벤트로그 = new System.Windows.Forms.RichTextBox();
+            this.tab3 = new System.Windows.Forms.TabPage();
             this.자동매매로그창 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tab1.SuspendLayout();
@@ -64,6 +64,15 @@
             this.tab1.Text = "전체";
             this.tab1.UseVisualStyleBackColor = true;
             // 
+            // 전체로그
+            // 
+            this.전체로그.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.전체로그.Location = new System.Drawing.Point(3, 3);
+            this.전체로그.Name = "전체로그";
+            this.전체로그.Size = new System.Drawing.Size(458, 687);
+            this.전체로그.TabIndex = 1;
+            this.전체로그.Text = "";
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.송수신이벤트로그);
@@ -75,6 +84,15 @@
             this.tabPage2.Text = "송수신이벤트";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // 송수신이벤트로그
+            // 
+            this.송수신이벤트로그.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.송수신이벤트로그.Location = new System.Drawing.Point(3, 3);
+            this.송수신이벤트로그.Name = "송수신이벤트로그";
+            this.송수신이벤트로그.Size = new System.Drawing.Size(458, 687);
+            this.송수신이벤트로그.TabIndex = 0;
+            this.송수신이벤트로그.Text = "";
+            // 
             // tab3
             // 
             this.tab3.Controls.Add(this.자동매매로그창);
@@ -85,24 +103,6 @@
             this.tab3.TabIndex = 2;
             this.tab3.Text = "자동매매로그";
             this.tab3.UseVisualStyleBackColor = true;
-            // 
-            // 송수신이벤트로그
-            // 
-            this.송수신이벤트로그.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.송수신이벤트로그.Location = new System.Drawing.Point(3, 3);
-            this.송수신이벤트로그.Name = "송수신이벤트로그";
-            this.송수신이벤트로그.Size = new System.Drawing.Size(458, 687);
-            this.송수신이벤트로그.TabIndex = 0;
-            this.송수신이벤트로그.Text = "";
-            // 
-            // 전체로그
-            // 
-            this.전체로그.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.전체로그.Location = new System.Drawing.Point(3, 3);
-            this.전체로그.Name = "전체로그";
-            this.전체로그.Size = new System.Drawing.Size(458, 687);
-            this.전체로그.TabIndex = 1;
-            this.전체로그.Text = "";
             // 
             // 자동매매로그창
             // 
