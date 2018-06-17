@@ -2098,6 +2098,7 @@
             this.닫기btn.TabIndex = 1;
             this.닫기btn.Text = "닫기";
             this.닫기btn.UseVisualStyleBackColor = true;
+            this.닫기btn.Click += new System.EventHandler(this.닫기btn_Click);
             // 
             // 단기설정적용btn
             // 

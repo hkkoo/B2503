@@ -98,6 +98,20 @@ namespace B2503
                 statusBar.Items[1].Text = "로그인 실패";
         }
 
+        private void SendConditionReal()
+        {
+            string condition = shortSettings.s초기매수조건식;
+            int condNum = int.Parse(condition.Substring(0, condition.IndexOf('^')));
+            string condName = condition.Substring(condition.IndexOf('^') + 1);
+            _strRealConScrNum = GetScrNum();
+            _strRealConName = condName;
+
+            if (axKHOpenAPI.SendCondition(_strRealConScrNum, condName, condNum, 1) == 1)
+                return;
+            else
+                return;
+        }
+
         private void GetDefaultRealData()
         {
             serverGubunLabal.Text = (serverType == "1") ? "모의" : "실전";
@@ -109,9 +123,14 @@ namespace B2503
             settingBtn.Enabled = true;
 
             if(shortSettings.s선택계좌 != "") {
-
+                axKHOpenAPI.SetInputValue("계좌번호", shortSettings.s선택계좌);
+                axKHOpenAPI.SetInputValue("비밀번호", "");
+                axKHOpenAPI.SetInputValue("상장폐지조회구분", "1");
+                axKHOpenAPI.SetInputValue("비밀번호입력매체구분", "00");
+                axKHOpenAPI.CommRqData("단기계좌평가현황요청", "OPW00004", 0, GetScrNum());
             }
 
+            SendConditionReal();             
         }
         // ============================== 로그인 이벤트 함수 =================================================
         private void axKHOpenAPI_OnEventConnect(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnEventConnectEvent e)
@@ -128,6 +147,7 @@ namespace B2503
                 GetDefaultRealData();
                 
             } else {
+                ;
                 //Logger(Log.실시간, "로그인창 열기 실패");
                 //Logger(Log.실시간, "로그인 실패로 조건식리스트 불러오기 실패");
             }
@@ -148,7 +168,56 @@ namespace B2503
                 // Logger(Log.검색코드, "[이벤트] 조건식 탑재 성공 (건당 이벤트 발생)" );
             } else {
                 //Logger(Log.실시간, "[이벤트] 조건식 저장 실패로 수동버튼으로 불러오세요 : " + e.sMsg);        // 에러처리.. 
-            }            
+            }
+        }
+
+        // =======================================================<<실시간 f그리드업데이트 함수 최초 구현부>> ======================================//
+        // 종목코드만 넣고 추가 값을 넣으면 알아서 그리드에서 종목코드 찾아서 그 위치에 넣어줌
+        //==========================================================================================================================================//
+        private void Update계좌정보Data(string 계좌번호, string 추정자산, string 유가잔고, string 당일매수,
+                                     string 당일매도, string 매매수수료, string 매매세금, string 손익금)
+        {
+            for (int i = 0; i < 계좌리스트.Rows.Count; i++) {
+                if (계좌번호.Equals(계좌리스트["계좌번호", i].Value.ToString().Trim())) {
+                    계좌리스트["추정자산", i].Value = int.Parse(추정자산);
+                    계좌리스트["유가잔고액", i].Value = int.Parse(유가잔고);
+                    계좌리스트["주문가능액", i].Value = int.Parse(추정자산) - int.Parse(유가잔고);
+                    return;
+                }
+            }
+            계좌리스트.Rows.Add();
+            계좌리스트["계좌번호", 계좌리스트.Rows.Count - 1].Value = 계좌번호;
+            계좌리스트["추정자산", 계좌리스트.Rows.Count - 1].Value = int.Parse(추정자산);
+            계좌리스트["유가잔고액", 계좌리스트.Rows.Count - 1].Value = int.Parse(유가잔고);
+            계좌리스트["주문가능액", 계좌리스트.Rows.Count - 1].Value = int.Parse(추정자산) - int.Parse(유가잔고);
+        }
+
+        private void Update단기계좌보유현황Data(string 종목코드, string 종목명, string 보유수량, string 평균단가,
+                                     string 현재가, string 매입금액, string 평가금액, string 손익금액, string 손익율)
+        {
+            
+            for (int i = 0; i < 단기계좌보유현황리스트.Rows.Count; i++) {
+                if (종목코드.Equals(단기계좌보유현황리스트["단기종목코드", i].Value.ToString().Trim())) {
+                    단기계좌보유현황리스트["단기보유수량", i].Value = int.Parse(보유수량);
+                    단기계좌보유현황리스트["단기매입가", i].Value = int.Parse(평균단가);
+                    단기계좌보유현황리스트["단기현재가", i].Value = int.Parse(현재가);
+                    단기계좌보유현황리스트["단기매입금액", i].Value = int.Parse(매입금액);
+                    단기계좌보유현황리스트["단기평가금액", i].Value = int.Parse(평가금액);
+                    단기계좌보유현황리스트["단기손익금액", i].Value = int.Parse(손익금액);
+                    단기계좌보유현황리스트["단기수익율", i].Value = float.Parse(손익율.Insert(6, "."));
+                    return;
+                }
+            }
+            단기계좌보유현황리스트.Rows.Add();
+            단기계좌보유현황리스트["단기종목코드", 단기계좌보유현황리스트.Rows.Count - 1].Value = 종목코드;
+            단기계좌보유현황리스트["단기종목명", 단기계좌보유현황리스트.Rows.Count - 1].Value = 종목명;
+            단기계좌보유현황리스트["단기보유수량", 단기계좌보유현황리스트.Rows.Count - 1].Value = int.Parse(보유수량);
+            단기계좌보유현황리스트["단기매입가", 단기계좌보유현황리스트.Rows.Count - 1].Value = int.Parse(평균단가);
+            단기계좌보유현황리스트["단기현재가", 단기계좌보유현황리스트.Rows.Count - 1].Value = int.Parse(현재가);
+            단기계좌보유현황리스트["단기매입금액", 단기계좌보유현황리스트.Rows.Count - 1].Value = int.Parse(매입금액);
+            단기계좌보유현황리스트["단기평가금액", 단기계좌보유현황리스트.Rows.Count - 1].Value = int.Parse(평가금액);
+            단기계좌보유현황리스트["단기손익금액", 단기계좌보유현황리스트.Rows.Count - 1].Value = int.Parse(손익금액);
+            단기계좌보유현황리스트["단기수익율", 단기계좌보유현황리스트.Rows.Count - 1].Value = float.Parse(손익율.Insert(6, "."));
         }
 
         // ==========================================<< 2. 조회 요청한 일반 데이터(OnReceiveTrData) TR수신부(비실시간) >>==================================//
@@ -156,11 +225,26 @@ namespace B2503
         // ================================================================================================================================================//
         private void axKHOpenAPI_OnReceiveTrData(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveTrDataEvent e)
         {
-
+            if (e.sRQName == "단기계좌평가현황요청") {
+                Update계좌정보Data(shortSettings.s선택계좌,
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, 0, "추정예탁자산").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, 0, "유가잔고평가액").Trim(),
+                        null, null, null, null, null);
+                int nCnt = axKHOpenAPI.GetRepeatCnt(e.sTrCode, e.sRQName);
+                for (int i = 0; i < nCnt; i++) {
+                    Update단기계좌보유현황Data(axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "종목코드").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "종목명").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "보유수량").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "평균단가").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "현재가").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "매입금액").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "평가금액").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "손익금액").Trim(),
+                        axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "손익율").Trim());
+                }
+            }
         }
-
-       
-
+        
         // ==================================================<<매수 매도주문 체결 정보(OnReceiveChejanData) 수신부>>==============================//        
         // 체결 잔고 수신 이벤트 함수
         // 매수 매도주문 체결 정보 출력부        
@@ -176,16 +260,14 @@ namespace B2503
         // 
         // =========================================================================================================================================//
         private void axKHOpenAPI_OnReceiveMsg(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveMsgEvent e)
-        {            
+        {
+            e.sMsg.ToString();
+            e.sScrNo.ToString();
+            e.sRQName.ToString();
+            e.sTrCode.ToString();
         }
 
-        // =======================================================<<실시간 f그리드업데이트 함수 최초 구현부>> ======================================//
-        // 종목코드만 넣고 추가 값을 넣으면 알아서 그리드에서 종목코드 찾아서 그 위치에 넣어줌
-        //==========================================================================================================================================//
-        private void f그리드업데이트(string str종목코드, string str현재가, string str등락률, string str거래량,
-                                     string str전일대비기호, string str보유수량, string str매입가, string str평가금액, string str수익률)
-        {  
-        }
+        
 
         // =====================================================<< 3. 실시간 데이터(OnReceiveRealData) 수신부 >>===================================================//
         //
@@ -194,6 +276,9 @@ namespace B2503
         // ========================================================================================================================================================//
         private void axKHOpenAPI_OnReceiveRealData(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveRealDataEvent e)
         {
+            if (e.sRealType == "") {
+                
+            }
         }
 
         
@@ -206,6 +291,16 @@ namespace B2503
 
         private void axKHOpenAPI_OnReceiveRealCondition(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveRealConditionEvent e)
         {
+            string strCodeName;
+
+            if (e.strType == "I")// 종목편입
+            {
+                strCodeName = axKHOpenAPI.GetMasterCodeName(e.sTrCode); // 종목명을 가져온다.
+                long lRet = axKHOpenAPI.SetRealReg(_strRealConScrNum, e.sTrCode, "9001;302;10;11;25;12;13", "1");// 실시간 시세등록
+            } else if (e.strType == "D") // 종목이탈
+              {
+                axKHOpenAPI.SetRealRemove(_strRealConScrNum, e.sTrCode);// 실시간 시세해지
+            }
         }
 
         // =====================================================<< 조건식 TR 메세지 수신부 >> ================================================//
@@ -215,6 +310,120 @@ namespace B2503
 
         private void axKHOpenAPI_OnReceiveTrCondition(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveTrConditionEvent e)
         {
+        }
+
+        private void 단기계좌보유현황리스트_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            DataGridView view = (DataGridView)sender;
+
+            view["단기종목코드", e.RowIndex].Style.ApplyStyle(view.Columns["단기종목코드"].DefaultCellStyle);
+            view["단기종목명", e.RowIndex].Style.ApplyStyle(view.Columns["단기종목명"].DefaultCellStyle);
+            view["단기보유수량", e.RowIndex].Style.ApplyStyle(view.Columns["단기보유수량"].DefaultCellStyle);
+            view["단기매입가", e.RowIndex].Style.ApplyStyle(view.Columns["단기매입가"].DefaultCellStyle);
+            view["단기현재가", e.RowIndex].Style.ApplyStyle(view.Columns["단기현재가"].DefaultCellStyle);
+            view["단기매입금액", e.RowIndex].Style.ApplyStyle(view.Columns["단기매입금액"].DefaultCellStyle);
+            view["단기평가금액", e.RowIndex].Style.ApplyStyle(view.Columns["단기평가금액"].DefaultCellStyle);
+            view["단기손익금액", e.RowIndex].Style.ApplyStyle(view.Columns["단기손익금액"].DefaultCellStyle);
+            view["단기수익율", e.RowIndex].Style.ApplyStyle(view.Columns["단기수익율"].DefaultCellStyle);
+        }
+
+        private void 단기계좌보유현황리스트_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView view = (DataGridView)sender;
+
+            string name = view.Columns[e.ColumnIndex].Name;
+            if (name == "단기손익금액" || name == "단기수익율") {
+                if (float.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()) > 0)
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Red;
+                else if (float.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()) < 0)
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Blue;
+                else
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Black;
+            }
+        }
+        
+        private void 단기계좌보유현황리스트_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView view = (DataGridView)sender;
+
+            if (e.ColumnIndex != 0)
+                return;
+
+            if (view[e.ColumnIndex, e.RowIndex].Value == null)
+                view[e.ColumnIndex, e.RowIndex].Value = false;
+
+            view[e.ColumnIndex, e.RowIndex].Value = !(bool.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()));
+        }
+
+        private void 계좌리스트_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            DataGridView view = (DataGridView)sender;
+
+            view["계좌번호", e.RowIndex].Style.ApplyStyle(view.Columns["계좌번호"].DefaultCellStyle);
+            view["추정자산", e.RowIndex].Style.ApplyStyle(view.Columns["추정자산"].DefaultCellStyle);
+            view["주문가능액", e.RowIndex].Style.ApplyStyle(view.Columns["주문가능액"].DefaultCellStyle);
+            view["유가잔고액", e.RowIndex].Style.ApplyStyle(view.Columns["유가잔고액"].DefaultCellStyle);
+            view["당일매수액", e.RowIndex].Style.ApplyStyle(view.Columns["당일매수액"].DefaultCellStyle);
+            view["당일매도액", e.RowIndex].Style.ApplyStyle(view.Columns["당일매도액"].DefaultCellStyle);
+            view["매매수수료", e.RowIndex].Style.ApplyStyle(view.Columns["매매수수료"].DefaultCellStyle);
+            view["매매세금", e.RowIndex].Style.ApplyStyle(view.Columns["매매세금"].DefaultCellStyle);
+            view["손익금", e.RowIndex].Style.ApplyStyle(view.Columns["손익금"].DefaultCellStyle);
+        }
+
+        private void 실시간검색리스트_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            DataGridView view = (DataGridView)sender;
+
+            view["상태", e.RowIndex].Style.ApplyStyle(view.Columns["상태"].DefaultCellStyle);
+            view["종목코드", e.RowIndex].Style.ApplyStyle(view.Columns["종목코드"].DefaultCellStyle);
+            view["종목명", e.RowIndex].Style.ApplyStyle(view.Columns["종목명"].DefaultCellStyle);
+            view["구분", e.RowIndex].Style.ApplyStyle(view.Columns["구분"].DefaultCellStyle);
+            view["전일대비", e.RowIndex].Style = view.Columns["전일대비"].DefaultCellStyle;
+            view["현재가", e.RowIndex].Style.ApplyStyle(view.Columns["현재가"].DefaultCellStyle);
+            view["등락율", e.RowIndex].Style.ApplyStyle(view.Columns["등락율"].DefaultCellStyle);
+            view["거래량", e.RowIndex].Style.ApplyStyle(view.Columns["거래량"].DefaultCellStyle);
+            view["편입가", e.RowIndex].Style.ApplyStyle(view.Columns["편입가"].DefaultCellStyle);
+            view["편입대비", e.RowIndex].Style.ApplyStyle(view.Columns["편입대비"].DefaultCellStyle);
+            view["수익율", e.RowIndex].Style.ApplyStyle(view.Columns["수익율"].DefaultCellStyle);
+            view["편입시간", e.RowIndex].Style.ApplyStyle(view.Columns["편입시간"].DefaultCellStyle);
+            view["매수조건식", e.RowIndex].Style.ApplyStyle(view.Columns["매수조건식"].DefaultCellStyle);
+        }
+
+        private void 실시간검색리스트_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView view = (DataGridView)sender;
+
+            if (e.ColumnIndex != 0)
+                return;
+
+            if (view[e.ColumnIndex, e.RowIndex].Value == null)
+                view[e.ColumnIndex, e.RowIndex].Value = false;
+
+            view[e.ColumnIndex, e.RowIndex].Value = !(bool.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()));
+        }
+
+        private void 실시간검색리스트_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridView view = (DataGridView)sender;
+
+            string name = view.Columns[e.ColumnIndex].Name;
+            if (name == "전일대비" || name == "등락율" || name == "편입대비" || name == "수익율") {
+                if (float.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()) > 0)
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Red;
+                else if (float.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()) < 0)
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Blue;
+                else
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Black;
+            } else if (name == "구분") {
+                if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("매수"))
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Red;
+                else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("매도"))
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Blue;
+                else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("편입"))
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Black;
+                else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("이탈"))
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Gray;
+            }
         }
     }
 }

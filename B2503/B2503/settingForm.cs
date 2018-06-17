@@ -261,5 +261,10 @@ namespace B2503
             if (전략saveFileDialog.ShowDialog() == DialogResult.OK)
                 shortSettings.SaveSettings(전략saveFileDialog.FileName + ".cfg");
         }
+
+        private void 닫기btn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

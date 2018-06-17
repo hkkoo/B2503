@@ -30,49 +30,61 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle37 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle38 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle39 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle40 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle41 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle42 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle43 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle44 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle45 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle66 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle67 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle68 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle69 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle70 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle71 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle72 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle73 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle74 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle75 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle76 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle77 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle78 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle79 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle80 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle81 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle82 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle83 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle84 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle85 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle86 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(1D, 1D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(2D, 2D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint3 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(3D, 3D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint4 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(4D, 4D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint5 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(6D, 21D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint6 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(20D, 1D);
+            System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint7 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(26D, 2D);
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.loginBtn = new System.Windows.Forms.ToolStripButton();
             this.settingBtn = new System.Windows.Forms.ToolStripButton();
@@ -117,33 +129,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.상태 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.종목코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.종목명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.구분 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.전일대비 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.현재가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.등락률 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.거래량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.편입가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.편입대비 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.수익률 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.편입시간 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.매수조건식 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.실시간검색리스트 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.계좌종목코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌종목명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌보유수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌매입가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌현재가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌거래량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌매입금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌평가금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌평가손익 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌수익률 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.계좌상태 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기계좌보유현황리스트 = new System.Windows.Forms.DataGridView();
             this.statusBar = new System.Windows.Forms.StatusStrip();
             this.statusTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -151,18 +139,45 @@
             this.currentTimer = new System.Windows.Forms.Timer(this.components);
             this.serverGubunLabal = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기계좌보유현황리스트 = new System.Windows.Forms.DataGridView();
+            this.장기종목코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기종목명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기보유수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기매입가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기현재가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기거래량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기매입금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기평가금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기평가손익 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기수익율 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.장기상태 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.조건체크 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.상태 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.종목코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.종목명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.구분 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.전일대비 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.현재가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.등락율 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.거래량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.편입가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.편입대비 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.수익율 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.편입시간 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.매수조건식 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기체크 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.단기종목코드 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기종목명 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기보유수량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기매입가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기현재가 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기거래량 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기매입금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기평가금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기손익금액 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기수익율 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.단기상태 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.toolStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.계좌리스트)).BeginInit();
@@ -171,12 +186,13 @@
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.실시간검색리스트)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.단기계좌보유현황리스트)).BeginInit();
             this.statusBar.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.장기계좌보유현황리스트)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -189,7 +205,7 @@
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1262, 26);
+            this.toolStrip1.Size = new System.Drawing.Size(1262, 23);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "MenuBar";
             // 
@@ -198,7 +214,7 @@
             this.loginBtn.Image = ((System.Drawing.Image)(resources.GetObject("loginBtn.Image")));
             this.loginBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(71, 23);
+            this.loginBtn.Size = new System.Drawing.Size(63, 20);
             this.loginBtn.Text = "로그인";
             this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
             // 
@@ -207,7 +223,7 @@
             this.settingBtn.Image = ((System.Drawing.Image)(resources.GetObject("settingBtn.Image")));
             this.settingBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.settingBtn.Name = "settingBtn";
-            this.settingBtn.Size = new System.Drawing.Size(113, 23);
+            this.settingBtn.Size = new System.Drawing.Size(99, 20);
             this.settingBtn.Text = "자동매매설정";
             this.settingBtn.Click += new System.EventHandler(this.settingBtn_Click);
             // 
@@ -216,7 +232,7 @@
             this.logBtn.Image = ((System.Drawing.Image)(resources.GetObject("logBtn.Image")));
             this.logBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.logBtn.Name = "logBtn";
-            this.logBtn.Size = new System.Drawing.Size(57, 23);
+            this.logBtn.Size = new System.Drawing.Size(51, 20);
             this.logBtn.Text = "로그";
             this.logBtn.Click += new System.EventHandler(this.logBtn_Click);
             // 
@@ -225,7 +241,7 @@
             this.reportBtn.Image = ((System.Drawing.Image)(resources.GetObject("reportBtn.Image")));
             this.reportBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.reportBtn.Name = "reportBtn";
-            this.reportBtn.Size = new System.Drawing.Size(99, 23);
+            this.reportBtn.Size = new System.Drawing.Size(87, 20);
             this.reportBtn.Text = "손익보고서";
             // 
             // groupBox1
@@ -251,6 +267,10 @@
             // 
             // 계좌리스트
             // 
+            this.계좌리스트.AllowUserToAddRows = false;
+            this.계좌리스트.AllowUserToDeleteRows = false;
+            this.계좌리스트.AllowUserToResizeColumns = false;
+            this.계좌리스트.AllowUserToResizeRows = false;
             this.계좌리스트.BackgroundColor = System.Drawing.Color.White;
             this.계좌리스트.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             this.계좌리스트.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -273,118 +293,147 @@
             this.계좌리스트.Name = "계좌리스트";
             this.계좌리스트.ReadOnly = true;
             this.계좌리스트.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.계좌리스트.RowHeadersVisible = false;
             this.계좌리스트.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.계좌리스트.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.계좌리스트.RowTemplate.Height = 23;
-            this.계좌리스트.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.계좌리스트.ShowEditingIcon = false;
             this.계좌리스트.Size = new System.Drawing.Size(957, 76);
             this.계좌리스트.TabIndex = 3;
+            this.계좌리스트.TabStop = false;
+            this.계좌리스트.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.계좌리스트_RowsAdded);
             // 
             // 계좌번호
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle1.Format = "####-####";
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.계좌번호.DefaultCellStyle = dataGridViewCellStyle1;
             this.계좌번호.Frozen = true;
             this.계좌번호.HeaderText = "계좌번호";
             this.계좌번호.Name = "계좌번호";
             this.계좌번호.ReadOnly = true;
+            this.계좌번호.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.계좌번호.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // 추정자산
             // 
-            dataGridViewCellStyle44.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle44.Format = "C0";
-            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.Black;
-            this.추정자산.DefaultCellStyle = dataGridViewCellStyle44;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle2.Format = "#,#";
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.추정자산.DefaultCellStyle = dataGridViewCellStyle2;
             this.추정자산.Frozen = true;
             this.추정자산.HeaderText = "추정자산";
             this.추정자산.Name = "추정자산";
             this.추정자산.ReadOnly = true;
+            this.추정자산.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.추정자산.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // 주문가능액
             // 
-            dataGridViewCellStyle45.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle45.Format = "C0";
-            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.Black;
-            this.주문가능액.DefaultCellStyle = dataGridViewCellStyle45;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle3.Format = "#,#";
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.주문가능액.DefaultCellStyle = dataGridViewCellStyle3;
             this.주문가능액.Frozen = true;
             this.주문가능액.HeaderText = "주문가능액";
             this.주문가능액.Name = "주문가능액";
             this.주문가능액.ReadOnly = true;
+            this.주문가능액.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.주문가능액.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // 유가잔고액
             // 
-            dataGridViewCellStyle46.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle46.Format = "C0";
-            dataGridViewCellStyle46.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle46.SelectionForeColor = System.Drawing.Color.Black;
-            this.유가잔고액.DefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle4.Format = "#,#";
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.유가잔고액.DefaultCellStyle = dataGridViewCellStyle4;
             this.유가잔고액.Frozen = true;
             this.유가잔고액.HeaderText = "유가잔고액";
             this.유가잔고액.Name = "유가잔고액";
             this.유가잔고액.ReadOnly = true;
+            this.유가잔고액.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.유가잔고액.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // 당일매수액
             // 
-            dataGridViewCellStyle47.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle47.Format = "C0";
-            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.Color.Black;
-            this.당일매수액.DefaultCellStyle = dataGridViewCellStyle47;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle5.Format = "#,#";
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.당일매수액.DefaultCellStyle = dataGridViewCellStyle5;
             this.당일매수액.Frozen = true;
             this.당일매수액.HeaderText = "당일매수액";
             this.당일매수액.Name = "당일매수액";
             this.당일매수액.ReadOnly = true;
+            this.당일매수액.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.당일매수액.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // 당일매도액
             // 
-            dataGridViewCellStyle48.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle48.Format = "C0";
-            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.Black;
-            this.당일매도액.DefaultCellStyle = dataGridViewCellStyle48;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle6.Format = "#,#";
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.당일매도액.DefaultCellStyle = dataGridViewCellStyle6;
             this.당일매도액.Frozen = true;
             this.당일매도액.HeaderText = "당일매도액";
             this.당일매도액.Name = "당일매도액";
             this.당일매도액.ReadOnly = true;
+            this.당일매도액.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.당일매도액.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // 매매수수료
             // 
-            dataGridViewCellStyle49.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle49.Format = "C0";
-            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.Color.Black;
-            this.매매수수료.DefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle7.Format = "#,#";
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.매매수수료.DefaultCellStyle = dataGridViewCellStyle7;
             this.매매수수료.Frozen = true;
             this.매매수수료.HeaderText = "매매수수료";
             this.매매수수료.Name = "매매수수료";
             this.매매수수료.ReadOnly = true;
+            this.매매수수료.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.매매수수료.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // 매매세금
             // 
-            dataGridViewCellStyle50.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle50.Format = "C0";
-            dataGridViewCellStyle50.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle50.SelectionForeColor = System.Drawing.Color.Black;
-            this.매매세금.DefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle8.Format = "#,#";
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.매매세금.DefaultCellStyle = dataGridViewCellStyle8;
             this.매매세금.Frozen = true;
             this.매매세금.HeaderText = "매매세금";
             this.매매세금.Name = "매매세금";
             this.매매세금.ReadOnly = true;
+            this.매매세금.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.매매세금.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // 손익금
             // 
-            dataGridViewCellStyle51.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle51.Format = "C0";
-            dataGridViewCellStyle51.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle51.SelectionForeColor = System.Drawing.Color.Black;
-            this.손익금.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle9.Format = "#,#";
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.손익금.DefaultCellStyle = dataGridViewCellStyle9;
             this.손익금.Frozen = true;
             this.손익금.HeaderText = "손익금";
             this.손익금.Name = "손익금";
             this.손익금.ReadOnly = true;
+            this.손익금.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.손익금.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.chart1);
             this.groupBox2.Controls.Add(this.axKHOpenAPI);
             this.groupBox2.Controls.Add(this.button4);
             this.groupBox2.Controls.Add(this.button3);
@@ -417,6 +466,7 @@
             // 
             // button4
             // 
+            this.button4.Enabled = false;
             this.button4.Font = new System.Drawing.Font("맑은 고딕", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.button4.ForeColor = System.Drawing.Color.Blue;
             this.button4.Location = new System.Drawing.Point(142, 366);
@@ -663,7 +713,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dataGridView1);
+            this.groupBox3.Controls.Add(this.실시간검색리스트);
             this.groupBox3.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox3.Location = new System.Drawing.Point(13, 131);
             this.groupBox3.Name = "groupBox3";
@@ -672,213 +722,50 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "::실시간조건검색";
             // 
-            // dataGridView1
+            // 실시간검색리스트
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.실시간검색리스트.AllowUserToAddRows = false;
+            this.실시간검색리스트.AllowUserToDeleteRows = false;
+            this.실시간검색리스트.BackgroundColor = System.Drawing.Color.White;
+            this.실시간검색리스트.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.실시간검색리스트.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.실시간검색리스트.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.실시간검색리스트.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.조건체크,
             this.상태,
             this.종목코드,
             this.종목명,
             this.구분,
             this.전일대비,
             this.현재가,
-            this.등락률,
+            this.등락율,
             this.거래량,
             this.편입가,
             this.편입대비,
-            this.수익률,
+            this.수익율,
             this.편입시간,
             this.매수조건식});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dataGridView1.GridColor = System.Drawing.Color.Black;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.ShowEditingIcon = false;
-            this.dataGridView1.Size = new System.Drawing.Size(957, 315);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // 상태
-            // 
-            dataGridViewCellStyle52.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle52.NullValue = null;
-            dataGridViewCellStyle52.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle52.SelectionForeColor = System.Drawing.Color.Black;
-            this.상태.DefaultCellStyle = dataGridViewCellStyle52;
-            this.상태.Frozen = true;
-            this.상태.HeaderText = "상태";
-            this.상태.Name = "상태";
-            this.상태.ReadOnly = true;
-            this.상태.Width = 40;
-            // 
-            // 종목코드
-            // 
-            dataGridViewCellStyle53.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle53.NullValue = null;
-            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.Black;
-            this.종목코드.DefaultCellStyle = dataGridViewCellStyle53;
-            this.종목코드.Frozen = true;
-            this.종목코드.HeaderText = "종목코드";
-            this.종목코드.Name = "종목코드";
-            this.종목코드.ReadOnly = true;
-            this.종목코드.Width = 80;
-            // 
-            // 종목명
-            // 
-            dataGridViewCellStyle54.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle54.NullValue = null;
-            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.Black;
-            this.종목명.DefaultCellStyle = dataGridViewCellStyle54;
-            this.종목명.Frozen = true;
-            this.종목명.HeaderText = "종목명";
-            this.종목명.Name = "종목명";
-            this.종목명.ReadOnly = true;
-            // 
-            // 구분
-            // 
-            dataGridViewCellStyle55.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle55.NullValue = null;
-            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.Black;
-            this.구분.DefaultCellStyle = dataGridViewCellStyle55;
-            this.구분.Frozen = true;
-            this.구분.HeaderText = "구분";
-            this.구분.Name = "구분";
-            this.구분.ReadOnly = true;
-            this.구분.Width = 40;
-            // 
-            // 전일대비
-            // 
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle56.Format = "C0";
-            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.Black;
-            this.전일대비.DefaultCellStyle = dataGridViewCellStyle56;
-            this.전일대비.Frozen = true;
-            this.전일대비.HeaderText = "전일대비";
-            this.전일대비.Name = "전일대비";
-            this.전일대비.ReadOnly = true;
-            this.전일대비.Width = 65;
-            // 
-            // 현재가
-            // 
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle57.Format = "C0";
-            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.Black;
-            this.현재가.DefaultCellStyle = dataGridViewCellStyle57;
-            this.현재가.Frozen = true;
-            this.현재가.HeaderText = "현재가";
-            this.현재가.Name = "현재가";
-            this.현재가.ReadOnly = true;
-            this.현재가.Width = 60;
-            // 
-            // 등락률
-            // 
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle58.Format = "N2";
-            dataGridViewCellStyle58.NullValue = null;
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.Black;
-            this.등락률.DefaultCellStyle = dataGridViewCellStyle58;
-            this.등락률.Frozen = true;
-            this.등락률.HeaderText = "등락률";
-            this.등락률.Name = "등락률";
-            this.등락률.ReadOnly = true;
-            this.등락률.Width = 60;
-            // 
-            // 거래량
-            // 
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle59.Format = "N0";
-            dataGridViewCellStyle59.NullValue = null;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.Black;
-            this.거래량.DefaultCellStyle = dataGridViewCellStyle59;
-            this.거래량.Frozen = true;
-            this.거래량.HeaderText = "거래량";
-            this.거래량.Name = "거래량";
-            this.거래량.ReadOnly = true;
-            this.거래량.Width = 60;
-            // 
-            // 편입가
-            // 
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle60.Format = "C0";
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.Color.Black;
-            this.편입가.DefaultCellStyle = dataGridViewCellStyle60;
-            this.편입가.Frozen = true;
-            this.편입가.HeaderText = "편입가";
-            this.편입가.Name = "편입가";
-            this.편입가.ReadOnly = true;
-            this.편입가.Width = 60;
-            // 
-            // 편입대비
-            // 
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle61.Format = "C0";
-            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.Color.Black;
-            this.편입대비.DefaultCellStyle = dataGridViewCellStyle61;
-            this.편입대비.Frozen = true;
-            this.편입대비.HeaderText = "편입대비";
-            this.편입대비.Name = "편입대비";
-            this.편입대비.ReadOnly = true;
-            this.편입대비.Width = 60;
-            // 
-            // 수익률
-            // 
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle62.Format = "N2";
-            dataGridViewCellStyle62.NullValue = null;
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.Color.Black;
-            this.수익률.DefaultCellStyle = dataGridViewCellStyle62;
-            this.수익률.Frozen = true;
-            this.수익률.HeaderText = "수익률";
-            this.수익률.Name = "수익률";
-            this.수익률.ReadOnly = true;
-            this.수익률.Width = 50;
-            // 
-            // 편입시간
-            // 
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle63.Format = "HH:mm:ss:sss";
-            dataGridViewCellStyle63.NullValue = null;
-            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.Color.Black;
-            this.편입시간.DefaultCellStyle = dataGridViewCellStyle63;
-            this.편입시간.Frozen = true;
-            this.편입시간.HeaderText = "편입시간";
-            this.편입시간.Name = "편입시간";
-            this.편입시간.ReadOnly = true;
-            this.편입시간.Width = 70;
-            // 
-            // 매수조건식
-            // 
-            dataGridViewCellStyle64.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle64.NullValue = null;
-            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.Color.Black;
-            this.매수조건식.DefaultCellStyle = dataGridViewCellStyle64;
-            this.매수조건식.Frozen = true;
-            this.매수조건식.HeaderText = "매수조건식";
-            this.매수조건식.Name = "매수조건식";
-            this.매수조건식.ReadOnly = true;
+            this.실시간검색리스트.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.실시간검색리스트.GridColor = System.Drawing.Color.Black;
+            this.실시간검색리스트.Location = new System.Drawing.Point(3, 22);
+            this.실시간검색리스트.Name = "실시간검색리스트";
+            this.실시간검색리스트.ReadOnly = true;
+            this.실시간검색리스트.RowHeadersVisible = false;
+            this.실시간검색리스트.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.실시간검색리스트.RowTemplate.Height = 23;
+            this.실시간검색리스트.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.실시간검색리스트.ShowEditingIcon = false;
+            this.실시간검색리스트.Size = new System.Drawing.Size(957, 315);
+            this.실시간검색리스트.TabIndex = 3;
+            this.실시간검색리스트.TabStop = false;
+            this.실시간검색리스트.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.실시간검색리스트_CellContentClick);
+            this.실시간검색리스트.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.실시간검색리스트_CellValueChanged);
+            this.실시간검색리스트.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.실시간검색리스트_RowsAdded);
             // 
             // groupBox4
             // 
             this.groupBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox4.Controls.Add(this.dataGridView2);
+            this.groupBox4.Controls.Add(this.단기계좌보유현황리스트);
             this.groupBox4.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox4.Location = new System.Drawing.Point(13, 477);
             this.groupBox4.Name = "groupBox4";
@@ -887,201 +774,66 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "::단기계좌보유현황";
             // 
-            // dataGridView2
+            // 단기계좌보유현황리스트
             // 
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.계좌종목코드,
-            this.계좌종목명,
-            this.계좌보유수량,
-            this.계좌매입가,
-            this.계좌현재가,
-            this.계좌거래량,
-            this.계좌매입금액,
-            this.계좌평가금액,
-            this.계좌평가손익,
-            this.계좌수익률,
-            this.계좌상태});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.GridColor = System.Drawing.Color.Black;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 19);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.ShowEditingIcon = false;
-            this.dataGridView2.Size = new System.Drawing.Size(957, 128);
-            this.dataGridView2.TabIndex = 4;
-            // 
-            // 계좌종목코드
-            // 
-            dataGridViewCellStyle65.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle65.NullValue = null;
-            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌종목코드.DefaultCellStyle = dataGridViewCellStyle65;
-            this.계좌종목코드.Frozen = true;
-            this.계좌종목코드.HeaderText = "종목코드";
-            this.계좌종목코드.Name = "계좌종목코드";
-            this.계좌종목코드.ReadOnly = true;
-            this.계좌종목코드.Width = 80;
-            // 
-            // 계좌종목명
-            // 
-            dataGridViewCellStyle66.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle66.NullValue = null;
-            dataGridViewCellStyle66.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle66.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌종목명.DefaultCellStyle = dataGridViewCellStyle66;
-            this.계좌종목명.Frozen = true;
-            this.계좌종목명.HeaderText = "종목명";
-            this.계좌종목명.Name = "계좌종목명";
-            this.계좌종목명.ReadOnly = true;
-            // 
-            // 계좌보유수량
-            // 
-            dataGridViewCellStyle67.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle67.Format = "N0";
-            dataGridViewCellStyle67.NullValue = null;
-            dataGridViewCellStyle67.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle67.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌보유수량.DefaultCellStyle = dataGridViewCellStyle67;
-            this.계좌보유수량.Frozen = true;
-            this.계좌보유수량.HeaderText = "보유수량";
-            this.계좌보유수량.Name = "계좌보유수량";
-            this.계좌보유수량.ReadOnly = true;
-            this.계좌보유수량.Width = 65;
-            // 
-            // 계좌매입가
-            // 
-            dataGridViewCellStyle68.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle68.Format = "C0";
-            dataGridViewCellStyle68.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle68.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌매입가.DefaultCellStyle = dataGridViewCellStyle68;
-            this.계좌매입가.Frozen = true;
-            this.계좌매입가.HeaderText = "매입가";
-            this.계좌매입가.Name = "계좌매입가";
-            this.계좌매입가.ReadOnly = true;
-            this.계좌매입가.Width = 80;
-            // 
-            // 계좌현재가
-            // 
-            dataGridViewCellStyle69.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle69.Format = "C0";
-            dataGridViewCellStyle69.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle69.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌현재가.DefaultCellStyle = dataGridViewCellStyle69;
-            this.계좌현재가.Frozen = true;
-            this.계좌현재가.HeaderText = "현재가";
-            this.계좌현재가.Name = "계좌현재가";
-            this.계좌현재가.ReadOnly = true;
-            this.계좌현재가.Width = 80;
-            // 
-            // 계좌거래량
-            // 
-            dataGridViewCellStyle70.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle70.Format = "N0";
-            dataGridViewCellStyle70.NullValue = null;
-            dataGridViewCellStyle70.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle70.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌거래량.DefaultCellStyle = dataGridViewCellStyle70;
-            this.계좌거래량.Frozen = true;
-            this.계좌거래량.HeaderText = "거래량";
-            this.계좌거래량.Name = "계좌거래량";
-            this.계좌거래량.ReadOnly = true;
-            // 
-            // 계좌매입금액
-            // 
-            dataGridViewCellStyle71.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle71.Format = "C0";
-            dataGridViewCellStyle71.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle71.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌매입금액.DefaultCellStyle = dataGridViewCellStyle71;
-            this.계좌매입금액.Frozen = true;
-            this.계좌매입금액.HeaderText = "매입금액";
-            this.계좌매입금액.Name = "계좌매입금액";
-            this.계좌매입금액.ReadOnly = true;
-            this.계좌매입금액.Width = 80;
-            // 
-            // 계좌평가금액
-            // 
-            dataGridViewCellStyle72.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle72.Format = "C0";
-            dataGridViewCellStyle72.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle72.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌평가금액.DefaultCellStyle = dataGridViewCellStyle72;
-            this.계좌평가금액.Frozen = true;
-            this.계좌평가금액.HeaderText = "평가금액";
-            this.계좌평가금액.Name = "계좌평가금액";
-            this.계좌평가금액.ReadOnly = true;
-            this.계좌평가금액.Width = 80;
-            // 
-            // 계좌평가손익
-            // 
-            dataGridViewCellStyle73.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle73.Format = "C0";
-            dataGridViewCellStyle73.NullValue = null;
-            dataGridViewCellStyle73.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle73.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌평가손익.DefaultCellStyle = dataGridViewCellStyle73;
-            this.계좌평가손익.Frozen = true;
-            this.계좌평가손익.HeaderText = "평가손익";
-            this.계좌평가손익.Name = "계좌평가손익";
-            this.계좌평가손익.ReadOnly = true;
-            this.계좌평가손익.Width = 65;
-            // 
-            // 계좌수익률
-            // 
-            dataGridViewCellStyle74.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle74.Format = "N2";
-            dataGridViewCellStyle74.NullValue = null;
-            dataGridViewCellStyle74.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle74.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌수익률.DefaultCellStyle = dataGridViewCellStyle74;
-            this.계좌수익률.Frozen = true;
-            this.계좌수익률.HeaderText = "수익률";
-            this.계좌수익률.Name = "계좌수익률";
-            this.계좌수익률.ReadOnly = true;
-            this.계좌수익률.Width = 60;
-            // 
-            // 계좌상태
-            // 
-            dataGridViewCellStyle75.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle75.NullValue = null;
-            dataGridViewCellStyle75.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle75.SelectionForeColor = System.Drawing.Color.Black;
-            this.계좌상태.DefaultCellStyle = dataGridViewCellStyle75;
-            this.계좌상태.Frozen = true;
-            this.계좌상태.HeaderText = "상태";
-            this.계좌상태.Name = "계좌상태";
-            this.계좌상태.ReadOnly = true;
-            this.계좌상태.Width = 60;
+            this.단기계좌보유현황리스트.AllowUserToAddRows = false;
+            this.단기계좌보유현황리스트.AllowUserToDeleteRows = false;
+            this.단기계좌보유현황리스트.AllowUserToResizeColumns = false;
+            this.단기계좌보유현황리스트.AllowUserToResizeRows = false;
+            this.단기계좌보유현황리스트.BackgroundColor = System.Drawing.Color.White;
+            this.단기계좌보유현황리스트.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.단기계좌보유현황리스트.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.단기계좌보유현황리스트.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.단기계좌보유현황리스트.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.단기체크,
+            this.단기종목코드,
+            this.단기종목명,
+            this.단기보유수량,
+            this.단기매입가,
+            this.단기현재가,
+            this.단기거래량,
+            this.단기매입금액,
+            this.단기평가금액,
+            this.단기손익금액,
+            this.단기수익율,
+            this.단기상태});
+            this.단기계좌보유현황리스트.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.단기계좌보유현황리스트.GridColor = System.Drawing.Color.Black;
+            this.단기계좌보유현황리스트.Location = new System.Drawing.Point(3, 19);
+            this.단기계좌보유현황리스트.Name = "단기계좌보유현황리스트";
+            this.단기계좌보유현황리스트.ReadOnly = true;
+            this.단기계좌보유현황리스트.RowHeadersVisible = false;
+            this.단기계좌보유현황리스트.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.단기계좌보유현황리스트.RowTemplate.Height = 23;
+            this.단기계좌보유현황리스트.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.단기계좌보유현황리스트.ShowEditingIcon = false;
+            this.단기계좌보유현황리스트.Size = new System.Drawing.Size(957, 128);
+            this.단기계좌보유현황리스트.TabIndex = 4;
+            this.단기계좌보유현황리스트.TabStop = false;
+            this.단기계좌보유현황리스트.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.단기계좌보유현황리스트_CellContentClick);
+            this.단기계좌보유현황리스트.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.단기계좌보유현황리스트_CellValueChanged);
+            this.단기계좌보유현황리스트.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.단기계좌보유현황리스트_RowsAdded);
             // 
             // statusBar
             // 
             this.statusBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.statusTime,
             this.toolStripStatusLabel1});
-            this.statusBar.Location = new System.Drawing.Point(0, 792);
+            this.statusBar.Location = new System.Drawing.Point(0, 794);
             this.statusBar.Name = "statusBar";
-            this.statusBar.Size = new System.Drawing.Size(1262, 24);
+            this.statusBar.Size = new System.Drawing.Size(1262, 22);
             this.statusBar.TabIndex = 5;
             // 
             // statusTime
             // 
             this.statusTime.Name = "statusTime";
-            this.statusTime.Size = new System.Drawing.Size(141, 19);
+            this.statusTime.Size = new System.Drawing.Size(121, 17);
             this.statusTime.Text = "toolStripStatusLabel1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(72, 19);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(60, 17);
             this.toolStripStatusLabel1.Text = "statusText";
             // 
             // curTimeLabel
@@ -1114,7 +866,7 @@
             // groupBox5
             // 
             this.groupBox5.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox5.Controls.Add(this.dataGridView3);
+            this.groupBox5.Controls.Add(this.장기계좌보유현황리스트);
             this.groupBox5.Font = new System.Drawing.Font("맑은 고딕", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.groupBox5.Location = new System.Drawing.Point(13, 633);
             this.groupBox5.Name = "groupBox5";
@@ -1123,180 +875,579 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "::장기계좌보유현황";
             // 
-            // dataGridView3
+            // 장기계좌보유현황리스트
             // 
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            this.dataGridView3.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn4,
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9,
-            this.dataGridViewTextBoxColumn10,
-            this.dataGridViewTextBoxColumn11});
-            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView3.GridColor = System.Drawing.Color.Black;
-            this.dataGridView3.Location = new System.Drawing.Point(3, 19);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.dataGridView3.RowTemplate.Height = 23;
-            this.dataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView3.ShowEditingIcon = false;
-            this.dataGridView3.Size = new System.Drawing.Size(957, 128);
-            this.dataGridView3.TabIndex = 5;
+            this.장기계좌보유현황리스트.AllowUserToAddRows = false;
+            this.장기계좌보유현황리스트.AllowUserToDeleteRows = false;
+            this.장기계좌보유현황리스트.BackgroundColor = System.Drawing.Color.White;
+            this.장기계좌보유현황리스트.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.장기계좌보유현황리스트.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.장기계좌보유현황리스트.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.장기계좌보유현황리스트.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.장기종목코드,
+            this.장기종목명,
+            this.장기보유수량,
+            this.장기매입가,
+            this.장기현재가,
+            this.장기거래량,
+            this.장기매입금액,
+            this.장기평가금액,
+            this.장기평가손익,
+            this.장기수익율,
+            this.장기상태});
+            this.장기계좌보유현황리스트.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.장기계좌보유현황리스트.GridColor = System.Drawing.Color.Black;
+            this.장기계좌보유현황리스트.Location = new System.Drawing.Point(3, 19);
+            this.장기계좌보유현황리스트.Name = "장기계좌보유현황리스트";
+            this.장기계좌보유현황리스트.ReadOnly = true;
+            this.장기계좌보유현황리스트.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.장기계좌보유현황리스트.RowTemplate.Height = 23;
+            this.장기계좌보유현황리스트.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.장기계좌보유현황리스트.ShowEditingIcon = false;
+            this.장기계좌보유현황리스트.Size = new System.Drawing.Size(957, 128);
+            this.장기계좌보유현황리스트.TabIndex = 5;
+            this.장기계좌보유현황리스트.TabStop = false;
             // 
-            // dataGridViewTextBoxColumn1
+            // 장기종목코드
             // 
-            dataGridViewCellStyle76.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle76.NullValue = null;
-            dataGridViewCellStyle76.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle76.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle76;
-            this.dataGridViewTextBoxColumn1.Frozen = true;
-            this.dataGridViewTextBoxColumn1.HeaderText = "종목코드";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 80;
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle35.NullValue = null;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기종목코드.DefaultCellStyle = dataGridViewCellStyle35;
+            this.장기종목코드.Frozen = true;
+            this.장기종목코드.HeaderText = "종목코드";
+            this.장기종목코드.Name = "장기종목코드";
+            this.장기종목코드.ReadOnly = true;
+            this.장기종목코드.Width = 80;
             // 
-            // dataGridViewTextBoxColumn2
+            // 장기종목명
             // 
-            dataGridViewCellStyle77.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle77.NullValue = null;
-            dataGridViewCellStyle77.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle77.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn2.DefaultCellStyle = dataGridViewCellStyle77;
-            this.dataGridViewTextBoxColumn2.Frozen = true;
-            this.dataGridViewTextBoxColumn2.HeaderText = "종목명";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle36.NullValue = null;
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기종목명.DefaultCellStyle = dataGridViewCellStyle36;
+            this.장기종목명.Frozen = true;
+            this.장기종목명.HeaderText = "종목명";
+            this.장기종목명.Name = "장기종목명";
+            this.장기종목명.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn3
+            // 장기보유수량
             // 
-            dataGridViewCellStyle78.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle78.Format = "N0";
-            dataGridViewCellStyle78.NullValue = null;
-            dataGridViewCellStyle78.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle78.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle78;
-            this.dataGridViewTextBoxColumn3.Frozen = true;
-            this.dataGridViewTextBoxColumn3.HeaderText = "보유수량";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Width = 65;
+            dataGridViewCellStyle37.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle37.Format = "N0";
+            dataGridViewCellStyle37.NullValue = null;
+            dataGridViewCellStyle37.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle37.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기보유수량.DefaultCellStyle = dataGridViewCellStyle37;
+            this.장기보유수량.Frozen = true;
+            this.장기보유수량.HeaderText = "보유수량";
+            this.장기보유수량.Name = "장기보유수량";
+            this.장기보유수량.ReadOnly = true;
+            this.장기보유수량.Width = 65;
             // 
-            // dataGridViewTextBoxColumn4
+            // 장기매입가
             // 
-            dataGridViewCellStyle79.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle79.Format = "C0";
-            dataGridViewCellStyle79.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle79.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle79;
-            this.dataGridViewTextBoxColumn4.Frozen = true;
-            this.dataGridViewTextBoxColumn4.HeaderText = "매입가";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            this.dataGridViewTextBoxColumn4.ReadOnly = true;
-            this.dataGridViewTextBoxColumn4.Width = 80;
+            dataGridViewCellStyle38.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle38.Format = "C0";
+            dataGridViewCellStyle38.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle38.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기매입가.DefaultCellStyle = dataGridViewCellStyle38;
+            this.장기매입가.Frozen = true;
+            this.장기매입가.HeaderText = "매입가";
+            this.장기매입가.Name = "장기매입가";
+            this.장기매입가.ReadOnly = true;
+            this.장기매입가.Width = 80;
             // 
-            // dataGridViewTextBoxColumn5
+            // 장기현재가
             // 
-            dataGridViewCellStyle80.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle80.Format = "C0";
-            dataGridViewCellStyle80.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle80.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle80;
-            this.dataGridViewTextBoxColumn5.Frozen = true;
-            this.dataGridViewTextBoxColumn5.HeaderText = "현재가";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
-            this.dataGridViewTextBoxColumn5.Width = 80;
+            dataGridViewCellStyle39.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle39.Format = "C0";
+            dataGridViewCellStyle39.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle39.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기현재가.DefaultCellStyle = dataGridViewCellStyle39;
+            this.장기현재가.Frozen = true;
+            this.장기현재가.HeaderText = "현재가";
+            this.장기현재가.Name = "장기현재가";
+            this.장기현재가.ReadOnly = true;
+            this.장기현재가.Width = 80;
             // 
-            // dataGridViewTextBoxColumn6
+            // 장기거래량
             // 
-            dataGridViewCellStyle81.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle81.Format = "N0";
-            dataGridViewCellStyle81.NullValue = null;
-            dataGridViewCellStyle81.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle81.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle81;
-            this.dataGridViewTextBoxColumn6.Frozen = true;
-            this.dataGridViewTextBoxColumn6.HeaderText = "거래량";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            dataGridViewCellStyle40.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle40.Format = "N0";
+            dataGridViewCellStyle40.NullValue = null;
+            dataGridViewCellStyle40.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle40.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기거래량.DefaultCellStyle = dataGridViewCellStyle40;
+            this.장기거래량.Frozen = true;
+            this.장기거래량.HeaderText = "거래량";
+            this.장기거래량.Name = "장기거래량";
+            this.장기거래량.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn7
+            // 장기매입금액
             // 
-            dataGridViewCellStyle82.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle82.Format = "C0";
-            dataGridViewCellStyle82.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle82.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle82;
-            this.dataGridViewTextBoxColumn7.Frozen = true;
-            this.dataGridViewTextBoxColumn7.HeaderText = "매입금액";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            this.dataGridViewTextBoxColumn7.ReadOnly = true;
-            this.dataGridViewTextBoxColumn7.Width = 80;
+            dataGridViewCellStyle41.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle41.Format = "C0";
+            dataGridViewCellStyle41.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle41.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기매입금액.DefaultCellStyle = dataGridViewCellStyle41;
+            this.장기매입금액.Frozen = true;
+            this.장기매입금액.HeaderText = "매입금액";
+            this.장기매입금액.Name = "장기매입금액";
+            this.장기매입금액.ReadOnly = true;
+            this.장기매입금액.Width = 80;
             // 
-            // dataGridViewTextBoxColumn8
+            // 장기평가금액
             // 
-            dataGridViewCellStyle83.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle83.Format = "C0";
-            dataGridViewCellStyle83.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle83.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn8.DefaultCellStyle = dataGridViewCellStyle83;
-            this.dataGridViewTextBoxColumn8.Frozen = true;
-            this.dataGridViewTextBoxColumn8.HeaderText = "평가금액";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            this.dataGridViewTextBoxColumn8.ReadOnly = true;
-            this.dataGridViewTextBoxColumn8.Width = 80;
+            dataGridViewCellStyle42.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle42.Format = "C0";
+            dataGridViewCellStyle42.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle42.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기평가금액.DefaultCellStyle = dataGridViewCellStyle42;
+            this.장기평가금액.Frozen = true;
+            this.장기평가금액.HeaderText = "평가금액";
+            this.장기평가금액.Name = "장기평가금액";
+            this.장기평가금액.ReadOnly = true;
+            this.장기평가금액.Width = 80;
             // 
-            // dataGridViewTextBoxColumn9
+            // 장기평가손익
             // 
-            dataGridViewCellStyle84.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle84.Format = "C0";
-            dataGridViewCellStyle84.NullValue = null;
-            dataGridViewCellStyle84.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle84.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn9.DefaultCellStyle = dataGridViewCellStyle84;
-            this.dataGridViewTextBoxColumn9.Frozen = true;
-            this.dataGridViewTextBoxColumn9.HeaderText = "평가손익";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            this.dataGridViewTextBoxColumn9.ReadOnly = true;
-            this.dataGridViewTextBoxColumn9.Width = 65;
+            dataGridViewCellStyle43.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle43.Format = "C0";
+            dataGridViewCellStyle43.NullValue = null;
+            dataGridViewCellStyle43.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle43.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기평가손익.DefaultCellStyle = dataGridViewCellStyle43;
+            this.장기평가손익.Frozen = true;
+            this.장기평가손익.HeaderText = "평가손익";
+            this.장기평가손익.Name = "장기평가손익";
+            this.장기평가손익.ReadOnly = true;
+            this.장기평가손익.Width = 65;
             // 
-            // dataGridViewTextBoxColumn10
+            // 장기수익율
             // 
-            dataGridViewCellStyle85.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle85.Format = "N2";
-            dataGridViewCellStyle85.NullValue = null;
-            dataGridViewCellStyle85.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle85.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn10.DefaultCellStyle = dataGridViewCellStyle85;
-            this.dataGridViewTextBoxColumn10.Frozen = true;
-            this.dataGridViewTextBoxColumn10.HeaderText = "수익률";
-            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
-            this.dataGridViewTextBoxColumn10.ReadOnly = true;
-            this.dataGridViewTextBoxColumn10.Width = 60;
+            dataGridViewCellStyle44.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle44.Format = "N2";
+            dataGridViewCellStyle44.NullValue = null;
+            dataGridViewCellStyle44.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle44.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기수익율.DefaultCellStyle = dataGridViewCellStyle44;
+            this.장기수익율.Frozen = true;
+            this.장기수익율.HeaderText = "수익율";
+            this.장기수익율.Name = "장기수익율";
+            this.장기수익율.ReadOnly = true;
+            this.장기수익율.Width = 60;
             // 
-            // dataGridViewTextBoxColumn11
+            // 장기상태
             // 
-            dataGridViewCellStyle86.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            dataGridViewCellStyle86.NullValue = null;
-            dataGridViewCellStyle86.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
-            dataGridViewCellStyle86.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataGridViewTextBoxColumn11.DefaultCellStyle = dataGridViewCellStyle86;
-            this.dataGridViewTextBoxColumn11.Frozen = true;
-            this.dataGridViewTextBoxColumn11.HeaderText = "상태";
-            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
-            this.dataGridViewTextBoxColumn11.ReadOnly = true;
-            this.dataGridViewTextBoxColumn11.Width = 60;
+            dataGridViewCellStyle45.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle45.NullValue = null;
+            dataGridViewCellStyle45.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle45.SelectionForeColor = System.Drawing.Color.Black;
+            this.장기상태.DefaultCellStyle = dataGridViewCellStyle45;
+            this.장기상태.Frozen = true;
+            this.장기상태.HeaderText = "상태";
+            this.장기상태.Name = "장기상태";
+            this.장기상태.ReadOnly = true;
+            this.장기상태.Width = 60;
+            // 
+            // chart1
+            // 
+            this.chart1.BackColor = System.Drawing.SystemColors.Control;
+            this.chart1.BorderSkin.BorderColor = System.Drawing.Color.Red;
+            this.chart1.BorderSkin.BorderDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Dash;
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Alignment = System.Drawing.StringAlignment.Far;
+            legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Bottom;
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(6, 413);
+            this.chart1.Name = "chart1";
+            this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            series1.Points.Add(dataPoint1);
+            series1.Points.Add(dataPoint2);
+            series1.Points.Add(dataPoint3);
+            series1.Points.Add(dataPoint4);
+            series1.Points.Add(dataPoint5);
+            series1.Points.Add(dataPoint6);
+            series1.Points.Add(dataPoint7);
+            series1.XValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.Date;
+            series1.YValueType = System.Windows.Forms.DataVisualization.Charting.ChartValueType.UInt64;
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(257, 272);
+            this.chart1.TabIndex = 13;
+            this.chart1.Text = "chart1";
+            // 
+            // 조건체크
+            // 
+            this.조건체크.Frozen = true;
+            this.조건체크.HeaderText = " ";
+            this.조건체크.Name = "조건체크";
+            this.조건체크.ReadOnly = true;
+            this.조건체크.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.조건체크.Width = 35;
+            // 
+            // 상태
+            // 
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle11.NullValue = null;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            this.상태.DefaultCellStyle = dataGridViewCellStyle11;
+            this.상태.Frozen = true;
+            this.상태.HeaderText = "상태";
+            this.상태.Name = "상태";
+            this.상태.ReadOnly = true;
+            this.상태.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.상태.Width = 40;
+            // 
+            // 종목코드
+            // 
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle12.NullValue = null;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            this.종목코드.DefaultCellStyle = dataGridViewCellStyle12;
+            this.종목코드.Frozen = true;
+            this.종목코드.HeaderText = "종목코드";
+            this.종목코드.Name = "종목코드";
+            this.종목코드.ReadOnly = true;
+            this.종목코드.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.종목코드.Width = 70;
+            // 
+            // 종목명
+            // 
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle13.NullValue = null;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            this.종목명.DefaultCellStyle = dataGridViewCellStyle13;
+            this.종목명.Frozen = true;
+            this.종목명.HeaderText = "종목명";
+            this.종목명.Name = "종목명";
+            this.종목명.ReadOnly = true;
+            this.종목명.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.종목명.Width = 120;
+            // 
+            // 구분
+            // 
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle14.NullValue = null;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            this.구분.DefaultCellStyle = dataGridViewCellStyle14;
+            this.구분.Frozen = true;
+            this.구분.HeaderText = "구분";
+            this.구분.Name = "구분";
+            this.구분.ReadOnly = true;
+            this.구분.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.구분.Width = 40;
+            // 
+            // 전일대비
+            // 
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle15.Format = "C0";
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            this.전일대비.DefaultCellStyle = dataGridViewCellStyle15;
+            this.전일대비.Frozen = true;
+            this.전일대비.HeaderText = "전일대비";
+            this.전일대비.Name = "전일대비";
+            this.전일대비.ReadOnly = true;
+            this.전일대비.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.전일대비.Width = 65;
+            // 
+            // 현재가
+            // 
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle16.Format = "#,#";
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            this.현재가.DefaultCellStyle = dataGridViewCellStyle16;
+            this.현재가.Frozen = true;
+            this.현재가.HeaderText = "현재가";
+            this.현재가.Name = "현재가";
+            this.현재가.ReadOnly = true;
+            this.현재가.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.현재가.Width = 80;
+            // 
+            // 등락율
+            // 
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle17.Format = "0.##%";
+            dataGridViewCellStyle17.NullValue = null;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            this.등락율.DefaultCellStyle = dataGridViewCellStyle17;
+            this.등락율.Frozen = true;
+            this.등락율.HeaderText = "등락율";
+            this.등락율.Name = "등락율";
+            this.등락율.ReadOnly = true;
+            this.등락율.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.등락율.Width = 60;
+            // 
+            // 거래량
+            // 
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle18.Format = "#,#";
+            dataGridViewCellStyle18.NullValue = null;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            this.거래량.DefaultCellStyle = dataGridViewCellStyle18;
+            this.거래량.Frozen = true;
+            this.거래량.HeaderText = "거래량";
+            this.거래량.Name = "거래량";
+            this.거래량.ReadOnly = true;
+            this.거래량.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // 편입가
+            // 
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle19.Format = "#,#";
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            this.편입가.DefaultCellStyle = dataGridViewCellStyle19;
+            this.편입가.Frozen = true;
+            this.편입가.HeaderText = "편입가";
+            this.편입가.Name = "편입가";
+            this.편입가.ReadOnly = true;
+            this.편입가.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.편입가.Width = 80;
+            // 
+            // 편입대비
+            // 
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle20.Format = "#,#";
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            this.편입대비.DefaultCellStyle = dataGridViewCellStyle20;
+            this.편입대비.Frozen = true;
+            this.편입대비.HeaderText = "편입대비";
+            this.편입대비.Name = "편입대비";
+            this.편입대비.ReadOnly = true;
+            this.편입대비.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.편입대비.Width = 80;
+            // 
+            // 수익율
+            // 
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle21.Format = "0.##%";
+            dataGridViewCellStyle21.NullValue = null;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
+            this.수익율.DefaultCellStyle = dataGridViewCellStyle21;
+            this.수익율.Frozen = true;
+            this.수익율.HeaderText = "수익율";
+            this.수익율.Name = "수익율";
+            this.수익율.ReadOnly = true;
+            this.수익율.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.수익율.Width = 60;
+            // 
+            // 편입시간
+            // 
+            dataGridViewCellStyle22.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle22.Format = "HH:mm:ss:sss";
+            dataGridViewCellStyle22.NullValue = null;
+            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
+            this.편입시간.DefaultCellStyle = dataGridViewCellStyle22;
+            this.편입시간.Frozen = true;
+            this.편입시간.HeaderText = "편입시간";
+            this.편입시간.Name = "편입시간";
+            this.편입시간.ReadOnly = true;
+            this.편입시간.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.편입시간.Width = 80;
+            // 
+            // 매수조건식
+            // 
+            dataGridViewCellStyle23.Font = new System.Drawing.Font("나눔고딕", 8.249999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            dataGridViewCellStyle23.NullValue = null;
+            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
+            this.매수조건식.DefaultCellStyle = dataGridViewCellStyle23;
+            this.매수조건식.Frozen = true;
+            this.매수조건식.HeaderText = "매수조건식";
+            this.매수조건식.Name = "매수조건식";
+            this.매수조건식.ReadOnly = true;
+            this.매수조건식.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.매수조건식.Width = 120;
+            // 
+            // 단기체크
+            // 
+            this.단기체크.FalseValue = "false";
+            this.단기체크.Frozen = true;
+            this.단기체크.HeaderText = " ";
+            this.단기체크.IndeterminateValue = "false";
+            this.단기체크.Name = "단기체크";
+            this.단기체크.ReadOnly = true;
+            this.단기체크.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기체크.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.단기체크.TrueValue = "true";
+            this.단기체크.Width = 35;
+            // 
+            // 단기종목코드
+            // 
+            dataGridViewCellStyle24.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle24.NullValue = null;
+            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기종목코드.DefaultCellStyle = dataGridViewCellStyle24;
+            this.단기종목코드.Frozen = true;
+            this.단기종목코드.HeaderText = "종목코드";
+            this.단기종목코드.Name = "단기종목코드";
+            this.단기종목코드.ReadOnly = true;
+            this.단기종목코드.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기종목코드.Width = 70;
+            // 
+            // 단기종목명
+            // 
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle25.NullValue = null;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기종목명.DefaultCellStyle = dataGridViewCellStyle25;
+            this.단기종목명.Frozen = true;
+            this.단기종목명.HeaderText = "종목명";
+            this.단기종목명.Name = "단기종목명";
+            this.단기종목명.ReadOnly = true;
+            this.단기종목명.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기종목명.Width = 120;
+            // 
+            // 단기보유수량
+            // 
+            dataGridViewCellStyle26.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle26.Format = "#주";
+            dataGridViewCellStyle26.NullValue = null;
+            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기보유수량.DefaultCellStyle = dataGridViewCellStyle26;
+            this.단기보유수량.Frozen = true;
+            this.단기보유수량.HeaderText = "수량";
+            this.단기보유수량.Name = "단기보유수량";
+            this.단기보유수량.ReadOnly = true;
+            this.단기보유수량.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기보유수량.Width = 60;
+            // 
+            // 단기매입가
+            // 
+            dataGridViewCellStyle27.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle27.Format = "#,#";
+            dataGridViewCellStyle27.NullValue = null;
+            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기매입가.DefaultCellStyle = dataGridViewCellStyle27;
+            this.단기매입가.Frozen = true;
+            this.단기매입가.HeaderText = "매입가";
+            this.단기매입가.Name = "단기매입가";
+            this.단기매입가.ReadOnly = true;
+            this.단기매입가.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기매입가.Width = 80;
+            // 
+            // 단기현재가
+            // 
+            dataGridViewCellStyle28.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle28.Format = "#,#";
+            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기현재가.DefaultCellStyle = dataGridViewCellStyle28;
+            this.단기현재가.Frozen = true;
+            this.단기현재가.HeaderText = "현재가";
+            this.단기현재가.Name = "단기현재가";
+            this.단기현재가.ReadOnly = true;
+            this.단기현재가.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기현재가.Width = 80;
+            // 
+            // 단기거래량
+            // 
+            dataGridViewCellStyle29.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle29.Format = "#,#";
+            dataGridViewCellStyle29.NullValue = null;
+            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기거래량.DefaultCellStyle = dataGridViewCellStyle29;
+            this.단기거래량.Frozen = true;
+            this.단기거래량.HeaderText = "거래량";
+            this.단기거래량.Name = "단기거래량";
+            this.단기거래량.ReadOnly = true;
+            this.단기거래량.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // 단기매입금액
+            // 
+            dataGridViewCellStyle30.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle30.Format = "#,#";
+            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기매입금액.DefaultCellStyle = dataGridViewCellStyle30;
+            this.단기매입금액.Frozen = true;
+            this.단기매입금액.HeaderText = "매입금액";
+            this.단기매입금액.Name = "단기매입금액";
+            this.단기매입금액.ReadOnly = true;
+            this.단기매입금액.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기매입금액.Width = 80;
+            // 
+            // 단기평가금액
+            // 
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle31.Format = "#,#";
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기평가금액.DefaultCellStyle = dataGridViewCellStyle31;
+            this.단기평가금액.Frozen = true;
+            this.단기평가금액.HeaderText = "평가금액";
+            this.단기평가금액.Name = "단기평가금액";
+            this.단기평가금액.ReadOnly = true;
+            this.단기평가금액.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기평가금액.Width = 80;
+            // 
+            // 단기손익금액
+            // 
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle32.Format = "#,#";
+            dataGridViewCellStyle32.NullValue = null;
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기손익금액.DefaultCellStyle = dataGridViewCellStyle32;
+            this.단기손익금액.Frozen = true;
+            this.단기손익금액.HeaderText = "손익금액";
+            this.단기손익금액.Name = "단기손익금액";
+            this.단기손익금액.ReadOnly = true;
+            this.단기손익금액.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기손익금액.Width = 65;
+            // 
+            // 단기수익율
+            // 
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle33.Format = "0.00%";
+            dataGridViewCellStyle33.NullValue = null;
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기수익율.DefaultCellStyle = dataGridViewCellStyle33;
+            this.단기수익율.Frozen = true;
+            this.단기수익율.HeaderText = "수익율";
+            this.단기수익율.Name = "단기수익율";
+            this.단기수익율.ReadOnly = true;
+            this.단기수익율.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기수익율.Width = 60;
+            // 
+            // 단기상태
+            // 
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("나눔고딕", 7.5F);
+            dataGridViewCellStyle34.NullValue = null;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.DarkTurquoise;
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.Black;
+            this.단기상태.DefaultCellStyle = dataGridViewCellStyle34;
+            this.단기상태.Frozen = true;
+            this.단기상태.HeaderText = "상태";
+            this.단기상태.Name = "단기상태";
+            this.단기상태.ReadOnly = true;
+            this.단기상태.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.단기상태.Width = 40;
             // 
             // MainForm
             // 
@@ -1327,13 +1478,14 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.실시간검색리스트)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.단기계좌보유현황리스트)).EndInit();
             this.statusBar.ResumeLayout(false);
             this.statusBar.PerformLayout();
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.장기계좌보유현황리스트)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1376,27 +1528,27 @@
         private System.Windows.Forms.ToolStripStatusLabel statusTime;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView 실시간검색리스트;
+        private System.Windows.Forms.DataGridView 단기계좌보유현황리스트;
         private System.Windows.Forms.Label serverGubunLabal;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 상태;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 종목코드;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 종목명;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 구분;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 전일대비;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 현재가;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 등락률;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 거래량;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 편입가;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 편입대비;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 수익률;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 편입시간;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 매수조건식;
         private System.Windows.Forms.Label 개인정보;
+        private System.Windows.Forms.GroupBox groupBox5;
+        private System.Windows.Forms.DataGridView 장기계좌보유현황리스트;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기종목코드;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기종목명;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기보유수량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기매입가;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기현재가;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기거래량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기매입금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기평가금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기평가손익;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기수익율;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 장기상태;
         private System.Windows.Forms.DataGridViewTextBoxColumn 계좌번호;
         private System.Windows.Forms.DataGridViewTextBoxColumn 추정자산;
         private System.Windows.Forms.DataGridViewTextBoxColumn 주문가능액;
@@ -1406,30 +1558,33 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn 매매수수료;
         private System.Windows.Forms.DataGridViewTextBoxColumn 매매세금;
         private System.Windows.Forms.DataGridViewTextBoxColumn 손익금;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌종목코드;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌종목명;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌보유수량;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌매입가;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌현재가;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌거래량;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌매입금액;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌평가금액;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌평가손익;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌수익률;
-        private System.Windows.Forms.DataGridViewTextBoxColumn 계좌상태;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn 조건체크;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 상태;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 종목코드;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 종목명;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 구분;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 전일대비;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 현재가;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 등락율;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 거래량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 편입가;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 편입대비;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 수익율;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 편입시간;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 매수조건식;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn 단기체크;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기종목코드;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기종목명;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기보유수량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기매입가;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기현재가;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기거래량;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기매입금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기평가금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기손익금액;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기수익율;
+        private System.Windows.Forms.DataGridViewTextBoxColumn 단기상태;
     }
 }
 
