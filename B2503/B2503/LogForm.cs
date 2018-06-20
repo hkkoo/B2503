@@ -32,25 +32,50 @@ namespace B2503
         {
             조건식로그,
             실시간주식거래,
-            주식매매로그,
             송수신이벤트,
             자동매매로그
         }
 
-        public void Logger(Log type, string format, params Object[] args)
+
+
+        public void Logger(Log type, logLevel loglevel, string format, params Object[] args)
         {
             string message = String.Format(format, args);
-            message = message + "\n";
+            string time = System.DateTime.Now.ToString();
+            string test;
+            string logtype = "전체";
+
+
             switch (type)
             {
                 case Log.송수신이벤트:
-                    송수신이벤트로그.AppendText(message);
-                    전체로그.AppendText(message);
-                    logger.log(Future.Logger.logLevel.Info, "송수신이벤트", message);
+                    logtype = "송수신이벤트";
+                    test = "<" + loglevel + ">" + "[" + time + "]" + logtype + " : " + message + " \r\n";
+                    송수신이벤트로그.AppendText(test);
+                    전체로그.AppendText(test);
+
                     break;
-                case Log.실시간주식거래:                    
+                case Log.실시간주식거래:
+                    logtype = "실시간주식거래";
+                    test = "<" + loglevel + ">" + "[" + time + "]" + logtype + " : " + message + " \r\n";
+                    실시간주식거래.AppendText(test);
+                    전체로그.AppendText(test);
+                    break;
+                case Log.조건식로그:
+                    logtype = "조건식로그";
+                    test = "<" + loglevel + ">" + "[" + time + "]" + logtype + " : " + message + " \r\n";
+                    조건식로그.AppendText(test);
+                    전체로그.AppendText(test);
+                    break;
+                case Log.자동매매로그:
+                    logtype = "자동매매로그";
+                    test = "<" + loglevel + ">" + "[" + time + "]" + logtype + " : " + message + " \r\n";
+                    조건식로그.AppendText(test);
+                    전체로그.AppendText(test);
                     break;
             }
+            //파일에 log write
+            logger.log(loglevel, logtype, message);
         }
     }
 }

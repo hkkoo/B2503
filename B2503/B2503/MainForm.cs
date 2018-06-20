@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using KiwoomCode;
+using Future.Logger;
 
 namespace B2503
 {
@@ -98,7 +99,7 @@ namespace B2503
         {
             if (axKHOpenAPI.CommConnect() == 0) {
                 statusBar.Items[1].Text = "로그인 성공";
-                logform.Logger(LogForm.Log.송수신이벤트, "로그인 성공");
+                logform.Logger(LogForm.Log.송수신이벤트, logLevel.Error, "로그인 성공");
             }
             else
                 statusBar.Items[1].Text = "로그인 실패";
@@ -142,7 +143,7 @@ namespace B2503
         private void axKHOpenAPI_OnEventConnect(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnEventConnectEvent e)
         {
             if (Error.IsError(e.nErrCode)) {
-                logform.Logger(LogForm.Log.송수신이벤트, "// [로그인 처리결과] " + Error.GetErrorMessage());
+                logform.Logger(LogForm.Log.송수신이벤트, logLevel.Info, "// [로그인 처리결과] " + Error.GetErrorMessage());
                 System.Threading.Thread.Sleep(500);         //  로그인 성공후 잠시 기다려서 조건식 불러오기 자동 실행하기
                 axKHOpenAPI.GetConditionLoad();
                 개인정보.Text = "ID: " + axKHOpenAPI.GetLoginInfo("USER_ID");
@@ -156,8 +157,8 @@ namespace B2503
                 ;
                 //Logger(Log.실시간, "로그인창 열기 실패");
                 //Logger(Log.실시간, "로그인 실패로 조건식리스트 불러오기 실패");
-                logform.Logger(LogForm.Log.송수신이벤트, "로그인창 열기 실패");
-                logform.Logger(LogForm.Log.송수신이벤트, "로그인 실패로 조건식리스트 불러오기 실패");
+                logform.Logger(LogForm.Log.송수신이벤트, logLevel.Error, "로그인창 열기 실패");
+                logform.Logger(LogForm.Log.송수신이벤트, logLevel.Error, "로그인 실패로 조건식리스트 불러오기 실패");
             }
         }
 
