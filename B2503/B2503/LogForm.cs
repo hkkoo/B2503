@@ -19,6 +19,7 @@ namespace B2503
         {
             InitializeComponent();
             this.Location = new Point(mainformPostion.X - this.Size.Width + 14, mainformPostion.Y);
+            
             logger = Future.Logger.Logger.singleton();
             
 ;        }
@@ -26,6 +27,7 @@ namespace B2503
         private void LogForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             Properties.Settings.Default.logFormEnabled = false;
+            logger.shutdown();
         }
 
         public enum Log
