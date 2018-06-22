@@ -303,6 +303,7 @@
             this.계좌리스트.Size = new System.Drawing.Size(957, 76);
             this.계좌리스트.TabIndex = 3;
             this.계좌리스트.TabStop = false;
+            this.계좌리스트.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.계좌리스트_CellValueChanged);
             this.계좌리스트.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.계좌리스트_RowsAdded);
             // 
             // 계좌번호
