@@ -62,7 +62,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="KiwoomCode.cs" />
-    <Compile Include="Log.cs" />
     <Compile Include="LogForm.cs">
       <SubType>Form</SubType>
     </Compile>

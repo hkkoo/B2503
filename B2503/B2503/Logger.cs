@@ -10,6 +10,7 @@ using System.IO;
 
 namespace Future.Logger
 {
+    
     public enum logLevel
     {
         Critical = 0,
