@@ -38,7 +38,7 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.조건식로그 = new System.Windows.Forms.RichTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.실시간주식거래 = new System.Windows.Forms.RichTextBox();
+            this.디버깅로그 = new System.Windows.Forms.RichTextBox();
             this.tabControl1.SuspendLayout();
             this.tab1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -55,6 +55,7 @@
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -64,10 +65,10 @@
             // tab1
             // 
             this.tab1.Controls.Add(this.전체로그);
-            this.tab1.Location = new System.Drawing.Point(4, 22);
+            this.tab1.Location = new System.Drawing.Point(4, 23);
             this.tab1.Name = "tab1";
             this.tab1.Padding = new System.Windows.Forms.Padding(3);
-            this.tab1.Size = new System.Drawing.Size(464, 693);
+            this.tab1.Size = new System.Drawing.Size(464, 692);
             this.tab1.TabIndex = 0;
             this.tab1.Text = "전체";
             this.tab1.UseVisualStyleBackColor = true;
@@ -75,19 +76,20 @@
             // 전체로그
             // 
             this.전체로그.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.전체로그.Font = new System.Drawing.Font("나눔고딕", 8F);
             this.전체로그.Location = new System.Drawing.Point(3, 3);
             this.전체로그.Name = "전체로그";
-            this.전체로그.Size = new System.Drawing.Size(458, 687);
+            this.전체로그.Size = new System.Drawing.Size(458, 686);
             this.전체로그.TabIndex = 1;
             this.전체로그.Text = "";
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.송수신이벤트로그);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 21);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(464, 693);
+            this.tabPage2.Size = new System.Drawing.Size(464, 694);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "송수신이벤트";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -95,9 +97,10 @@
             // 송수신이벤트로그
             // 
             this.송수신이벤트로그.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.송수신이벤트로그.Font = new System.Drawing.Font("나눔고딕", 8F);
             this.송수신이벤트로그.Location = new System.Drawing.Point(3, 3);
             this.송수신이벤트로그.Name = "송수신이벤트로그";
-            this.송수신이벤트로그.Size = new System.Drawing.Size(458, 687);
+            this.송수신이벤트로그.Size = new System.Drawing.Size(458, 688);
             this.송수신이벤트로그.TabIndex = 0;
             this.송수신이벤트로그.Text = "";
             // 
@@ -115,6 +118,7 @@
             // 자동매매로그
             // 
             this.자동매매로그.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.자동매매로그.Font = new System.Drawing.Font("나눔고딕", 8F);
             this.자동매매로그.Location = new System.Drawing.Point(3, 3);
             this.자동매매로그.Name = "자동매매로그";
             this.자동매매로그.Size = new System.Drawing.Size(458, 687);
@@ -134,6 +138,7 @@
             // 조건식로그
             // 
             this.조건식로그.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.조건식로그.Font = new System.Drawing.Font("나눔고딕", 8F);
             this.조건식로그.Location = new System.Drawing.Point(0, 0);
             this.조건식로그.Name = "조건식로그";
             this.조건식로그.Size = new System.Drawing.Size(464, 693);
@@ -142,22 +147,23 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.실시간주식거래);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Controls.Add(this.디버깅로그);
+            this.tabPage3.Location = new System.Drawing.Point(4, 21);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(464, 693);
+            this.tabPage3.Size = new System.Drawing.Size(464, 694);
             this.tabPage3.TabIndex = 4;
-            this.tabPage3.Text = "실시간주식거래";
+            this.tabPage3.Text = "디버깅로그";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // 실시간주식거래
+            // 디버깅로그
             // 
-            this.실시간주식거래.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.실시간주식거래.Location = new System.Drawing.Point(0, 0);
-            this.실시간주식거래.Name = "실시간주식거래";
-            this.실시간주식거래.Size = new System.Drawing.Size(464, 693);
-            this.실시간주식거래.TabIndex = 3;
-            this.실시간주식거래.Text = "";
+            this.디버깅로그.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.디버깅로그.Font = new System.Drawing.Font("나눔고딕", 8F);
+            this.디버깅로그.Location = new System.Drawing.Point(0, 0);
+            this.디버깅로그.Name = "디버깅로그";
+            this.디버깅로그.Size = new System.Drawing.Size(464, 694);
+            this.디버깅로그.TabIndex = 3;
+            this.디버깅로그.Text = "";
             // 
             // LogForm
             // 
@@ -194,6 +200,6 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.RichTextBox 조건식로그;
-        private System.Windows.Forms.RichTextBox 실시간주식거래;
+        private System.Windows.Forms.RichTextBox 디버깅로그;
     }
 }

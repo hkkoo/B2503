@@ -31,7 +31,6 @@ namespace B2503
             this.단기추가매수조건식1combo.Items.AddRange(conditionList.ToArray());
             this.단기추가매수조건식2combo.Items.AddRange(conditionList.ToArray());
             this.단기추가매수조건식3combo.Items.AddRange(conditionList.ToArray());
-            this.단기초기매도조건식combo.Items.AddRange(conditionList.ToArray());
             this.단기분할매도조건식1combo.Items.AddRange(conditionList.ToArray());
             this.단기분할매도조건식2combo.Items.AddRange(conditionList.ToArray());
             this.단기분할매도조건식3combo.Items.AddRange(conditionList.ToArray());
@@ -73,22 +72,13 @@ namespace B2503
             shortSettings.i추가매수수익률수익arr[0] = Decimal.ToInt32(단기추가매수수익률1수익률num.Value);
             shortSettings.i추가매수수익률수익arr[1] = Decimal.ToInt32(단기추가매수수익률2수익률num.Value);
             shortSettings.i추가매수수익률수익arr[2] = Decimal.ToInt32(단기추가매수수익률3수익률num.Value);
-            if (단기추가매수수익률1updown.SelectedItem != null)
-                shortSettings.s추가매수수익률범위arr[0] = 단기추가매수수익률1updown.SelectedItem.ToString();
-            if (단기추가매수수익률2updown.SelectedItem != null)
-                shortSettings.s추가매수수익률범위arr[1] = 단기추가매수수익률2updown.SelectedItem.ToString();
-            if (단기추가매수수익률3updown.SelectedItem != null)
-                shortSettings.s추가매수수익률범위arr[2] = 단기추가매수수익률3updown.SelectedItem.ToString();
             shortSettings.i추가매수수익률수량arr[0] = Decimal.ToInt32(단기추가매수수익률1수량num.Value);
             shortSettings.i추가매수수익률수량arr[1] = Decimal.ToInt32(단기추가매수수익률2수량num.Value);
             shortSettings.i추가매수수익률수량arr[2] = Decimal.ToInt32(단기추가매수수익률3수량num.Value);
 
             //매도조건설정 저장
             shortSettings.b일괄청산시간check = 단기일괄청산시간check.Checked;
-            shortSettings.t일괄청산시간 = 단기매수운영종료시간time.Value;
-            shortSettings.b초기매도조건식check = 단기초기매도조건식check.Checked;
-            if (단기초기매도조건식combo.SelectedItem != null)
-                shortSettings.s초기매도조건식 = 단기초기매도조건식combo.SelectedItem.ToString();
+            shortSettings.t일괄청산시간 = 단기매수운영종료시간time.Value;            
             if (단기매도방식combo.SelectedItem != null)
                 shortSettings.s매도방식 = 단기매도방식combo.SelectedItem.ToString();
             if (단기매도호가combo.SelectedItem != null)
@@ -113,12 +103,6 @@ namespace B2503
             shortSettings.i분할매도수익률수익arr[0] = Decimal.ToInt32(단기분할매도수익률1수익률num.Value);
             shortSettings.i분할매도수익률수익arr[1] = Decimal.ToInt32(단기분할매도수익률2수익률num.Value);
             shortSettings.i분할매도수익률수익arr[2] = Decimal.ToInt32(단기분할매도수익률3수익률num.Value);
-            if (단기분할매도수익률1updown.SelectedItem != null)
-                shortSettings.s분할매도수익률범위arr[0] = 단기분할매도수익률1updown.SelectedItem.ToString();
-            if (단기분할매도수익률2updown.SelectedItem != null)
-                shortSettings.s분할매도수익률범위arr[1] = 단기분할매도수익률2updown.SelectedItem.ToString();
-            if (단기분할매도수익률3updown.SelectedItem != null)
-                shortSettings.s분할매도수익률범위arr[2] = 단기분할매도수익률3updown.SelectedItem.ToString();
             shortSettings.i분할매도수익률수량arr[0] = Decimal.ToInt32(단기분할매도수익률1수량num.Value);
             shortSettings.i분할매도수익률수량arr[1] = Decimal.ToInt32(단기분할매도수익률2수량num.Value);
             shortSettings.i분할매도수익률수량arr[2] = Decimal.ToInt32(단기분할매도수익률3수량num.Value);
@@ -139,7 +123,7 @@ namespace B2503
             shortSettings.l종목별최대매수금액 = Decimal.ToInt64(단기종목별최대매수금액num.Value);
             shortSettings.l최대매수종목수 = Decimal.ToInt64(단기최대매수종목수num.Value);
             shortSettings.l블랙리스트.Clear();
-            foreach(string str in 단기블랙리스트list.Items) {
+            foreach (string str in 단기블랙리스트list.Items) {
                 if (str != "")
                     shortSettings.l블랙리스트.Add(str);
             }
@@ -155,7 +139,7 @@ namespace B2503
             단기매수호가combo.SelectedItem = shortSettings.s매수호가;
 
             단기추가매수조건식1check.Checked = shortSettings.b추가매수조건식arr[0];
-            단기추가매수조건식2check.Checked = shortSettings.b추가매수조건식arr[1] ;
+            단기추가매수조건식2check.Checked = shortSettings.b추가매수조건식arr[1];
             단기추가매수조건식3check.Checked = shortSettings.b추가매수조건식arr[2];
             단기추가매수조건식1combo.SelectedItem = shortSettings.s추가매수조건식arr[0];
             단기추가매수조건식2combo.SelectedItem = shortSettings.s추가매수조건식arr[1];
@@ -170,9 +154,6 @@ namespace B2503
             단기추가매수수익률1수익률num.Value = shortSettings.i추가매수수익률수익arr[0];
             단기추가매수수익률2수익률num.Value = shortSettings.i추가매수수익률수익arr[1];
             단기추가매수수익률3수익률num.Value = shortSettings.i추가매수수익률수익arr[2];
-            단기추가매수수익률1updown.SelectedItem = shortSettings.s추가매수수익률범위arr[0];
-            단기추가매수수익률2updown.SelectedItem = shortSettings.s추가매수수익률범위arr[1];
-            단기추가매수수익률3updown.SelectedItem = shortSettings.s추가매수수익률범위arr[2];
             단기추가매수수익률1수량num.Value = shortSettings.i추가매수수익률수량arr[0];
             단기추가매수수익률2수량num.Value = shortSettings.i추가매수수익률수량arr[1];
             단기추가매수수익률3수량num.Value = shortSettings.i추가매수수익률수량arr[2];
@@ -180,8 +161,6 @@ namespace B2503
             //매도조건설정 저장
             단기일괄청산시간check.Checked = shortSettings.b일괄청산시간check;
             단기매수운영종료시간time.Value = shortSettings.t일괄청산시간;
-            단기초기매도조건식check.Checked = shortSettings.b초기매도조건식check;
-            단기초기매도조건식combo.SelectedItem = shortSettings.s초기매도조건식;
             단기매도방식combo.SelectedItem = shortSettings.s매도방식;
             단기매도호가combo.SelectedItem = shortSettings.s매도호가;
 
@@ -201,10 +180,7 @@ namespace B2503
             단기분할매도수익률1수익률num.Value = shortSettings.i분할매도수익률수익arr[0];
             단기분할매도수익률2수익률num.Value = shortSettings.i분할매도수익률수익arr[1];
             단기분할매도수익률3수익률num.Value = shortSettings.i분할매도수익률수익arr[2];
-            단기분할매도수익률1updown.SelectedItem = shortSettings.s분할매도수익률범위arr[0];
-            단기분할매도수익률2updown.SelectedItem = shortSettings.s분할매도수익률범위arr[1];
-            단기분할매도수익률3updown.SelectedItem = shortSettings.s분할매도수익률범위arr[2]; 
-            단기분할매도수익률1수량num.Value = shortSettings.i분할매도수익률수량arr[0]; 
+            단기분할매도수익률1수량num.Value = shortSettings.i분할매도수익률수량arr[0];
             단기분할매도수익률2수량num.Value = shortSettings.i분할매도수익률수량arr[1];
             단기분할매도수익률3수량num.Value = shortSettings.i분할매도수익률수량arr[2];
 
@@ -265,6 +241,48 @@ namespace B2503
         private void 닫기btn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void 단기추가매수수익률1수익률num_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown nup = (NumericUpDown)sender;
+            단기추가매수수익률1Label.Text = (nup.Value < 0) ? "이하" : "이상";
+            nup.ForeColor = (nup.Value < 0) ? Color.Blue : Color.Red;
+        }
+
+        private void 단기추가매수수익률2수익률num_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown nup = (NumericUpDown)sender;
+            단기추가매수수익률2Label.Text = (nup.Value < 0) ? "이하" : "이상";
+            nup.ForeColor = (nup.Value < 0) ? Color.Blue : Color.Red;
+        }
+
+        private void 단기추가매수수익률3수익률num_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown nup = (NumericUpDown)sender;
+            단기추가매수수익률3Label.Text = (nup.Value < 0) ? "이하" : "이상";
+            nup.ForeColor = (nup.Value < 0) ? Color.Blue : Color.Red;
+        }
+
+        private void 단기분할매도수익률1수익률num_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown nup = (NumericUpDown)sender;
+            단기분할매도수익률1Label.Text = (nup.Value < 0) ? "이하" : "이상";
+            nup.ForeColor = (nup.Value < 0) ? Color.Blue : Color.Red;
+        }
+
+        private void 단기분할매도수익률2수익률num_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown nup = (NumericUpDown)sender;
+            단기분할매도수익률2Label.Text = (nup.Value < 0) ? "이하" : "이상";
+            nup.ForeColor = (nup.Value < 0) ? Color.Blue : Color.Red;
+        }
+
+        private void 단기분할매도수익률3수익률num_ValueChanged(object sender, EventArgs e)
+        {
+            NumericUpDown nup = (NumericUpDown)sender;
+            단기분할매도수익률3Label.Text = (nup.Value < 0) ? "이하" : "이상";
+            nup.ForeColor = (nup.Value < 0) ? Color.Blue : Color.Red;
         }
     }
 }

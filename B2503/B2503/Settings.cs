@@ -32,13 +32,11 @@ namespace B2503
 
         public bool[]          b추가매수수익률arr = new bool[3];
         public int[]           i추가매수수익률수익arr = new int[3];
-        public string[]        s추가매수수익률범위arr = new string[3];
         public int[]           i추가매수수익률수량arr = new int[3];
 
         public bool            b일괄청산시간check = false;
         public DateTime        t일괄청산시간 = DateTime.Now;
-        public bool            b초기매도조건식check = false;
-        public string          s초기매도조건식 = "";
+
         public string          s매도방식 = "";
         public string          s매도호가 = "";
         public bool[]          b분할매도조건식arr = new bool[3];
@@ -47,7 +45,6 @@ namespace B2503
 
         public bool[]          b분할매도수익률arr = new bool[3];
         public int[]           i분할매도수익률수익arr = new int[3];
-        public string[]        s분할매도수익률범위arr = new string[3];
         public int[]           i분할매도수익률수량arr = new int[3];
 
         public bool            b미체결취소check = false;
@@ -106,18 +103,13 @@ namespace B2503
             WritePrivateProfileString(section, "추가매수수익률1수익률", i추가매수수익률수익arr[0].ToString(), fileName);
             WritePrivateProfileString(section, "추가매수수익률2수익률", i추가매수수익률수익arr[1].ToString(), fileName);
             WritePrivateProfileString(section, "추가매수수익률3수익률", i추가매수수익률수익arr[2].ToString(), fileName);
-            WritePrivateProfileString(section, "추가매수수익률1범위", s추가매수수익률범위arr[0], fileName);
-            WritePrivateProfileString(section, "추가매수수익률2범위", s추가매수수익률범위arr[1], fileName);
-            WritePrivateProfileString(section, "추가매수수익률3범위", s추가매수수익률범위arr[2], fileName);
             WritePrivateProfileString(section, "추가매수수익률1수량", i추가매수수익률수량arr[0].ToString(), fileName);
             WritePrivateProfileString(section, "추가매수수익률2수량", i추가매수수익률수량arr[1].ToString(), fileName);
             WritePrivateProfileString(section, "추가매수수익률3수량", i추가매수수익률수량arr[2].ToString(), fileName);
 
             //매도
             WritePrivateProfileString(section, "일괄청산시간_ON", b일괄청산시간check.ToString(), fileName);
-            WritePrivateProfileString(section, "일괄청산시간", t일괄청산시간.ToString("HH:mm:ss"), fileName);
-            WritePrivateProfileString(section, "초기매도조건식_ON", b초기매도조건식check.ToString(), fileName);
-            WritePrivateProfileString(section, "초기매도조건식", s초기매도조건식, fileName);
+            WritePrivateProfileString(section, "일괄청산시간", t일괄청산시간.ToString("HH:mm:ss"), fileName);            
             WritePrivateProfileString(section, "매도방식", s매도방식, fileName);
             WritePrivateProfileString(section, "매도호가", s매도호가, fileName);
             WritePrivateProfileString(section, "분할매도조건식1_ON", b분할매도조건식arr[0].ToString(), fileName);
@@ -136,9 +128,6 @@ namespace B2503
             WritePrivateProfileString(section, "분할매도수익률1수익률", i분할매도수익률수익arr[0].ToString(), fileName);
             WritePrivateProfileString(section, "분할매도수익률2수익률", i분할매도수익률수익arr[1].ToString(), fileName);
             WritePrivateProfileString(section, "분할매도수익률3수익률", i분할매도수익률수익arr[2].ToString(), fileName);
-            WritePrivateProfileString(section, "분할매도수익률1범위", s분할매도수익률범위arr[0], fileName);
-            WritePrivateProfileString(section, "분할매도수익률2범위", s분할매도수익률범위arr[1], fileName);
-            WritePrivateProfileString(section, "분할매도수익률3범위", s분할매도수익률범위arr[2], fileName);
             WritePrivateProfileString(section, "분할매도수익률1수량", i분할매도수익률수량arr[0].ToString(), fileName);
             WritePrivateProfileString(section, "분할매도수익률2수량", i분할매도수익률수량arr[1].ToString(), fileName);
             WritePrivateProfileString(section, "분할매도수익률3수량", i분할매도수익률수량arr[2].ToString(), fileName);
@@ -199,9 +188,6 @@ namespace B2503
                 i추가매수수익률수익arr[0] = int.Parse(GetProfileString(section, "추가매수수익률1수익률", fileName));
                 i추가매수수익률수익arr[1] = int.Parse(GetProfileString(section, "추가매수수익률2수익률", fileName));
                 i추가매수수익률수익arr[2] = int.Parse(GetProfileString(section, "추가매수수익률3수익률", fileName));
-                s추가매수수익률범위arr[0] = GetProfileString(section, "추가매수수익률1범위", fileName);
-                s추가매수수익률범위arr[1] = GetProfileString(section, "추가매수수익률2범위", fileName);
-                s추가매수수익률범위arr[2] = GetProfileString(section, "추가매수수익률3범위", fileName);
                 i추가매수수익률수량arr[0] = int.Parse(GetProfileString(section, "추가매수수익률1수량", fileName));
                 i추가매수수익률수량arr[1] = int.Parse(GetProfileString(section, "추가매수수익률2수량", fileName));
                 i추가매수수익률수량arr[2] = int.Parse(GetProfileString(section, "추가매수수익률3수량", fileName));
@@ -209,8 +195,6 @@ namespace B2503
                 //매도
                 b일괄청산시간check = bool.Parse(GetProfileString(section, "일괄청산시간_ON", fileName));
                 t일괄청산시간 = DateTime.Parse(GetProfileString(section, "일괄청산시간", fileName));
-                b초기매도조건식check = bool.Parse(GetProfileString(section, "초기매도조건식_ON", fileName));
-                s초기매도조건식 = GetProfileString(section, "초기매도조건식", fileName);
                 s매도방식 = GetProfileString(section, "매도방식", fileName);
                 s매도호가 = GetProfileString(section, "매도호가", fileName);
                 b분할매도조건식arr[0] = bool.Parse(GetProfileString(section, "분할매도조건식1_ON", fileName));
@@ -229,9 +213,6 @@ namespace B2503
                 i분할매도수익률수익arr[0] = int.Parse(GetProfileString(section, "분할매도수익률1수익률", fileName));
                 i분할매도수익률수익arr[1] = int.Parse(GetProfileString(section, "분할매도수익률2수익률", fileName));
                 i분할매도수익률수익arr[2] = int.Parse(GetProfileString(section, "분할매도수익률3수익률", fileName));
-                s분할매도수익률범위arr[0] = GetProfileString(section, "분할매도수익률1범위", fileName);
-                s분할매도수익률범위arr[1] = GetProfileString(section, "분할매도수익률2범위", fileName);
-                s분할매도수익률범위arr[2] = GetProfileString(section, "분할매도수익률3범위", fileName);
                 i분할매도수익률수량arr[0] = int.Parse(GetProfileString(section, "분할매도수익률1수량", fileName));
                 i분할매도수익률수량arr[1] = int.Parse(GetProfileString(section, "분할매도수익률2수량", fileName));
                 i분할매도수익률수량arr[2] = int.Parse(GetProfileString(section, "분할매도수익률3수량", fileName));

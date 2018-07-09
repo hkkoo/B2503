@@ -5,10 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 using System.Windows.Forms;
+using System.Reflection;
 using KiwoomCode;
-using Future.Logger;
 
 namespace B2503
 {
@@ -16,8 +16,7 @@ namespace B2503
     {
         INT,
         FLOAT,
-        STR,
-        DATETIME,
+        STR
     }
 
     public partial class MainForm : Form
@@ -26,9 +25,12 @@ namespace B2503
         SettingForm settingform = null;
         Settings shortSettings;
         Settings longSettings;
+        Logger logger = new Logger();
+
         string serverType;
         List<string> conditionList = new List<string>();
         List<string> accountList = new List<string>();
+        Thread buySellThread;
 
         private int _scrNum = 5000;
         private string _strRealConScrNum = "0000";
@@ -37,16 +39,17 @@ namespace B2503
         public MainForm()
         {
             InitializeComponent();
+            실시간검색뷰.DoubleBuffered(true);
+            단기계좌보유현황뷰.DoubleBuffered(true);
+            장기계좌보유현황뷰.DoubleBuffered(true);
+            계좌뷰.DoubleBuffered(true);
             conditionList = new List<string>();
             settingBtn.Enabled = false;
             currentTimer.Start();
-            //logform default open for test
-#if false
-            logform = new LogForm(this.Location);
-            logform.Show();
-            Properties.Settings.Default.logFormEnabled = true;
-#endif
-            axKHOpenAPI.CommConnect();
+            if (axKHOpenAPI.CommConnect() == 0) {
+                logger.Write(LOGTYPE.D, "로그인 성공");
+            } else
+                logger.Write(LOGTYPE.D, "로그인 실패");
         }
 
         private string GetScrNum()
@@ -62,7 +65,7 @@ namespace B2503
         private void logBtn_Click(object sender, EventArgs e)
         {
             if (logform == null || Properties.Settings.Default.logFormEnabled == false) {
-                logform = new LogForm(this.Location);
+                logform = new LogForm(this.Location, logger);
                 logform.Show();
                 Properties.Settings.Default.logFormEnabled = true;
             } else {
@@ -106,10 +109,9 @@ namespace B2503
         private void loginBtn_Click(object sender, EventArgs e)
         {
             if (axKHOpenAPI.CommConnect() == 0) {
-                statusBar.Items[1].Text = "로그인 성공";
-                logform.Logger(LogForm.Log.송수신이벤트, logLevel.Error, "로그인 성공");
+                logger.Write(LOGTYPE.D, "로그인 성공");
             } else
-                statusBar.Items[1].Text = "로그인 실패";
+                logger.Write(LOGTYPE.D, "로그인 실패");
         }
 
         private void SendConditionReal()
@@ -120,10 +122,7 @@ namespace B2503
             _strRealConScrNum = GetScrNum();
             _strRealConName = condName;
 
-            if (axKHOpenAPI.SendCondition(_strRealConScrNum, condName, condNum, 1) == 1)
-                return;
-            else
-                return;
+            axKHOpenAPI.SendCondition(_strRealConScrNum, condName, condNum, 1);
         }
 
         private void GetDefaultRealData()
@@ -143,8 +142,6 @@ namespace B2503
                 axKHOpenAPI.SetInputValue("비밀번호입력매체구분", "00");
                 axKHOpenAPI.CommRqData("단기계좌평가현황요청", "OPW00004", 0, GetScrNum());
             }
-
-            SendConditionReal();
         }
         // ============================== 로그인 이벤트 함수 =================================================
         private void axKHOpenAPI_OnEventConnect(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnEventConnectEvent e)
@@ -159,13 +156,9 @@ namespace B2503
                 accountList.AddRange(axKHOpenAPI.GetLoginInfo("ACCNO").Split(';'));
                 serverType = axKHOpenAPI.GetLoginInfo("GetServerGubun");
                 GetDefaultRealData();
-
+                logger.Write(LOGTYPE.E, KiwoomCode.Error.GetErrorMessage());
             } else {
-                ;
-                //Logger(Log.실시간, "로그인창 열기 실패");
-                //Logger(Log.실시간, "로그인 실패로 조건식리스트 불러오기 실패");
-                //logform.Logger(LogForm.Log.송수신이벤트, logLevel.Error, "로그인창 열기 실패");
-                //logform.Logger(LogForm.Log.송수신이벤트, logLevel.Error, "로그인 실패로 조건식리스트 불러오기 실패");
+                logger.Write(LOGTYPE.E, KiwoomCode.Error.GetErrorMessage());
             }
         }
 
@@ -178,7 +171,7 @@ namespace B2503
         {
             if (e.lRet == 1) {
                 string[] spConList = axKHOpenAPI.GetConditionNameList().Trim().Split(';');   // 조건식 리스트 호출하기    
-                // Logger(Log.실시간, strConList);
+                logger.Write(LOGTYPE.E, e.sMsg);
                 System.Array.Sort(spConList);                             // 조건식 배열 오류로 추가 소스 삽입 
                 conditionList.AddRange(spConList);
                 // Logger(Log.검색코드, "[이벤트] 조건식 탑재 성공 (건당 이벤트 발생)" );
@@ -196,12 +189,15 @@ namespace B2503
             int rowCnt = 뷰.Rows.Count;
             for (int i = 0; i < rowCnt; i++) {
                 if (기준값 != null && 기준값.Equals(뷰[기준, i].Value.ToString().Trim())) {
+                    if (기준 == 열이름)
+                        return;
+
                     switch (타입) {
                     case DATATYPE.INT:
-                        뷰[열이름, i].Value = 열값.Contains(".") ? float.Parse(열값) : int.Parse(열값); ;
+                        뷰[열이름, i].Value = 열값.Contains(".") ? float.Parse(열값)/100 : int.Parse(열값);
                         break;
                     case DATATYPE.FLOAT:
-                        뷰[열이름, i].Value = 열값.Contains(".") ? float.Parse(열값)/1000 : float.Parse(열값.Insert(6, "."))/1000;
+                        뷰[열이름, i].Value = 열값.Contains(".") ? float.Parse(열값)/1000 : float.Parse(열값.Insert(6, "."));
                         break;
                     case DATATYPE.STR:
                         뷰[열이름, i].Value = 열값;
@@ -219,7 +215,7 @@ namespace B2503
                 뷰[열이름, rowCnt - 1].Value = 열값.Contains(".") ? float.Parse(열값) : int.Parse(열값); ;
                 break;
             case DATATYPE.FLOAT:
-                뷰[열이름, rowCnt - 1].Value = 열값.Contains(".") ? float.Parse(열값)/1000 : float.Parse(열값.Insert(6, "."))/1000;
+                뷰[열이름, rowCnt - 1].Value = 열값.Contains(".") ? float.Parse(열값)/1000 : float.Parse(열값.Insert(6, "."));
                 break;
             case DATATYPE.STR:
                 뷰[열이름, rowCnt - 1].Value = 열값;
@@ -237,12 +233,12 @@ namespace B2503
             if (e.sRQName == "단기계좌평가현황요청") {
                 UpdateDataGridViewData(계좌뷰, "계좌번호", shortSettings.s선택계좌, "계좌번호", shortSettings.s선택계좌, DATATYPE.STR);
                 UpdateDataGridViewData(계좌뷰, "계좌번호", shortSettings.s선택계좌, "추정자산", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, 0, "추정예탁자산").Trim(), DATATYPE.INT);
-                UpdateDataGridViewData(계좌뷰, "계좌번호", shortSettings.s선택계좌, "유가잔고액", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, 0, "유가잔고평가액").Trim(), DATATYPE.INT);
-
+                UpdateDataGridViewData(계좌뷰, "계좌번호", shortSettings.s선택계좌, "유가잔고액", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, 0, "유가잔고평가액").Trim(), DATATYPE.INT);               
                 int nCnt = axKHOpenAPI.GetRepeatCnt(e.sTrCode, e.sRQName);
+                logger.Write(LOGTYPE.E, string.Format("[{0}][{1}](cnt = {2}) {3}", e.sScrNo, e.sRQName, nCnt, e.sMessage));
                 for (int i = 0; i < nCnt; i++) {
                     string stCode = axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "종목코드").Trim();
-
+                    logger.Write(LOGTYPE.E, string.Format("[{0}][{1}][{2}] {3}", e.sScrNo, e.sRQName, stCode, e.sMessage));
                     UpdateDataGridViewData(단기계좌보유현황뷰, "단기종목코드", stCode, "단기종목코드", stCode, DATATYPE.STR);
                     UpdateDataGridViewData(단기계좌보유현황뷰, "단기종목코드", stCode, "단기종목명", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "종목명").Trim(), DATATYPE.STR);
                     UpdateDataGridViewData(단기계좌보유현황뷰, "단기종목코드", stCode, "단기보유수량", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "보유수량").Trim(), DATATYPE.INT);
@@ -253,6 +249,20 @@ namespace B2503
                     UpdateDataGridViewData(단기계좌보유현황뷰, "단기종목코드", stCode, "단기손익금액", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "손익금액").Trim(), DATATYPE.INT);
                     UpdateDataGridViewData(단기계좌보유현황뷰, "단기종목코드", stCode, "단기수익율", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "손익율").Trim(), DATATYPE.FLOAT);
                 }
+            } else if (e.sRQName == "관심종목정보요청") {
+                int nCnt = axKHOpenAPI.GetRepeatCnt(e.sTrCode, e.sRQName);
+                logger.Write(LOGTYPE.E, string.Format("[{0}][{1}](cnt = {2}) {3}", e.sScrNo, e.sRQName, nCnt, e.sMessage));
+                for (int i = 0; i < nCnt; i++) {
+                    string stCode = axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "종목코드").Trim();
+
+                    UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "종목코드", stCode, DATATYPE.STR);
+                    UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "현재가", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "현재가").Trim(), DATATYPE.INT);
+                    UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "전일대비", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "전일대비").Trim(), DATATYPE.INT);
+                    UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "등락율", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "등락율").Trim(), DATATYPE.INT);
+                    UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "거래량", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "거래량").Trim(), DATATYPE.INT);
+                    UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "구분", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "전일대비기호").Trim(), DATATYPE.STR);
+                    UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "편입가", axKHOpenAPI.GetCommData(e.sTrCode, e.sRQName, i, "현재가").Trim(), DATATYPE.INT);
+                }
             }
         }
         
@@ -262,6 +272,7 @@ namespace B2503
         // =======================================================================================================================================//
         private void axKHOpenAPI_OnReceiveChejanData(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveChejanDataEvent e)
         {
+
         }
 
         // ===============================================================<< 메세지(OnReceiveMsg)  수신부>> ========================================//
@@ -270,10 +281,7 @@ namespace B2503
         // =========================================================================================================================================//
         private void axKHOpenAPI_OnReceiveMsg(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveMsgEvent e)
         {
-            e.sMsg.ToString();
-            e.sScrNo.ToString();
-            e.sRQName.ToString();
-            e.sTrCode.ToString();
+            logger.Write(LOGTYPE.E, string.Format("[{0}][{1}] {2}", e.sScrNo, e.sRQName, e.sMsg));   
         }
         
         // =====================================================<< 3. 실시간 데이터(OnReceiveRealData) 수신부 >>===================================================//
@@ -282,14 +290,17 @@ namespace B2503
         // ========================================================================================================================================================//
         private void axKHOpenAPI_OnReceiveRealData(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveRealDataEvent e)
         {
-            if (e.sRealType == "주식시세") {
-                string stCode = e.sRealKey;
-
+            //logger.Write(LOGTYPE.C, string.Format("[{0}][{1}]", e.sRealKey, e.sRealType));
+            string stCode = e.sRealKey;
+            if (e.sRealType == "주식체결") {
+                UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "종목코드", stCode, DATATYPE.STR);
                 UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "현재가", axKHOpenAPI.GetCommRealData(e.sRealType, 10).Trim(), DATATYPE.INT);
                 UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "전일대비", axKHOpenAPI.GetCommRealData(e.sRealType, 11).Trim(), DATATYPE.INT);
-                UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "등락율", axKHOpenAPI.GetCommRealData(e.sRealType, 12).Trim(), DATATYPE.FLOAT);
+                UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "등락율", axKHOpenAPI.GetCommRealData(e.sRealType, 12).Trim(), DATATYPE.INT);
                 UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "거래량", axKHOpenAPI.GetCommRealData(e.sRealType, 13).Trim(), DATATYPE.INT);
                 UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode, "구분", axKHOpenAPI.GetCommRealData(e.sRealType, 25).Trim(), DATATYPE.STR);
+            } else if (e.sRealType == "") {
+
             }
         }
         
@@ -299,24 +310,22 @@ namespace B2503
 
         private void axKHOpenAPI_OnReceiveRealCondition(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveRealConditionEvent e)
         {
+            string strCodeName = axKHOpenAPI.GetMasterCodeName(e.sTrCode); // 종목명을 가져온다.
+
             if (e.strType == "I") { //종목편입
-                string strCodeName = axKHOpenAPI.GetMasterCodeName(e.sTrCode); // 종목명을 가져온다.
-                UpdateDataGridViewData(실시간검색뷰, "종목코드", e.sTrCode, "상태", "편입", DATATYPE.STR);
                 UpdateDataGridViewData(실시간검색뷰, "종목코드", e.sTrCode, "종목코드", e.sTrCode, DATATYPE.STR);
+                UpdateDataGridViewData(실시간검색뷰, "종목코드", e.sTrCode, "상태", "편입", DATATYPE.STR);
                 UpdateDataGridViewData(실시간검색뷰, "종목코드", e.sTrCode, "종목명", strCodeName, DATATYPE.STR);
                 UpdateDataGridViewData(실시간검색뷰, "종목코드", e.sTrCode, "매수조건식", e.strConditionIndex + "^" + e.strConditionName, DATATYPE.STR);
-                if (e.strConditionName.Contains("단기")) {
-                    axKHOpenAPI.SendOrder("주식주문", GetScrNum(), shortSettings.s선택계좌, 1, e.sTrCode,                     
-                                                1,      // 주문수량
-                                                1,      // 주문가격 
-                                                "03",    // 거래구분 (시장가)
-                                                "0");    // 원주문 번호
-                } else {
+                logger.Write(LOGTYPE.C, string.Format("[{0}][{1}] {2}", "편입", e.strConditionName, strCodeName));
 
-                }
-                    axKHOpenAPI.SetRealReg(_strRealConScrNum, e.sTrCode, "9001;302;10;11;12;13;25", "1");// 실시간 시세등록
+                axKHOpenAPI.CommKwRqData(e.sTrCode, 0, 1, 0, "관심종목정보요청", GetScrNum());
+                axKHOpenAPI.SetRealReg(_strRealConScrNum, e.sTrCode, "9001;302;10;11;12;13;25", "1");// 실시간 시세등록
+
             } else if (e.strType == "D") { //종목이탈
+                logger.Write(LOGTYPE.C, string.Format("[{0}][{1}] {2}", "이탈", e.strConditionName, strCodeName));
                 axKHOpenAPI.SetRealRemove(_strRealConScrNum, e.sTrCode);// 실시간 시세해지
+                
                 UpdateDataGridViewData(실시간검색뷰, "종목코드", e.sTrCode, "상태", "이탈", DATATYPE.STR);
             }
         }
@@ -328,6 +337,19 @@ namespace B2503
 
         private void axKHOpenAPI_OnReceiveTrCondition(object sender, AxKHOpenAPILib._DKHOpenAPIEvents_OnReceiveTrConditionEvent e)
         {
+            string[] stCode = e.strCodeList.Split(';');
+
+            axKHOpenAPI.CommKwRqData(e.strCodeList, 0, stCode.Length, 0, "관심종목정보요청", GetScrNum());
+            
+
+            for (int i = 0; i < stCode.Length - 1; i++) {
+                string strCodeName = axKHOpenAPI.GetMasterCodeName(stCode[i]); // 종목명을 가져온다.
+
+                UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode[i], "종목코드", stCode[i].ToString(), DATATYPE.STR);
+                UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode[i], "상태", "", DATATYPE.STR);
+                UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode[i], "종목명", strCodeName, DATATYPE.STR);
+                UpdateDataGridViewData(실시간검색뷰, "종목코드", stCode[i], "매수조건식", e.nIndex + "^" + e.strConditionName, DATATYPE.STR);                
+            }
         }
 
         // =====================================================<< Form Event Handler >> ================================================//
@@ -391,14 +413,28 @@ namespace B2503
                 return;
 
             string name = view.Columns[e.ColumnIndex].Name;
-            if (name == "전일대비" || name == "등락율" || name == "편입대비" || name == "수익율") {
+            if (name == "현재가") {
+                view[e.ColumnIndex, e.RowIndex].Value = Math.Abs(int.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()));
+            } else if (name == "편입가") {
+                if (view["현재가", e.RowIndex].Value != null && view["현재가", e.RowIndex].Value != null) {
+                    int 편입대비Val = int.Parse(view["현재가", e.RowIndex].Value.ToString()) - int.Parse(view["편입가", e.RowIndex].Value.ToString());
+                    view["편입대비", e.RowIndex].Value = 편입대비Val;
+                    if (편입대비Val < 0)
+                        view["편입대비", e.RowIndex].Style.ForeColor = Color.Blue;
+                    else if (편입대비Val > 0)
+                        view["편입대비", e.RowIndex].Style.ForeColor = Color.Red;
+                    else
+                        view["편입대비", e.RowIndex].Style.ForeColor = Color.Black;
+                }
+                view[e.ColumnIndex, e.RowIndex].Value = Math.Abs(int.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()));
+            } else if (name == "전일대비" || name == "등락율" || name == "편입대비" || name == "수익율") {
                 if (float.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()) > 0)
                     view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Red;
                 else if (float.Parse(view[e.ColumnIndex, e.RowIndex].Value.ToString()) < 0)
                     view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Blue;
                 else
                     view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Black;
-            } else if (name == "구분") {
+            } else if (name == "상태") {
                 if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("매수"))
                     view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Red;
                 else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("매도"))
@@ -407,7 +443,85 @@ namespace B2503
                     view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Black;
                 else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("이탈"))
                     view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Gray;
+            } else if (name == "구분") {
+                if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("1")) {
+                    view[e.ColumnIndex, e.RowIndex].Value = "↑";
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Red;
+                } else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("2")) {
+                    view[e.ColumnIndex, e.RowIndex].Value = "▲";
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Red;
+                } else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("3")) {
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Black;
+                } else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("4")) {
+                    view[e.ColumnIndex, e.RowIndex].Value = "↓";
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Blue;
+                } else if (view[e.ColumnIndex, e.RowIndex].Value.ToString().Equals("5")) {
+                    view[e.ColumnIndex, e.RowIndex].Value = "▼";
+                    view[e.ColumnIndex, e.RowIndex].Style.ForeColor = Color.Blue;
+                }
             }
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            logger.Close();
+        }
+
+        private void 자동매매시작버튼_Click(object sender, EventArgs e)
+        {
+            buySellThread = new Thread(자동매매스레드);
+            buySellThread.Start();
+            자동매매중지버튼.Enabled = true;
+            자동매매시작버튼.Enabled = false;
+        }
+
+        private void 자동매매스레드()
+        {
+            bool shortIsEnd = false;
+            SendConditionReal();
+            for (int i = 0;  i < 단기계좌보유현황뷰.Rows.Count; i++) {
+                axKHOpenAPI.SetRealReg(_strRealConScrNum, 단기계좌보유현황뷰["단기종목코드", i].Value.ToString(), "9001;302;10;11;12;13;25", "1");// 실시간 시세등록
+            }
+            //계좌정보 업데이트 TR 전송 (Or 실시간 받기)
+            do {
+                DateTime now = DateTime.Now;
+                if (!(shortSettings.t매수운영시작시간.Hour <= now.Hour &&
+                    shortSettings.t매수운영시작시간.Minute <= now.Minute &&
+                    shortSettings.t매수운영시작시간.Second < now.Second &&
+                    shortSettings.t매수운영종료시간.Hour >= now.Hour &&
+                    shortSettings.t매수운영시작시간.Minute >= now.Minute &&
+                    shortSettings.t매수운영시작시간.Second > now.Second))
+                    shortIsEnd = true;
+
+
+                //매수요청 DB check
+                //매수주문 TR -> 체결되면 chejanData에서 주문완료 DB에 update하면서 매수요청DB에서 삭제
+                //매수요청DB에 매수요청 시간 업데이트
+                //매도요청 DBG check
+                //매도주문 TR -> 체결되면 chejanData에서 주문완료 DB에 update하면서 매도요청DB에서 삭제
+                //매도요청DB에 매도요청 시간 업데이트
+                Thread.Sleep(100);
+            } while (true);
+
+        }
+
+        private void 자동매매중지버튼_Click(object sender, EventArgs e)
+        {
+            if (buySellThread.ThreadState == ThreadState.Running)
+                buySellThread.Abort();
+
+            자동매매중지버튼.Enabled = false;
+            자동매매시작버튼.Enabled = true;
+        }
+        
+    }
+    public static class ExtensionMethods
+    {
+        public static void DoubleBuffered(this DataGridView dgv, bool setting)
+        {
+            Type dgvType = dgv.GetType();
+            PropertyInfo pi = dgvType.GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
+            pi.SetValue(dgv, setting, null);
         }
     }
 }
