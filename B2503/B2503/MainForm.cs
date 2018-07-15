@@ -456,7 +456,7 @@ namespace B2503
             buySellThread.Start();
             자동매매중지버튼.Enabled = true;
             자동매매시작버튼.Enabled = false;
-
+            /*
             SQLiteConnection conn = new SQLiteConnection(@"Data Source=d:\\test.db");
             conn.Open();
 
@@ -470,6 +470,7 @@ namespace B2503
 
             rdr.Close();
             conn.Close();
+            */
         }
 
         private void 자동매매스레드()
