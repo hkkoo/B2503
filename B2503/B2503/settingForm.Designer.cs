@@ -38,13 +38,18 @@
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.단기추가매수수익률3수량num = new System.Windows.Forms.NumericUpDown();
+            this.label21 = new System.Windows.Forms.Label();
+            this.단기추가매수수익률3Label = new System.Windows.Forms.Label();
             this.단기추가매수수익률3수익률num = new System.Windows.Forms.NumericUpDown();
             this.단기추가매수수익률3check = new System.Windows.Forms.CheckBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.단기추가매수수익률2수량num = new System.Windows.Forms.NumericUpDown();
+            this.label57 = new System.Windows.Forms.Label();
+            this.단기추가매수수익률2Label = new System.Windows.Forms.Label();
             this.단기추가매수수익률2수익률num = new System.Windows.Forms.NumericUpDown();
             this.단기추가매수수익률2check = new System.Windows.Forms.CheckBox();
             this.panel9 = new System.Windows.Forms.Panel();
+            this.단기추가매수수익률1Label = new System.Windows.Forms.Label();
             this.단기추가매수수익률1수량num = new System.Windows.Forms.NumericUpDown();
             this.label20 = new System.Windows.Forms.Label();
             this.단기추가매수수익률1수익률num = new System.Windows.Forms.NumericUpDown();
@@ -68,26 +73,31 @@
             this.단기추가매수조건식1check = new System.Windows.Forms.CheckBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.단기추가매수조건식3num = new System.Windows.Forms.NumericUpDown();
+            this.label18 = new System.Windows.Forms.Label();
             this.단기추가매수조건식3combo = new System.Windows.Forms.ComboBox();
             this.단기추가매수조건식3check = new System.Windows.Forms.CheckBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.단기추가매수조건식2num = new System.Windows.Forms.NumericUpDown();
+            this.label17 = new System.Windows.Forms.Label();
             this.단기추가매수조건식2combo = new System.Windows.Forms.ComboBox();
             this.단기추가매수조건식2check = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.panel12 = new System.Windows.Forms.Panel();
+            this.단기분할매도수익률3Label = new System.Windows.Forms.Label();
             this.단기분할매도수익률3수량num = new System.Windows.Forms.NumericUpDown();
             this.label19 = new System.Windows.Forms.Label();
             this.단기분할매도수익률3수익률num = new System.Windows.Forms.NumericUpDown();
             this.단기분할매도수익률3check = new System.Windows.Forms.CheckBox();
             this.panel13 = new System.Windows.Forms.Panel();
+            this.단기분할매도수익률2Label = new System.Windows.Forms.Label();
             this.단기분할매도수익률2수량num = new System.Windows.Forms.NumericUpDown();
             this.label23 = new System.Windows.Forms.Label();
             this.단기분할매도수익률2수익률num = new System.Windows.Forms.NumericUpDown();
             this.단기분할매도수익률2check = new System.Windows.Forms.CheckBox();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.단기분할매도수익률1Label = new System.Windows.Forms.Label();
             this.단기분할매도수익률1수량num = new System.Windows.Forms.NumericUpDown();
             this.label24 = new System.Windows.Forms.Label();
             this.단기분할매도수익률1수익률num = new System.Windows.Forms.NumericUpDown();
@@ -283,16 +293,6 @@
             this.button10 = new System.Windows.Forms.Button();
             this.전략saveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.전략openFileDialog = new System.Windows.Forms.OpenFileDialog();
-            this.단기추가매수수익률1Label = new System.Windows.Forms.Label();
-            this.단기추가매수수익률2Label = new System.Windows.Forms.Label();
-            this.단기추가매수수익률3Label = new System.Windows.Forms.Label();
-            this.단기분할매도수익률1Label = new System.Windows.Forms.Label();
-            this.단기분할매도수익률2Label = new System.Windows.Forms.Label();
-            this.단기분할매도수익률3Label = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.장단기탭.SuspendLayout();
             this.단기탭.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -549,6 +549,27 @@
             0,
             0});
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label21.Location = new System.Drawing.Point(90, 28);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(244, 14);
+            this.label21.TabIndex = 40;
+            this.label21.Text = "최대매수금액 - 총매입가의                   %를 매수";
+            // 
+            // 단기추가매수수익률3Label
+            // 
+            this.단기추가매수수익률3Label.AutoSize = true;
+            this.단기추가매수수익률3Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기추가매수수익률3Label.Location = new System.Drawing.Point(135, 7);
+            this.단기추가매수수익률3Label.Margin = new System.Windows.Forms.Padding(0);
+            this.단기추가매수수익률3Label.Name = "단기추가매수수익률3Label";
+            this.단기추가매수수익률3Label.Size = new System.Drawing.Size(29, 14);
+            this.단기추가매수수익률3Label.TabIndex = 39;
+            this.단기추가매수수익률3Label.Text = "이상";
+            // 
             // 단기추가매수수익률3수익률num
             // 
             this.단기추가매수수익률3수익률num.Location = new System.Drawing.Point(74, 4);
@@ -611,6 +632,27 @@
             0,
             0});
             // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label57.Location = new System.Drawing.Point(90, 28);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(244, 14);
+            this.label57.TabIndex = 39;
+            this.label57.Text = "최대매수금액 - 총매입가의                   %를 매수";
+            // 
+            // 단기추가매수수익률2Label
+            // 
+            this.단기추가매수수익률2Label.AutoSize = true;
+            this.단기추가매수수익률2Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기추가매수수익률2Label.Location = new System.Drawing.Point(135, 7);
+            this.단기추가매수수익률2Label.Margin = new System.Windows.Forms.Padding(0);
+            this.단기추가매수수익률2Label.Name = "단기추가매수수익률2Label";
+            this.단기추가매수수익률2Label.Size = new System.Drawing.Size(29, 14);
+            this.단기추가매수수익률2Label.TabIndex = 38;
+            this.단기추가매수수익률2Label.Text = "이상";
+            // 
             // 단기추가매수수익률2수익률num
             // 
             this.단기추가매수수익률2수익률num.Location = new System.Drawing.Point(74, 4);
@@ -659,6 +701,17 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(360, 50);
             this.panel9.TabIndex = 30;
+            // 
+            // 단기추가매수수익률1Label
+            // 
+            this.단기추가매수수익률1Label.AutoSize = true;
+            this.단기추가매수수익률1Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기추가매수수익률1Label.Location = new System.Drawing.Point(135, 7);
+            this.단기추가매수수익률1Label.Margin = new System.Windows.Forms.Padding(0);
+            this.단기추가매수수익률1Label.Name = "단기추가매수수익률1Label";
+            this.단기추가매수수익률1Label.Size = new System.Drawing.Size(29, 14);
+            this.단기추가매수수익률1Label.TabIndex = 37;
+            this.단기추가매수수익률1Label.Text = "이상";
             // 
             // 단기추가매수수익률1수량num
             // 
@@ -984,6 +1037,16 @@
             0,
             0});
             // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label18.Location = new System.Drawing.Point(4, 29);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(334, 14);
+            this.label18.TabIndex = 35;
+            this.label18.Text = "위의 조건일 경우, 최대매수금액 - 총매입가의                   %를 매수";
+            // 
             // 단기추가매수조건식3combo
             // 
             this.단기추가매수조건식3combo.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -1033,6 +1096,16 @@
             0,
             0,
             0});
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label17.Location = new System.Drawing.Point(4, 27);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(334, 14);
+            this.label17.TabIndex = 34;
+            this.label17.Text = "위의 조건일 경우, 최대매수금액 - 총매입가의                   %를 매수";
             // 
             // 단기추가매수조건식2combo
             // 
@@ -1109,6 +1182,17 @@
             this.panel12.Size = new System.Drawing.Size(362, 47);
             this.panel12.TabIndex = 38;
             // 
+            // 단기분할매도수익률3Label
+            // 
+            this.단기분할매도수익률3Label.AutoSize = true;
+            this.단기분할매도수익률3Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기분할매도수익률3Label.Location = new System.Drawing.Point(136, 7);
+            this.단기분할매도수익률3Label.Margin = new System.Windows.Forms.Padding(0);
+            this.단기분할매도수익률3Label.Name = "단기분할매도수익률3Label";
+            this.단기분할매도수익률3Label.Size = new System.Drawing.Size(29, 14);
+            this.단기분할매도수익률3Label.TabIndex = 40;
+            this.단기분할매도수익률3Label.Text = "이상";
+            // 
             // 단기분할매도수익률3수량num
             // 
             this.단기분할매도수익률3수량num.Location = new System.Drawing.Point(235, 25);
@@ -1181,6 +1265,17 @@
             this.panel13.Size = new System.Drawing.Size(362, 50);
             this.panel13.TabIndex = 37;
             // 
+            // 단기분할매도수익률2Label
+            // 
+            this.단기분할매도수익률2Label.AutoSize = true;
+            this.단기분할매도수익률2Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기분할매도수익률2Label.Location = new System.Drawing.Point(136, 7);
+            this.단기분할매도수익률2Label.Margin = new System.Windows.Forms.Padding(0);
+            this.단기분할매도수익률2Label.Name = "단기분할매도수익률2Label";
+            this.단기분할매도수익률2Label.Size = new System.Drawing.Size(29, 14);
+            this.단기분할매도수익률2Label.TabIndex = 39;
+            this.단기분할매도수익률2Label.Text = "이상";
+            // 
             // 단기분할매도수익률2수량num
             // 
             this.단기분할매도수익률2수량num.Location = new System.Drawing.Point(235, 25);
@@ -1252,6 +1347,17 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(362, 50);
             this.panel14.TabIndex = 30;
+            // 
+            // 단기분할매도수익률1Label
+            // 
+            this.단기분할매도수익률1Label.AutoSize = true;
+            this.단기분할매도수익률1Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.단기분할매도수익률1Label.Location = new System.Drawing.Point(137, 7);
+            this.단기분할매도수익률1Label.Margin = new System.Windows.Forms.Padding(0);
+            this.단기분할매도수익률1Label.Name = "단기분할매도수익률1Label";
+            this.단기분할매도수익률1Label.Size = new System.Drawing.Size(29, 14);
+            this.단기분할매도수익률1Label.TabIndex = 38;
+            this.단기분할매도수익률1Label.Text = "이상";
             // 
             // 단기분할매도수익률1수량num
             // 
@@ -3540,112 +3646,6 @@
             // 
             this.전략openFileDialog.FileName = "openFileDialog1";
             this.전략openFileDialog.Filter = "*.cfg|";
-            // 
-            // 단기추가매수수익률1Label
-            // 
-            this.단기추가매수수익률1Label.AutoSize = true;
-            this.단기추가매수수익률1Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.단기추가매수수익률1Label.Location = new System.Drawing.Point(135, 7);
-            this.단기추가매수수익률1Label.Margin = new System.Windows.Forms.Padding(0);
-            this.단기추가매수수익률1Label.Name = "단기추가매수수익률1Label";
-            this.단기추가매수수익률1Label.Size = new System.Drawing.Size(29, 14);
-            this.단기추가매수수익률1Label.TabIndex = 37;
-            this.단기추가매수수익률1Label.Text = "이상";
-            // 
-            // 단기추가매수수익률2Label
-            // 
-            this.단기추가매수수익률2Label.AutoSize = true;
-            this.단기추가매수수익률2Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.단기추가매수수익률2Label.Location = new System.Drawing.Point(135, 7);
-            this.단기추가매수수익률2Label.Margin = new System.Windows.Forms.Padding(0);
-            this.단기추가매수수익률2Label.Name = "단기추가매수수익률2Label";
-            this.단기추가매수수익률2Label.Size = new System.Drawing.Size(29, 14);
-            this.단기추가매수수익률2Label.TabIndex = 38;
-            this.단기추가매수수익률2Label.Text = "이상";
-            // 
-            // 단기추가매수수익률3Label
-            // 
-            this.단기추가매수수익률3Label.AutoSize = true;
-            this.단기추가매수수익률3Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.단기추가매수수익률3Label.Location = new System.Drawing.Point(135, 7);
-            this.단기추가매수수익률3Label.Margin = new System.Windows.Forms.Padding(0);
-            this.단기추가매수수익률3Label.Name = "단기추가매수수익률3Label";
-            this.단기추가매수수익률3Label.Size = new System.Drawing.Size(29, 14);
-            this.단기추가매수수익률3Label.TabIndex = 39;
-            this.단기추가매수수익률3Label.Text = "이상";
-            // 
-            // 단기분할매도수익률1Label
-            // 
-            this.단기분할매도수익률1Label.AutoSize = true;
-            this.단기분할매도수익률1Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.단기분할매도수익률1Label.Location = new System.Drawing.Point(137, 7);
-            this.단기분할매도수익률1Label.Margin = new System.Windows.Forms.Padding(0);
-            this.단기분할매도수익률1Label.Name = "단기분할매도수익률1Label";
-            this.단기분할매도수익률1Label.Size = new System.Drawing.Size(29, 14);
-            this.단기분할매도수익률1Label.TabIndex = 38;
-            this.단기분할매도수익률1Label.Text = "이상";
-            // 
-            // 단기분할매도수익률2Label
-            // 
-            this.단기분할매도수익률2Label.AutoSize = true;
-            this.단기분할매도수익률2Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.단기분할매도수익률2Label.Location = new System.Drawing.Point(136, 7);
-            this.단기분할매도수익률2Label.Margin = new System.Windows.Forms.Padding(0);
-            this.단기분할매도수익률2Label.Name = "단기분할매도수익률2Label";
-            this.단기분할매도수익률2Label.Size = new System.Drawing.Size(29, 14);
-            this.단기분할매도수익률2Label.TabIndex = 39;
-            this.단기분할매도수익률2Label.Text = "이상";
-            // 
-            // 단기분할매도수익률3Label
-            // 
-            this.단기분할매도수익률3Label.AutoSize = true;
-            this.단기분할매도수익률3Label.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.단기분할매도수익률3Label.Location = new System.Drawing.Point(136, 7);
-            this.단기분할매도수익률3Label.Margin = new System.Windows.Forms.Padding(0);
-            this.단기분할매도수익률3Label.Name = "단기분할매도수익률3Label";
-            this.단기분할매도수익률3Label.Size = new System.Drawing.Size(29, 14);
-            this.단기분할매도수익률3Label.TabIndex = 40;
-            this.단기분할매도수익률3Label.Text = "이상";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label57.Location = new System.Drawing.Point(90, 28);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(244, 14);
-            this.label57.TabIndex = 39;
-            this.label57.Text = "최대매수금액 - 총매입가의                   %를 매수";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label21.Location = new System.Drawing.Point(90, 28);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(244, 14);
-            this.label21.TabIndex = 40;
-            this.label21.Text = "최대매수금액 - 총매입가의                   %를 매수";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label17.Location = new System.Drawing.Point(4, 27);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(334, 14);
-            this.label17.TabIndex = 34;
-            this.label17.Text = "위의 조건일 경우, 최대매수금액 - 총매입가의                   %를 매수";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("나눔고딕", 8.999999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label18.Location = new System.Drawing.Point(4, 29);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(334, 14);
-            this.label18.TabIndex = 35;
-            this.label18.Text = "위의 조건일 경우, 최대매수금액 - 총매입가의                   %를 매수";
             // 
             // SettingForm
             // 

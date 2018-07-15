@@ -1,14 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Windows.Forms;
 using System.Reflection;
 using KiwoomCode;
+using System.Data.SQLite;
 
 namespace B2503
 {
@@ -459,6 +456,20 @@ namespace B2503
             buySellThread.Start();
             자동매매중지버튼.Enabled = true;
             자동매매시작버튼.Enabled = false;
+
+            SQLiteConnection conn = new SQLiteConnection(@"Data Source=d:\\test.db");
+            conn.Open();
+
+            string sql = "select * from members";
+
+            SQLiteCommand cmd = new SQLiteCommand(sql, conn);
+            SQLiteDataReader rdr = cmd.ExecuteReader();
+            while (rdr.Read()) {
+                MessageBox.Show(rdr["name"] + " " + rdr["age"]);
+            }
+
+            rdr.Close();
+            conn.Close();
         }
 
         private void 자동매매스레드()
@@ -468,6 +479,7 @@ namespace B2503
             for (int i = 0;  i < 단기계좌보유현황뷰.Rows.Count; i++) {
                 //axKHOpenAPI.SetRealReg(_strRealConScrNum, 단기계좌보유현황뷰["단기종목코드", i].Value.ToString(), "9201;9001;10;930;931;932;", "1");// 실시간 시세등록
             }
+            
             //계좌정보 업데이트 TR 전송 (Or 실시간 받기)
             do {
                 DateTime now = DateTime.Now;
