@@ -6,6 +6,10 @@ using System.Windows.Forms;
 using System.Reflection;
 using KiwoomCode;
 using System.Data.SQLite;
+using System.Data;
+using System.Text;
+using System.Security;
+using System.Threading; //스레드 라이브러리 추가
 
 namespace B2503
 {
@@ -450,6 +454,90 @@ namespace B2503
             logger.Close();
         }
 
+        private SQLiteConnection connect_db() // 오라클 DB접속 매서드
+        {
+            String conninfo = @"Data Source=..\..\B2503.db";
+            SQLiteConnection conn = new SQLiteConnection(conninfo);
+
+            try
+            {
+                conn.Open();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("connect_db() FAIL! " + ex.Message, "오류 발생");
+                conn = null;
+            }
+            return conn;
+        }
+
+        private SQLiteDataReader read_db(string sql, string sql_string) // read_db
+        {
+            SQLiteCommand cmd;
+            SQLiteConnection conn;
+            SQLiteDataReader reader = null;
+
+            //string sql = null;
+            //sql = null;
+
+            conn = null;
+            conn = connect_db();
+
+            cmd = null;
+
+            cmd = new SQLiteCommand(null, conn);
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.Text;
+
+            cmd.CommandText = sql;
+
+            try
+            {
+                reader = cmd.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+                //write_err_log(sql_string + "ex.Message : [" + ex.Message + "]\n", 0);
+            }
+
+	    return reader;
+
+        }
+
+        private SQLiteConnection execute_db(string sql, string sql_string) // execute_db
+        {
+            SQLiteCommand cmd;
+            SQLiteConnection conn;
+            SQLiteDataReader reader = null;
+
+            //string sql = null;
+            //sql = null;
+
+            conn = null;
+            conn = connect_db();
+
+            cmd = null;
+
+            cmd = new SQLiteCommand(null, conn);
+            cmd.Connection = conn;
+            cmd.CommandType = CommandType.Text;
+
+            cmd.CommandText = sql;
+
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+	    catch (Exception ex)
+	    {
+		    //write_err_log(sql_string + "ex.Message : [" + ex.Message + "]\n", 0);
+	    }
+            conn.Close();
+
+	    return conn;
+
+        }
+ 
         private void 자동매매시작버튼_Click(object sender, EventArgs e)
         {
             buySellThread = new Thread(자동매매스레드);
@@ -457,6 +545,7 @@ namespace B2503
             자동매매중지버튼.Enabled = true;
             자동매매시작버튼.Enabled = false;
 
+	    /*
             SQLiteConnection conn = new SQLiteConnection(@"Data Source=d:\\test.db");
             conn.Open();
 
@@ -470,6 +559,8 @@ namespace B2503
 
             rdr.Close();
             conn.Close();
+	    */
+
         }
 
         private void 자동매매스레드()
