@@ -1,0 +1,4 @@
+create user ats identified by 1234;
+alter user ats account unlock;
+
+grant resource, DBA, connect to ats;

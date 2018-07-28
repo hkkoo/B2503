@@ -1,0 +1,17 @@
+CREATE TABLESPACE ats_data
+datafile 'C:\oraclexe\app\oracle\oradata\XE\ats_data.dbf' SIZE 1G
+AUTOEXTEND ON NEXT 512M MAXSIZE UNLIMITED
+LOGGING
+ONLINE
+PERMANENT
+EXTENT MANAGEMENT LOCAL AUTOALLOCATE
+BLOCKSIZE 8K
+SEGMENT SPACE MANAGEMENT AUTO
+FLASHBACK ON;
+
+CREATE TEMPORARY TABLESPACE ats_tmp
+TEMPFILE 'C:\oraclexe\app\oracle\oradata\XE\ats_tmp.dbf' SIZE 512M
+AUTOEXTEND ON NEXT 128M MAXSIZE UNLIMITED;
+
+alter user ats default tablespace ats_data;
+alter user ats temporary tablespace ats_tmp;
